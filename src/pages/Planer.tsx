@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import planerHero from "@/assets/planer-hero.jpg";
+import planerHero from "@/assets/planer-hero-new.jpg";
 import planerCat1 from "@/assets/planer-cat-1.png";
 import planerCat2 from "@/assets/planer-cat-2.png";
 
