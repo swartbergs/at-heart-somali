@@ -9,23 +9,23 @@ const Om = () => {
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Portrait Image */}
-          <div className="flex justify-center mb-8">
-            <div className="w-full max-w-md aspect-square overflow-hidden rounded-lg shadow-lg">
+          <div className="flex justify-center mb-6">
+            <div className="w-full max-w-sm">
               <img
                 src={piaWithCats}
                 alt="Pia Ringholm med två Somalikatter"
-                className="w-full h-full object-cover"
+                className="w-full h-auto"
               />
             </div>
           </div>
 
           {/* Heading */}
-          <h1 className="text-brand-gold text-3xl md:text-4xl mb-8 font-heading">
+          <h1 className="text-brand-gold text-2xl md:text-3xl mb-6 font-heading">
             Om mig och min kattuppfödning.
           </h1>
 
           {/* Main Content */}
-          <div className="space-y-3 text-brand-gold font-body font-light leading-snug">
+          <div className="space-y-2 text-brand-gold font-body font-light leading-snug text-sm md:text-base">
             <p>
               Jag heter Pia Ringholm och bor tillsammans med min man Tom, våra Somalikatter och två hundar i ett hus bara 15 minuter utanför Stockholm på ön Lidingö.
             </p>
