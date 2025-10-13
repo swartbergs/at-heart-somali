@@ -10,11 +10,11 @@ const Om = () => {
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Portrait Image */}
           <div className="flex justify-center mb-6">
-            <div className="w-full max-w-sm">
+            <div className="w-full max-w-md h-80 overflow-hidden">
               <img
                 src={piaWithCats}
                 alt="Pia Ringholm med två Somalikatter"
-                className="w-full h-auto"
+                className="w-full h-full object-cover object-center"
               />
             </div>
           </div>
@@ -59,9 +59,9 @@ const Om = () => {
             </p>
 
             {/* List Section */}
-            <div className="mt-8">
-              <p className="mb-4">En kattunge från mig är:</p>
-              <ul className="space-y-2 ml-6">
+            <div>
+              <p className="mb-1">En kattunge från mig är:</p>
+              <ul className="list-none space-y-0">
                 <li>* Minst 12-14 veckor gammal innan flytt till ett nytt hem</li>
                 <li>* Vaccinerad två gånger</li>
                 <li>* Registrerad i SVERAK, FiFe</li>
@@ -74,17 +74,19 @@ const Om = () => {
               </ul>
             </div>
 
-            <p className="mt-8">
-              Jag är styrelseledamot i AbSolut Cat-club där jag är avelssekreterare.
-            </p>
+            <div className="mt-4 space-y-2">
+              <p>
+                Jag är styrelseledamot i AbSolut Cat-club där jag är avelssekreterare.
+              </p>
 
-            <p>
-              Jag har uppfödardiplom från SVERAK och är utbildad i SVERAKs avelsskola (UppfödarEttan) och har min certifiering.
-            </p>
+              <p>
+                Jag har uppfödardiplom från SVERAK och är utbildad i SVERAKs avelsskola (UppfödarEttan) och har min certifiering.
+              </p>
 
-            <p>
-              Jag är med i AbSolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)
-            </p>
+              <p>
+                Jag är med i AbSolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)
+              </p>
+            </div>
           </div>
         </div>
       </main>
