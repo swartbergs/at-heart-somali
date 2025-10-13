@@ -1,6 +1,9 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import planerHero from "@/assets/planer-hero.jpg";
+import planerCat1 from "@/assets/planer-cat-1.png";
+import planerCat2 from "@/assets/planer-cat-2.png";
 
 const Planer = () => {
   return (
@@ -10,7 +13,7 @@ const Planer = () => {
         {/* Hero Image Section */}
         <div className="w-full h-[50vh] md:h-[60vh] bg-brand-green-muted">
           <img
-            src="/placeholder.svg"
+            src={planerHero}
             alt="Somalikatter"
             className="w-full h-full object-cover"
           />
@@ -50,14 +53,14 @@ const Planer = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <div className="aspect-[3/4] bg-brand-green-muted">
                   <img
-                    src="/placeholder.svg"
+                    src={planerCat1}
                     alt="Katt 1"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-[3/4] bg-brand-green-muted">
                   <img
-                    src="/placeholder.svg"
+                    src={planerCat2}
                     alt="Katt 2"
                     className="w-full h-full object-cover"
                   />
