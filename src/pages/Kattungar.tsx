@@ -42,7 +42,7 @@ const Kattungar = () => {
               <img
                 src={kittensHero}
                 alt="Kattunge kull"
-                className="h-[500px] w-auto object-contain rounded-lg"
+                className="h-[600px] w-auto object-contain rounded-lg"
               />
             </div>
 
