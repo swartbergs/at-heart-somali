@@ -2,7 +2,7 @@ import certifications from "@/assets/certifications.png";
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-brand-light py-12 md:py-16 border-t border-border">
+    <footer className="w-full bg-white py-12 md:py-16 border-t border-border">
       <div className="container mx-auto px-4">
         {/* Certifications */}
         <div className="flex justify-center mb-8">

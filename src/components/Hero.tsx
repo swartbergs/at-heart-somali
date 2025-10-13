@@ -17,7 +17,7 @@ export const Hero = () => {
       />
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
+      <div className="relative z-10 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto self-start pt-24 md:pt-32">
         {/* Decorative overline */}
         <p className="font-script text-3xl md:text-4xl text-brand-gold mb-4 drop-shadow-lg">
           Somali Cats Cattery
@@ -25,7 +25,7 @@ export const Hero = () => {
 
         {/* Main heading */}
         <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-semibold text-brand-gold drop-shadow-2xl mb-6">
-          SE At Heart
+          SE*At Heart
         </h1>
       </div>
     </section>

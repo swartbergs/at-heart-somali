@@ -42,7 +42,7 @@ export const Header = () => {
               <li key={item.name}>
                 <a
                   href={item.href}
-                  className="relative px-4 py-2 text-sm font-body text-brand-light/90 hover:text-brand-gold transition-colors font-light"
+                  className="relative px-4 py-2 text-sm font-body text-brand-gold hover:text-brand-gold/80 transition-colors font-light"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >

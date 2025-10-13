@@ -1,9 +1,9 @@
 export const Intro = () => {
   return (
-    <section className="w-full bg-brand-dark-green py-16 md:py-24">
+    <section className="w-full bg-brand-dark-green py-24 md:py-32 lg:py-40">
       <div className="container mx-auto px-4 max-w-4xl text-center">
         {/* Brand promise */}
-        <p className="text-brand-light text-base md:text-lg leading-relaxed mb-8 font-light">
+        <p className="text-brand-gold text-base md:text-lg leading-relaxed mb-12 font-light">
           En liten uppfödning av katten rasen Somali i hemmiljö, med fokus på hälsa, temperament och utseende (som följer Fife rasstandard för Somalikatter).
         </p>
 
