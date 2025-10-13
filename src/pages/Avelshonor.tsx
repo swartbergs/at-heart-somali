@@ -105,7 +105,7 @@ const Avelshonor = () => {
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
           {/* Active Queens Section */}
           <section className="mb-20">
-            <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide">
+            <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
               Avelshonor
             </h1>
 
@@ -118,7 +118,7 @@ const Avelshonor = () => {
 
           {/* Retired Queens Section */}
           <section>
-            <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide">
+            <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
               Pensionerade Honor
             </h1>
 
