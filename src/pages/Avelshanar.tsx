@@ -10,7 +10,7 @@ const Avelshanar = () => {
       image: maleCatFox,
       birthDate: "2022-06-07",
       mother: "SE*At Heart Bez, SOM n",
-      father: "CH H*Moanna's Clowis, SOM n",
+      father: "CH FI*Kisompa's Oliviero, SOM n",
       stamtavla: "Stamtavla",
       stamtavlaLink: "#",
       pkDef: "Normal",
