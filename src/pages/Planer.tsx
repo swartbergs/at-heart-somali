@@ -1,0 +1,95 @@
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+
+const Planer = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1">
+        {/* Hero Image Section */}
+        <div className="w-full h-[50vh] md:h-[60vh] bg-brand-green-muted">
+          <img
+            src="/placeholder.svg"
+            alt="Somalikatter"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Content Section */}
+        <div className="bg-brand-dark-green">
+          <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
+            {/* Heading */}
+            <h1 className="text-brand-gold text-3xl md:text-4xl mb-6 font-heading text-center uppercase tracking-wide">
+              Planerade Parningar
+            </h1>
+
+            {/* Intro Text */}
+            <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-2">
+              <p>Här publiceras planerade parningar för 2025.</p>
+              <p>
+                Skicka gärna en intresseanmälan här, via hemsidan eller till{" "}
+                <a href="mailto:pia@attheartplanet.se" className="underline hover:text-brand-gold/80">
+                  pia@attheartplanet.se
+                </a>
+                .
+              </p>
+              <p>
+                Besök av kattungars tidigare eller alla kattungarnas fyll 3 veckor. Besök bokas via{" "}
+                <a href="mailto:pia@attheartplanet.se" className="underline hover:text-brand-gold/80">
+                  övereenskommelse
+                </a>
+                . Vid bokning av kattunge tas en fingeringsavgift ut. Jag använder mig av SVERAKS
+                rekommenderade Tingningsavtal och även Köpekontrakt.
+              </p>
+            </div>
+
+            {/* Cat Pair Section */}
+            <div className="space-y-12">
+              {/* Images */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="aspect-[3/4] bg-brand-green-muted">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Katt 1"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="aspect-[3/4] bg-brand-green-muted">
+                  <img
+                    src="/placeholder.svg"
+                    alt="Katt 2"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Cat Info */}
+              <div className="text-brand-gold font-body font-light space-y-1 text-sm md:text-base">
+                <h2 className="text-xl md:text-2xl font-heading mb-4">
+                  JC KCH SE*At Heart Jes + JCH KCH SE*Wingardiums Caspian
+                </h2>
+                <p>Förväntade färger: Viltfärg</p>
+                <p>Beräknad födelse: 17 oktober</p>
+                <p>Hälsotester: Båda Normal PK def och. Normal PRA</p>
+              </div>
+
+              {/* Interest Button */}
+              <div className="flex justify-start">
+                <Button
+                  variant="outline"
+                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
+                >
+                  Anmäl intresse
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Planer;
