@@ -19,13 +19,13 @@ const Avelshanar = () => {
       genes: "Anlag för dilution",
       moreImagesLink: "#",
       showMerits: [
-        "Årets bästa feådig Somali hane 2023",
-        "Årets bästa feådig hane igrupp 4, plats 7. 2023",
-        "Årets bästa viltapgade Somali 2023",
-        "Deltarsjunk Vary Merit 2024",
-        "Årets bästa feådig Somali hane 2024",
-        "Årets bästa feådig hane i grupp 4, plats 5. 2024",
-        "Årets bästa viltapgade Somali 2024"
+        "Årets bästa fertila Somali hane 2023",
+        "Årets bästa fertila hane i grupp 4, plats 7, 2023",
+        "Årets bästa viltfärgade Somali 2023",
+        "Destinguish Varity Merit 2024",
+        "Årets bästa fertila Somali hane 2024",
+        "Årets bästa fertila hane i grupp 4 plats 5, 2024",
+        "Årets bästa viltfärgade Somali 2024"
       ]
     }
   ];
