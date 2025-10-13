@@ -23,7 +23,7 @@ const Planer = () => {
         <div className="bg-brand-dark-green">
           <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
             {/* Heading */}
-            <h1 className="text-brand-gold text-3xl md:text-4xl mb-6 font-heading text-center uppercase tracking-wide">
+            <h1 className="text-brand-gold text-3xl md:text-4xl mb-6 font-heading uppercase tracking-wide">
               Planerade Parningar
             </h1>
 
@@ -31,18 +31,13 @@ const Planer = () => {
             <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-2">
               <p>Här publiceras planerade parningar för 2025.</p>
               <p>
-                Skicka gärna en intresseanmälan här, via hemsidan eller till{" "}
-                <a href="mailto:pia@attheartplanet.se" className="underline hover:text-brand-gold/80">
-                  pia@attheartplanet.se
+                Skicka gärna en intresseanmälan här via hemsidan eller till{" "}
+                <a href="mailto:pi@tupplurens.se" className="underline hover:text-brand-gold/80">
+                  pi@tupplurens.se
                 </a>
-                .
               </p>
               <p>
-                Besök av kattungars tidigare eller alla kattungarnas fyll 3 veckor. Besök bokas via{" "}
-                <a href="mailto:pia@attheartplanet.se" className="underline hover:text-brand-gold/80">
-                  övereenskommelse
-                </a>
-                . Vid bokning av kattunge tas en fingeringsavgift ut. Jag använder mig av SVERAKS
+                Besök av kattungar tidigast efter att kattungarna fyllt 5 veckor. Besök bokas via överenskommelse . Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs
                 rekommenderade Tingningsavtal och även Köpekontrakt.
               </p>
             </div>
