@@ -11,11 +11,11 @@ const Planer = () => {
       <Header />
       <main className="flex-1">
         {/* Hero Image Section */}
-        <div className="w-full h-[50vh] md:h-[60vh] bg-brand-green-muted">
+        <div className="w-full flex justify-center bg-brand-green-muted">
           <img
             src={planerHero}
             alt="Somalikatter"
-            className="w-full h-full object-cover"
+            className="w-full max-w-7xl object-contain"
           />
         </div>
 
