@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Om from "./pages/Om";
 import Planer from "./pages/Planer";
 import Kattungar from "./pages/Kattungar";
+import Kullar from "./pages/Kullar";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/om" element={<Om />} />
           <Route path="/planer" element={<Planer />} />
           <Route path="/kattungar" element={<Kattungar />} />
+          <Route path="/kullar" element={<Kullar />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
