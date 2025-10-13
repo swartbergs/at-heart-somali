@@ -19,12 +19,12 @@ export const Hero = () => {
       {/* Hero Content */}
       <div className="relative z-10 pl-8 md:pl-16 lg:pl-24 self-start pt-24 md:pt-32">
         {/* Decorative overline */}
-        <p className="font-script text-3xl md:text-4xl text-brand-gold mb-4 drop-shadow-lg">
+        <p className="font-script text-3xl md:text-4xl text-brand-gold mb-2 drop-shadow-lg">
           Somali Cats Cattery
         </p>
 
         {/* Main heading */}
-        <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-semibold text-brand-gold drop-shadow-2xl mb-6">
+        <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-brand-gold drop-shadow-2xl mb-6">
           SE*At Heart
         </h1>
       </div>
