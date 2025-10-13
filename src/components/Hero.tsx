@@ -2,7 +2,7 @@ import heroCat from "@/assets/hero-cat.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[65vh] min-h-[500px] flex items-center justify-start overflow-hidden">
       {/* Hero Image */}
       <img
         src={heroCat}
@@ -17,7 +17,7 @@ export const Hero = () => {
       />
 
       {/* Hero Content */}
-      <div className="relative z-10 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto self-start pt-24 md:pt-32">
+      <div className="relative z-10 pl-8 md:pl-16 lg:pl-24 self-start pt-24 md:pt-32">
         {/* Decorative overline */}
         <p className="font-script text-3xl md:text-4xl text-brand-gold mb-4 drop-shadow-lg">
           Somali Cats Cattery

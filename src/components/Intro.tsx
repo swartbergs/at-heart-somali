@@ -1,6 +1,6 @@
 export const Intro = () => {
   return (
-    <section className="w-full bg-brand-dark-green py-24 md:py-32 lg:py-40">
+    <section className="w-full bg-brand-dark-green py-32 md:py-40 lg:py-48">
       <div className="container mx-auto px-4 max-w-4xl text-center">
         {/* Brand promise */}
         <p className="text-brand-gold text-base md:text-lg leading-relaxed mb-12 font-light">
