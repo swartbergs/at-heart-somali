@@ -1,13 +1,14 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import piaWithCats from "@/assets/pia-with-cats.jpg";
+import catActive from "@/assets/cat-active.png";
+import catRetired from "@/assets/cat-retired.png";
 
 const Avelshonor = () => {
   const activeQueens = [
     {
       id: "cat-1",
       name: "GIC SE*At Heart Cat, SOM n",
-      image: piaWithCats,
+      image: catActive,
       birthDate: "2020-03-01",
       mother: "GIC Gloria von Müllers Mühle, SOM o",
       father: "SE*Urlvet Adler, SOM n",
@@ -23,7 +24,7 @@ const Avelshonor = () => {
     {
       id: "gloria",
       name: "GIC Gloria von Müllers Mühle, SOM o",
-      image: piaWithCats,
+      image: catRetired,
       birthDate: "2016-12-08",
       mother: "Foxgarden's Fatha Yar, SOM o",
       father: "Elsa von Müllers Mühle, SOM o",
