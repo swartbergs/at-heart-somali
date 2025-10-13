@@ -61,16 +61,16 @@ const Om = () => {
             {/* List Section */}
             <div>
               <p className="mb-1">En kattunge från mig är:</p>
-              <ul className="list-none space-y-0">
-                <li>* Minst 12-14 veckor gammal innan flytt till ett nytt hem</li>
-                <li>* Vaccinerad två gånger</li>
-                <li>* Registrerad i SVERAK, FiFe</li>
-                <li>* Stamtavla</li>
-                <li>* Har ett ID-chip</li>
-                <li>* Veterinärbesiktigad inom en vecka innan avresa till ett nytt hem</li>
-                <li>* Rabiesvaccination (vid flytt utomlands)</li>
-                <li>* Försäkrad i Sveland</li>
-                <li>* Ett paket med mat och en filt.</li>
+              <ul className="list-disc list-inside space-y-0">
+                <li>Minst 12-14 veckor gammal innan flytt till ett nytt hem</li>
+                <li>Vaccinerad två gånger</li>
+                <li>Registrerad i SVERAK, FiFe</li>
+                <li>Stamtavla</li>
+                <li>Har ett ID-chip</li>
+                <li>Veterinärbesiktigad inom en vecka innan avresa till ett nytt hem</li>
+                <li>Rabiesvaccination (vid flytt utomlands)</li>
+                <li>Försäkrad i Sveland</li>
+                <li>Ett paket med mat och en filt.</li>
               </ul>
             </div>
 
