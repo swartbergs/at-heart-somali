@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const navigation = [
-  { name: "Om", href: "#om" },
-  { name: "Planer", href: "#planer" },
-  { name: "Kattungar", href: "#kattungar" },
-  { name: "Kullar", href: "#kullar" },
-  { name: "Avelshonor", href: "#avelshonor" },
-  { name: "Avelshanar", href: "#avelshanar" },
-  { name: "Shows", href: "#shows" },
-  { name: "Kontakt", href: "#kontakt" },
+  { name: "Om", href: "/om" },
+  { name: "Planer", href: "/planer" },
+  { name: "Kattungar", href: "/kattungar" },
+  { name: "Kullar", href: "/kullar" },
+  { name: "Avelshonor", href: "/avelshonor" },
+  { name: "Avelshanar", href: "/avelshanar" },
+  { name: "Shows", href: "/shows" },
+  { name: "Kontakt", href: "/kontakt" },
 ];
 
 export const Header = () => {
@@ -40,8 +40,8 @@ export const Header = () => {
           <ul className="hidden lg:flex items-center gap-1">
             {navigation.map((item, index) => (
               <li key={item.name}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="relative px-4 py-2 text-sm font-body text-brand-gold hover:text-brand-gold/80 transition-colors font-light"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
@@ -53,7 +53,7 @@ export const Header = () => {
                       aria-hidden="true"
                     />
                   )}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
