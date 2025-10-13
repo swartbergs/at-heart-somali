@@ -9,11 +9,11 @@ const Om = () => {
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Portrait Image */}
-          <div className="mb-6">
+          <div className="mb-6 flex justify-center">
             <img
               src={piaWithCats}
               alt="Pia Ringholm med två Somalikatter"
-              className="w-full"
+              className="w-[90vw] md:w-full md:max-w-[820px] max-h-[60vh] object-contain"
             />
           </div>
 
