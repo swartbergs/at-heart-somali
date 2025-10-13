@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import maleCatFox from "@/assets/male-cat-fox.png";
+import maleCatFox from "@/assets/male-cat-fox-new.png";
 
 const Avelshanar = () => {
   const studs = [
