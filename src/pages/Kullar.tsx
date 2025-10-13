@@ -1,6 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import kittensHero from "@/assets/kittens-hero.png";
+import kullarHero from "@/assets/kullar-hero.png";
 
 const Kullar = () => {
   const litters = [
@@ -10,11 +10,11 @@ const Kullar = () => {
       birthDate: "2025-10-00",
       mother: "GIC SE*At Heart Cat, SOM n",
       father: "JCH KCH SE*Wingardiums Caspian, SOM p",
-      image: kittensHero,
+      image: kullarHero,
       kittens: [
-        { name: "At Heart Nix - Hane - Viltfärgad - SOM n", color: "text-[#8CC4EC]" },
+        { name: "At Heart Nix - Hane - Viltfärgad - SOM n", color: "text-brand-gold" },
         { name: "At Heart Nea - Hona - Sorrel - SOM o", color: "text-brand-gold" },
-        { name: "At Heart Nia - Hona - Viltfärgad - SOM n", color: "text-[#F0A8C8]" },
+        { name: "At Heart Nia - Hona - Viltfärgad - SOM n", color: "text-brand-gold" },
       ]
     }
   ];
@@ -25,7 +25,7 @@ const Kullar = () => {
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Heading */}
-          <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide text-center">
+          <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide text-left">
             Från A-kull 2018 till vår senaste kull
           </h1>
 
