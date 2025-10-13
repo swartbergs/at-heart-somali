@@ -35,7 +35,7 @@ const Avelshonor = () => {
       pkDef: "Normal",
       pkaRada: "Normal",
       bloodType: "A/AB",
-      genes: "Mor bilder",
+      genes: "",
       moreImagesLink: "#"
     }
   ];
@@ -90,7 +90,9 @@ const Avelshonor = () => {
           <p className="font-light">
             <span className="font-semibold">Blodgrupp:</span> {cat.bloodType}
           </p>
-          <p className="font-light text-brand-gold/80">{cat.genes}</p>
+          {cat.genes && (
+            <p className="font-light text-brand-gold/80">{cat.genes}</p>
+          )}
         </div>
       </div>
     </div>
