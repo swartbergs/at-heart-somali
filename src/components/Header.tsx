@@ -1,6 +1,6 @@
-import { Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import atHeartLogo from "@/assets/at-heart-logo.png";
 
 const navigation = [
   { name: "Start", href: "/" },
@@ -27,9 +27,10 @@ export const Header = () => {
             className="flex items-center gap-3 group"
             aria-label="At Heart Somali Cats - Startsida"
           >
-            <Heart 
-              className="w-8 h-8 text-brand-gold group-hover:scale-110 transition-transform" 
-              fill="currentColor"
+            <img 
+              src={atHeartLogo}
+              alt="At Heart logo"
+              className="w-8 h-8 group-hover:scale-110 transition-transform" 
               aria-hidden="true"
             />
             <span className="font-heading text-xl text-brand-gold font-semibold tracking-wider">
