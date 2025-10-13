@@ -38,7 +38,7 @@ const Kattungar = () => {
           {/* Litter Section */}
           <div className="space-y-8">
             {/* Litter Image */}
-            <div className="w-full max-w-4xl mx-auto flex justify-end">
+            <div className="w-full max-w-4xl mx-auto flex justify-start">
               <img
                 src={kittensHero}
                 alt="Kattunge kull"
