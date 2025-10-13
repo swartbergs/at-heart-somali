@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import piaWithCats from "@/assets/pia-with-cats.jpg";
 
 const Om = () => {
   return (
@@ -11,7 +12,7 @@ const Om = () => {
           <div className="flex justify-center mb-8">
             <div className="w-full max-w-md">
               <img
-                src="/placeholder.svg"
+                src={piaWithCats}
                 alt="Pia Ringholm med två Somalikatter"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -24,7 +25,7 @@ const Om = () => {
           </h1>
 
           {/* Main Content */}
-          <div className="space-y-6 text-brand-gold font-body font-light leading-relaxed">
+          <div className="space-y-4 text-brand-gold font-body font-light leading-normal">
             <p>
               Jag heter Pia Ringholm och bor tillsammans med min man Tom, våra Somalikatter och två hundar i ett hus i Löddeköpinge, utanför Lund i södra Sverige, inte långt från Malmö och Lund i Skåne.
             </p>
