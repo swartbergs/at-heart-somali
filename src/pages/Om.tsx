@@ -61,7 +61,7 @@ const Om = () => {
             {/* List Section */}
             <div>
               <p className="mb-1">En kattunge från mig är:</p>
-              <ul className="list-disc list-inside space-y-0">
+              <ul className="list-disc list-inside space-y-0 text-sm md:text-base">
                 <li>Minst 12-14 veckor gammal innan flytt till ett nytt hem</li>
                 <li>Vaccinerad två gånger</li>
                 <li>Registrerad i SVERAK, FiFe</li>
