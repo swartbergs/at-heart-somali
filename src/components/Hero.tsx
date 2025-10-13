@@ -17,7 +17,7 @@ export const Hero = () => {
       />
 
       {/* Hero Content */}
-      <div className="relative z-10 pl-16 md:pl-24 lg:pl-32 self-start pt-24 md:pt-32">
+      <div className="relative z-10 pl-24 md:pl-32 lg:pl-40 self-start pt-24 md:pt-32">
         {/* Decorative overline */}
         <p className="font-script text-3xl md:text-4xl text-brand-gold mb-2 drop-shadow-lg">
           Somali Cats Cattery
