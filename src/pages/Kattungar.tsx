@@ -1,12 +1,13 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
+import kittensHero from "@/assets/kittens-hero.png";
 
 const Kattungar = () => {
   const kittens = [
-    { name: "Hane - Viltfärgad - SOM n", status: "Bokad", statusColor: "bg-[#D4A574]" },
-    { name: "Hona - Sorrel - SOM o", status: "Stannar i katteriet", statusColor: "bg-[#8B9A7E]" },
-    { name: "Hona - Viltfärgad - SOM n", status: "Tingad", statusColor: "bg-[#C4956F]" },
+    { name: "Hane - Viltfärgad - SOM n", status: "Bokad", statusColor: "bg-[#D4A574]", textColor: "text-[#8CC4EC]" },
+    { name: "Hona - Sorrel - SOM o", status: "Stannar i katteriet", statusColor: "bg-[#8B9A7E]", textColor: "text-brand-gold" },
+    { name: "Hona - Viltfärgad - SOM n", status: "Tingad", statusColor: "bg-[#C4956F]", textColor: "text-[#F0A8C8]" },
   ];
 
   return (
@@ -39,16 +40,16 @@ const Kattungar = () => {
             {/* Litter Image */}
             <div className="w-full max-w-2xl mx-auto">
               <img
-                src="/placeholder.svg"
+                src={kittensHero}
                 alt="Kattunge kull"
-                className="w-full object-cover"
+                className="w-full object-cover rounded-lg"
               />
             </div>
 
             {/* Litter Info */}
             <div className="text-brand-gold font-body space-y-2 text-sm md:text-base">
               <h2 className="text-2xl md:text-3xl font-heading mb-4">N-Kull 2025-10-21</h2>
-              <p className="font-light">Född: 2025-10-00</p>
+              <p className="font-light"><span className="font-bold">Född: 2025-10-00</span></p>
               <p className="font-light">Mor: GIC SE*At Heart Cat, SOM n</p>
               <p className="font-light">Far: JCH KCH SE*Wingardiums Caspian, SOM o</p>
             </div>
@@ -60,7 +61,7 @@ const Kattungar = () => {
                   key={index}
                   className="flex items-center justify-between py-4 border-b border-brand-gold/20"
                 >
-                  <span className="text-brand-gold font-body font-light text-sm md:text-base">
+                  <span className={`${kitten.textColor} font-body font-light text-sm md:text-base`}>
                     {kitten.name}
                   </span>
                   <Badge
