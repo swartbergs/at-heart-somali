@@ -13,10 +13,12 @@ const Avelshonor = () => {
       mother: "GIC Gloria von Müllers Mühle, SOM o",
       father: "SE*Urlvet Adler, SOM n",
       stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
       pkDef: "Normal",
       pkaRada: "Bärare",
       bloodType: "A/AB",
-      genes: "Anlag för sorrel el dilution"
+      genes: "Anlag för sorrel el dilution",
+      moreImagesLink: "#"
     }
   ];
 
@@ -29,10 +31,12 @@ const Avelshonor = () => {
       mother: "Foxgarden's Fatha Yar, SOM o",
       father: "Elsa von Müllers Mühle, SOM o",
       stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
       pkDef: "Normal",
       pkaRada: "Normal",
       bloodType: "A/AB",
-      genes: "Mor bilder"
+      genes: "Mor bilder",
+      moreImagesLink: "#"
     }
   ];
 
@@ -65,7 +69,12 @@ const Avelshonor = () => {
           <p className="font-light">
             <span className="font-semibold">Far:</span> {cat.father}
           </p>
-          <p className="font-light text-brand-gold/80">{cat.stamtavla}</p>
+          <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors block">
+            {cat.stamtavla}
+          </a>
+          <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors block">
+            Fler bilder
+          </a>
         </div>
 
         {/* Right Column */}
@@ -74,7 +83,7 @@ const Avelshonor = () => {
             <span className="font-semibold">PK def:</span> {cat.pkDef}
           </p>
           <p className="font-light">
-            <span className="font-semibold">PKA (råda):</span> {cat.pkaRada}
+            <span className="font-semibold">PKA (rdAc):</span> {cat.pkaRada}
           </p>
           <p className="font-light">
             <span className="font-semibold">Blodgrupp:</span> {cat.bloodType}
