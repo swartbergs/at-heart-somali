@@ -28,8 +28,8 @@ const Avelshonor = () => {
       name: "GIC Gloria von Müllers Mühle, SOM o",
       image: catRetired,
       birthDate: "2016-12-08",
-      mother: "Foxgarden's Fatha Yar, SOM o",
-      father: "Elsa von Müllers Mühle, SOM o",
+      mother: "Foxgarden's Tasha Yar, SOM o",
+      father: "Elvis von Müllers Mühle, SOM p",
       stamtavla: "Stamtavla",
       stamtavlaLink: "#",
       pkDef: "Normal",
@@ -69,12 +69,14 @@ const Avelshonor = () => {
           <p className="font-light">
             <span className="font-semibold">Far:</span> {cat.father}
           </p>
-          <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors block">
-            {cat.stamtavla}
-          </a>
-          <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors block">
-            Fler bilder
-          </a>
+          <div className="flex gap-4">
+            <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+              {cat.stamtavla}
+            </a>
+            <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+              Fler bilder
+            </a>
+          </div>
         </div>
 
         {/* Right Column */}
