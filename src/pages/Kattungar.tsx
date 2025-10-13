@@ -38,11 +38,11 @@ const Kattungar = () => {
           {/* Litter Section */}
           <div className="space-y-8">
             {/* Litter Image */}
-            <div className="w-full max-w-2xl mx-auto">
+            <div className="w-full max-w-4xl mx-auto flex justify-center">
               <img
                 src={kittensHero}
                 alt="Kattunge kull"
-                className="w-full object-cover rounded-lg"
+                className="h-96 w-auto object-contain rounded-lg mx-auto"
               />
             </div>
 
