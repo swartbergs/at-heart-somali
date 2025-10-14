@@ -15,7 +15,7 @@ const Avelshanar = () => {
   const studs = [
     {
       id: "fox",
-      name: "SC SE*At Heart Fox, SOM n",
+      name: "SC SE*At Heart Fux, SOM n",
       image: maleCatFox,
       birthDate: "2022-06-07",
       mother: "SE*At Heart Bez, SOM n",
