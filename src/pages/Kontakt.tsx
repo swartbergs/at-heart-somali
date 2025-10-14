@@ -71,50 +71,50 @@ const Kontakt = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-1 bg-brand-beige">
+      <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
           {/* Heading */}
-          <h1 className="text-brand-dark-green text-2xl md:text-3xl mb-12 text-center font-heading">
+          <h1 className="text-brand-gold text-2xl md:text-3xl mb-12 text-center font-heading">
             Har du frågor eller vill göra en intresseanmälan? Hör av dig!
           </h1>
 
           {/* Contact Info Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-brand-beige-light border border-brand-dark-green/20 rounded-lg p-8 text-center">
-              <Mail className="w-8 h-8 mx-auto mb-4 text-brand-dark-green" />
-              <h2 className="text-brand-dark-green font-heading text-lg mb-2">E-post</h2>
+            <div className="bg-brand-dark-green border border-brand-gold/20 rounded-lg p-8 text-center">
+              <Mail className="w-8 h-8 mx-auto mb-4 text-brand-gold" />
+              <h2 className="text-brand-gold font-heading text-lg mb-2">E-post</h2>
               <a 
                 href="mailto:Pi@tupplurens.se" 
-                className="text-brand-dark-green hover:underline text-sm"
+                className="text-brand-gold hover:underline text-sm"
               >
                 Pi@tupplurens.se
               </a>
             </div>
 
-            <div className="bg-brand-beige-light border border-brand-dark-green/20 rounded-lg p-8 text-center">
-              <Phone className="w-8 h-8 mx-auto mb-4 text-brand-dark-green" />
-              <h2 className="text-brand-dark-green font-heading text-lg mb-2">Telefon</h2>
+            <div className="bg-brand-dark-green border border-brand-gold/20 rounded-lg p-8 text-center">
+              <Phone className="w-8 h-8 mx-auto mb-4 text-brand-gold" />
+              <h2 className="text-brand-gold font-heading text-lg mb-2">Telefon</h2>
               <a 
                 href="tel:+46707940614" 
-                className="text-brand-dark-green hover:underline text-sm"
+                className="text-brand-gold hover:underline text-sm"
               >
                 +46 70 794 06 14
               </a>
             </div>
 
-            <div className="bg-brand-beige-light border border-brand-dark-green/20 rounded-lg p-8 text-center">
-              <MapPin className="w-8 h-8 mx-auto mb-4 text-brand-dark-green" />
-              <h2 className="text-brand-dark-green font-heading text-lg mb-2">Plats</h2>
-              <p className="text-brand-dark-green text-sm">Lidingö, Stockholm</p>
+            <div className="bg-brand-dark-green border border-brand-gold/20 rounded-lg p-8 text-center">
+              <MapPin className="w-8 h-8 mx-auto mb-4 text-brand-gold" />
+              <h2 className="text-brand-gold font-heading text-lg mb-2">Plats</h2>
+              <p className="text-brand-gold text-sm">Lidingö, Stockholm</p>
             </div>
           </div>
 
           {/* Interest Form */}
-          <div className="bg-brand-beige-light border border-brand-dark-green/20 rounded-lg p-8 md:p-12">
-            <h2 className="text-brand-dark-green font-heading text-xl md:text-2xl mb-2">
+          <div className="bg-brand-dark-green border border-brand-gold/20 rounded-lg p-8 md:p-12">
+            <h2 className="text-brand-gold font-heading text-xl md:text-2xl mb-2">
               Intresseformulär
             </h2>
-            <p className="text-brand-dark-green/70 text-sm mb-8">
+            <p className="text-brand-gold/70 text-sm mb-8">
               Fyll i formuläret så kontaktar vi dig inom kort
             </p>
 
@@ -126,11 +126,11 @@ const Kontakt = () => {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-brand-dark-green">Namn</FormLabel>
+                        <FormLabel className="text-brand-gold">Namn</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="Ditt fullständiga namn"
-                            className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40"
+                            className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40"
                             {...field}
                           />
                         </FormControl>
@@ -144,12 +144,12 @@ const Kontakt = () => {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-brand-dark-green">E-post</FormLabel>
+                        <FormLabel className="text-brand-gold">E-post</FormLabel>
                         <FormControl>
                           <Input
                             type="email"
                             placeholder="din.email@exempel.se"
-                            className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40"
+                            className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40"
                             {...field}
                           />
                         </FormControl>
@@ -164,12 +164,12 @@ const Kontakt = () => {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-brand-dark-green">Telefon</FormLabel>
+                      <FormLabel className="text-brand-gold">Telefon</FormLabel>
                       <FormControl>
                         <Input
                           type="tel"
                           placeholder="070-123 45 67"
-                          className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40"
+                          className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40"
                           {...field}
                         />
                       </FormControl>
@@ -183,11 +183,11 @@ const Kontakt = () => {
                   name="interest"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-brand-dark-green">Vad söker du?</FormLabel>
+                      <FormLabel className="text-brand-gold">Vad söker du?</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="T.ex. kön, färg/teckning, sällskap/avel/show"
-                          className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40"
+                          className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40"
                           {...field}
                         />
                       </FormControl>
@@ -201,11 +201,11 @@ const Kontakt = () => {
                   name="livingEnvironment"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-brand-dark-green">Boendemiljö</FormLabel>
+                      <FormLabel className="text-brand-gold">Boendemiljö</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="Beskriv din boendemiljö (barn, andra djur, inne/ute)"
-                          className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40 min-h-[100px]"
+                          className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40 min-h-[100px]"
                           {...field}
                         />
                       </FormControl>
@@ -219,11 +219,11 @@ const Kontakt = () => {
                   name="experience"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-brand-dark-green">Erfarenhet av katt/rasen</FormLabel>
+                      <FormLabel className="text-brand-gold">Erfarenhet av katt/rasen</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="Berätta om din erfarenhet av katter och Somali-rasen"
-                          className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40 min-h-[100px]"
+                          className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40 min-h-[100px]"
                           {...field}
                         />
                       </FormControl>
@@ -237,11 +237,11 @@ const Kontakt = () => {
                   name="other"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-brand-dark-green">Övrigt</FormLabel>
+                      <FormLabel className="text-brand-gold">Övrigt</FormLabel>
                       <FormControl>
                         <Textarea
                           placeholder="Övriga frågor eller information"
-                          className="bg-brand-beige border-brand-dark-green/30 text-brand-dark-green placeholder:text-brand-dark-green/40 min-h-[100px]"
+                          className="bg-brand-dark-green border-brand-gold/30 text-brand-gold placeholder:text-brand-gold/40 min-h-[100px]"
                           {...field}
                         />
                       </FormControl>
@@ -262,7 +262,7 @@ const Kontakt = () => {
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel className="text-sm text-brand-dark-green font-normal">
+                        <FormLabel className="text-sm text-brand-gold font-normal">
                           Jag samtycker till att At Heart Cattery lagrar mina uppgifter för att kunna kontakta mig enligt integritetspolicyn.
                         </FormLabel>
                         <FormMessage />
