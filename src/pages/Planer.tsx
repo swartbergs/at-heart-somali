@@ -11,7 +11,7 @@ const Planer = () => {
       <Header />
       <main className="flex-1">
         {/* Hero Image Section */}
-        <div className="w-full flex justify-center bg-brand-green-muted">
+        <div className="w-full flex justify-center bg-brand-dark-green">
           <img
             src={planerHero}
             alt="Somalikatter"
