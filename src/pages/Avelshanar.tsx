@@ -1,6 +1,15 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import maleCatFox from "@/assets/male-cat-fox-new.png";
+import catCaspian from "@/assets/cat-caspian.jpg";
+import catAce from "@/assets/cat-ace.png";
+import catLeroux from "@/assets/cat-leroux.png";
+import catVulpes from "@/assets/cat-vulpes.jpg";
+import catNeelix from "@/assets/cat-neelix.jpg";
+import catOliviero from "@/assets/cat-oliviero.jpg";
+import catMontgomeryScott from "@/assets/cat-montgomery-scott.jpg";
+import catImo from "@/assets/cat-imo.jpg";
+import catEss from "@/assets/cat-ess.png";
 
 const Avelshanar = () => {
   const studs = [
@@ -16,7 +25,7 @@ const Avelshanar = () => {
       pkDef: "Normal",
       pkaRada: "Normal",
       bloodType: "A/AB",
-      genes: "Anlag för dilution",
+      genes: "Bärare av dilution",
       moreImagesLink: "#",
       showMerits: [
         "Årets bästa fertila Somali hane 2023",
@@ -27,6 +36,138 @@ const Avelshanar = () => {
         "Årets bästa fertila hane i grupp 4 plats 5, 2024",
         "Årets bästa viltfärgade Somali 2024"
       ]
+    },
+    {
+      id: "caspian",
+      name: "JCH KCH SE Wingardiums Caspian, SOM p*",
+      image: catCaspian,
+      birthDate: "2024-08-012",
+      mother: "SE*Wingardiums Cassiega Soffice, SOM a",
+      father: "Ernst, SOM p",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    }
+  ];
+
+  const retiredStuds = [
+    {
+      id: "ace",
+      name: "GIC SE At Heart Ace, SOM o*",
+      image: catAce,
+      birthDate: "2018-06-22",
+      mother: "GIC Gloria von Müllers Mühler, SOM o",
+      father: "S* Limhamn's .K.A. Leroux, SOM n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    }
+  ];
+
+  const borrowedStuds = [
+    {
+      id: "leroux",
+      name: "S*Limhamnʼs K.A. Leroux, SOM n",
+      image: catLeroux,
+      birthDate: "2017-07-20",
+      mother: "CH S* Limhamn's H.J. Kiowa, SOM n",
+      father: "IC S*All Inclusive Argon Anders, ABY n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    },
+    {
+      id: "vulpes",
+      name: "SP, SC FI* Vulpes Aither, SOM n",
+      image: catVulpes,
+      birthDate: "2016-10-15",
+      mother: "CH FI* Foxkiss Cissa thalassina, SOM n",
+      father: "CH Foxgarden's Baron Barnsby, SOM n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Bärare",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    },
+    {
+      id: "neelix",
+      name: "CH Neelix des Minocs dʼArmor, ABY a",
+      image: catNeelix,
+      birthDate: "2017-08-08",
+      mother: "Mystik des Minocs d'Armor, ABY a",
+      father: "Liwanu du Roi de Coeur, ABY n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    },
+    {
+      id: "oliviero",
+      name: "CH FI* Kisompaʼs Oliviero, SOM n",
+      image: catOliviero,
+      birthDate: "2019-11-02",
+      mother: "IC FI* Lamadegaan Fullmoon Shadow, SOM n",
+      father: "SP, SC FI* Vulpes Aither, SOM n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Bärare",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    },
+    {
+      id: "montgomery-scott",
+      name: "S*Ianthelagens Montgomery Scott, SOM n",
+      image: catMontgomeryScott,
+      birthDate: "2022-03-13",
+      mother: "CH S* Ianthelagens Adira Tal, ABY n",
+      father: "IC (N) Kiachero Kiano, SOM a",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    },
+    {
+      id: "imo",
+      name: "Imo Impala av Rubicon, SOM n",
+      image: catImo,
+      birthDate: "2022-04-01",
+      mother: "IC S* Catnip's Yungmaid Yasmin, SOM o",
+      father: "Harry Hole av Rubicon, SOM n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
+    },
+    {
+      id: "ess",
+      name: "SE* At Heart Ess, SOM n",
+      image: catEss,
+      birthDate: "2021-02-22",
+      mother: "SE* At Heart Bezr, SOM n",
+      father: "CH Neelix des Minocs d'Armor, ABY a",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      moreImagesLink: "#"
     }
   ];
 
@@ -109,6 +250,7 @@ const Avelshanar = () => {
       <Header />
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
+          {/* Active Studs */}
           <section>
             <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
               Avelshanar
@@ -116,6 +258,32 @@ const Avelshanar = () => {
 
             <div className="space-y-16">
               {studs.map((cat) => (
+                <CatCard key={cat.id} cat={cat} />
+              ))}
+            </div>
+          </section>
+
+          {/* Retired Studs */}
+          <section className="mt-24">
+            <h2 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
+              Pensionerade Hanar
+            </h2>
+
+            <div className="space-y-16">
+              {retiredStuds.map((cat) => (
+                <CatCard key={cat.id} cat={cat} />
+              ))}
+            </div>
+          </section>
+
+          {/* Borrowed Studs */}
+          <section className="mt-24">
+            <h2 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
+              Lånade Avelshanar
+            </h2>
+
+            <div className="space-y-16">
+              {borrowedStuds.map((cat) => (
                 <CatCard key={cat.id} cat={cat} />
               ))}
             </div>
