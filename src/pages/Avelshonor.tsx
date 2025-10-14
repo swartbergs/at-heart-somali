@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import catActive from "@/assets/cat-active.png";
 import catRetired from "@/assets/cat-retired.png";
+import catHei from "@/assets/cat-hei.jpg";
+import catJes from "@/assets/cat-jes.jpg";
 
 const Avelshonor = () => {
   const activeQueens = [
@@ -18,6 +20,36 @@ const Avelshonor = () => {
       pkaRada: "Bärare",
       bloodType: "A/AB",
       genes: "Anlag för sorrel el dilution",
+      moreImagesLink: "#"
+    },
+    {
+      id: "cat-hei",
+      name: "CH SE*At Heart Hei, SOM n",
+      image: catHei,
+      birthDate: "2023-03-31",
+      mother: "GIC SE*At Heart Cat, SOM n",
+      father: "SI*anthelagens Montgomery Scott, SOM n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Bärare",
+      bloodType: "A/AB",
+      genes: "Bärare av dilution",
+      moreImagesLink: "#"
+    },
+    {
+      id: "cat-jes",
+      name: "JC KCH SE*At Heart Jes, SOM n",
+      image: catJes,
+      birthDate: "2024-06-14",
+      mother: "GIC SE*At Heart Cat, SOM n",
+      father: "SE*At Heart Ess, SOM n",
+      stamtavla: "Stamtavla",
+      stamtavlaLink: "#",
+      pkDef: "Normal",
+      pkaRada: "Normal",
+      bloodType: "A/AB",
+      genes: "Ej bärare av dilution",
       moreImagesLink: "#"
     }
   ];
