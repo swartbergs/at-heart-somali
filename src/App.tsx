@@ -10,6 +10,7 @@ import Kattungar from "./pages/Kattungar";
 import Kullar from "./pages/Kullar";
 import Avelshonor from "./pages/Avelshonor";
 import Avelshanar from "./pages/Avelshanar";
+import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/kullar" element={<Kullar />} />
           <Route path="/avelshonor" element={<Avelshonor />} />
           <Route path="/avelshanar" element={<Avelshanar />} />
+          <Route path="/kontakt" element={<Kontakt />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
