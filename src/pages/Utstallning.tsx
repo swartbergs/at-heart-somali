@@ -15,21 +15,6 @@ import showNykoping from "@/assets/show-nykoping.png";
 const Utstallning = () => {
   const shows = [
     {
-      date: "31 maj 2025",
-      location: "Kumla, SVERIGE",
-      mainImage: showHofors1, // Placeholder - kommer uppdateras med rätt bild
-      gridImages: [showHofors2, showHofors3, showHofors4, showHofors5],
-      club: "Vi Kattägare kattklubb",
-      subtitle: "Aby och Somali Breed BIS",
-      results: [
-        "SC SE* At Heart Fux DVM fick HP (Price of Honor)",
-        "GIC SE* At Heart Cat fick CACS",
-        "KCH JCH SE* At Heart Jes fick CACJ, NOM och BIS",
-        "KCH SE* Wingardiums Caspian fick CACJ, Junior Champoin, BIV, NOM och BIS"
-      ],
-      dayLabel: "LÖRDAG"
-    },
-    {
       date: "17 augusti 2025",
       location: "Bromma, SVERIGE",
       mainImage: showAward,
@@ -42,8 +27,8 @@ const Utstallning = () => {
       ]
     },
     {
-      date: "10 maj 2025",
-      location: "Hofors, SVERIGE",
+      date: "31 maj 2025",
+      location: "Kumla, SVERIGE",
       mainImage: showHofors1,
       gridImages: [showHofors2, showHofors3, showHofors4, showHofors5],
       club: "Vi Kattägare kattklubb",
@@ -53,7 +38,8 @@ const Utstallning = () => {
         "GIC SE* At Heart Cat fick CACS",
         "KCH JCH SE* At Heart Jes fick CACJ, NOM och BIS",
         "KCH SE* Wingardiums Caspian fick CACJ, Junior Champoin, BIV, NOM och BIS"
-      ]
+      ],
+      dayLabel: "LÖRDAG"
     },
     {
       date: "10 maj 2025",
