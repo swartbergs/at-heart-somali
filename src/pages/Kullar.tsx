@@ -155,8 +155,8 @@ const Kullar = () => {
                   />
                 </div>
 
-                {/* Litter Name - centered below image */}
-                <h2 className="text-brand-gold text-2xl md:text-3xl font-heading text-center">
+                {/* Litter Name - below image */}
+                <h2 className="text-brand-gold text-2xl md:text-3xl font-heading text-left">
                   {litter.name}
                 </h2>
 
