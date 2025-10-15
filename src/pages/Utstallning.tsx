@@ -137,7 +137,7 @@ const Utstallning = () => {
                         key={idx}
                         src={img}
                         alt={`${show.club} utställning bild ${idx + 2}`}
-                        className="w-full h-auto object-cover rounded-lg aspect-[4/3]"
+                        className="w-full h-auto object-contain rounded-lg"
                       />
                     ))}
                   </div>
