@@ -161,8 +161,9 @@ const Kullar = () => {
                   <p className="font-light mb-2">
                     <span className="font-bold">Född: {litter.birthDate}</span>
                   </p>
-                  <p className="font-light mb-4">
-                    Mor: {litter.mother}    Far: {litter.father}
+                  <p className="font-light mb-4 flex gap-12">
+                    <span>Mor: {litter.mother}</span>
+                    <span>Far: {litter.father}</span>
                   </p>
                   
                   {/* Kittens List */}
