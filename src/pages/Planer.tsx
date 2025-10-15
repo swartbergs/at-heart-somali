@@ -49,7 +49,7 @@ const Planer = () => {
             {/* Cat Pair Section */}
             <div className="space-y-12">
               {/* Images */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                 <div className="aspect-[3/4] bg-brand-green-muted">
                   <img
                     src={planerCat1}
@@ -90,7 +90,7 @@ const Planer = () => {
             {/* Second Cat Pair */}
             <div className="space-y-12">
               {/* Images */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                 <div className="aspect-[3/4] bg-brand-green-muted">
                   <img
                     src={planerCat3}
@@ -131,7 +131,7 @@ const Planer = () => {
             {/* Third Cat Pair */}
             <div className="space-y-12">
               {/* Images */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                 <div className="aspect-[3/4] bg-brand-green-muted">
                   <img
                     src={planerCat5}
