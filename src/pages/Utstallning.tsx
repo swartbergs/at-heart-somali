@@ -130,7 +130,7 @@ const Utstallning = () => {
 
                 {/* Grid Images (if any) */}
                 {show.gridImages.length > 0 && (
-                  <div className="w-full max-w-2xl mx-auto grid grid-cols-2 gap-4">
+                  <div className="w-full max-w-2xl mx-auto space-y-6">
                     {show.gridImages.map((img, idx) => (
                       <img
                         key={idx}
