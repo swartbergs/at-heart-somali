@@ -7,6 +7,10 @@ import showHofors2 from "@/assets/show-hofors-2.png";
 import showHofors3 from "@/assets/show-hofors-3.png";
 import showHofors4 from "@/assets/show-hofors-4.png";
 import showHofors5 from "@/assets/show-hofors-5.png";
+import showGestrika from "@/assets/show-gestrika.png";
+import showStockholm1 from "@/assets/show-stockholm-1.png";
+import showStockholm2 from "@/assets/show-stockholm-2.png";
+import showNykoping from "@/assets/show-nykoping.png";
 
 const Utstallning = () => {
   const shows = [
@@ -34,6 +38,49 @@ const Utstallning = () => {
         "GIC SE* At Heart Cat fick CACS",
         "KCH JCH SE* At Heart Jes fick CACJ, NOM och BIS",
         "KCH SE* Wingardiums Caspian fick CACJ, Junior Champoin, BIV, NOM och BIS"
+      ]
+    },
+    {
+      date: "10 maj 2025",
+      location: "Hofors, SVERIGE",
+      mainImage: showGestrika,
+      gridImages: [],
+      club: "Gestrika kattklubb",
+      subtitle: "",
+      results: [
+        "GIC SE* At Heart Cat fick CACS och NOM",
+        "KCH JCH SE* At Heart Jes fick CACJ",
+        "KCH SE* Wingardiums Caspian fick CACJ och NOM"
+      ]
+    },
+    {
+      date: "12 april 2025",
+      location: "Stockholm, SVERIGE",
+      mainImage: showStockholm1,
+      gridImages: [showStockholm2],
+      club: "Stockholms kattklubb",
+      subtitle: "",
+      results: [
+        "GIC SE* At Heart Cat fick CACS x 2, NOM i utställning B",
+        "KCH JCH SE* At Heart Jes fick CACJ x 2",
+        "KCH SE* Wingardiums Caspian fick CACJ x 2 och NOM i utställning A"
+      ],
+      dayLabel: "LÖRDAG UTSTÄLLNING A + B"
+    },
+    {
+      date: "22, 23 mars 2025",
+      location: "Nyköping, SVERIGE",
+      mainImage: showNykoping,
+      gridImages: [],
+      club: "Östkattens kattklubb",
+      subtitle: "",
+      results: [
+        "KCH JCH SE* At Heart Jes fick CACJ",
+        "KCH SE* Wingardiums Caspian fick CAC och NOM"
+      ],
+      sundayResults: [
+        "KCH JCH SE* At Heart Jes fick CACS och därmed Junior Champoin och BIV",
+        "KCH SE* Wingardiums Caspian fick CACC, NOM och BIS"
       ]
     }
   ];
@@ -103,12 +150,22 @@ const Utstallning = () => {
                   {show.subtitle && (
                     <p className="text-base font-light mb-3">{show.subtitle}</p>
                   )}
-                  <p className="font-bold mb-2">LÖRDAG:</p>
+                  <p className="font-bold mb-2">{show.dayLabel || "LÖRDAG"}:</p>
                   <div className="space-y-1 mb-4 font-light">
                     {show.results.map((result, idx) => (
                       <p key={idx}>{result}</p>
                     ))}
                   </div>
+                  {show.sundayResults && (
+                    <>
+                      <p className="font-bold mb-2">SÖNDAG:</p>
+                      <div className="space-y-1 mb-4 font-light">
+                        {show.sundayResults.map((result, idx) => (
+                          <p key={idx}>{result}</p>
+                        ))}
+                      </div>
+                    </>
+                  )}
                   <p className="font-light">Fler bilder</p>
                 </div>
               </div>
