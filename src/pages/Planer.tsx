@@ -1,6 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import planerHero from "@/assets/planer-hero-new.jpg";
 import planerCat1 from "@/assets/planer-cat-1.png";
 import planerCat2 from "@/assets/planer-cat-2.png";
@@ -10,6 +11,8 @@ import planerCat5 from "@/assets/planer-cat-5.png";
 import planerCat6 from "@/assets/planer-cat-6.png";
 
 const Planer = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -80,6 +83,7 @@ const Planer = () => {
               <div className="flex justify-start mb-12">
                 <Button
                   variant="outline"
+                  onClick={() => navigate('/kontakt')}
                   className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
@@ -121,6 +125,7 @@ const Planer = () => {
               <div className="flex justify-start mb-12">
                 <Button
                   variant="outline"
+                  onClick={() => navigate('/kontakt')}
                   className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
@@ -162,6 +167,7 @@ const Planer = () => {
               <div className="flex justify-start mb-12">
                 <Button
                   variant="outline"
+                  onClick={() => navigate('/kontakt')}
                   className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
