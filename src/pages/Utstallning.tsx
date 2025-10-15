@@ -15,6 +15,21 @@ import showNykoping from "@/assets/show-nykoping.png";
 const Utstallning = () => {
   const shows = [
     {
+      date: "31 maj 2025",
+      location: "Kumla, SVERIGE",
+      mainImage: showHofors1, // Placeholder - kommer uppdateras med rätt bild
+      gridImages: [showHofors2, showHofors3, showHofors4, showHofors5],
+      club: "Vi Kattägare kattklubb",
+      subtitle: "Aby och Somali Breed BIS",
+      results: [
+        "SC SE* At Heart Fux DVM fick HP (Price of Honor)",
+        "GIC SE* At Heart Cat fick CACS",
+        "KCH JCH SE* At Heart Jes fick CACJ, NOM och BIS",
+        "KCH SE* Wingardiums Caspian fick CACJ, Junior Champoin, BIV, NOM och BIS"
+      ],
+      dayLabel: "LÖRDAG"
+    },
+    {
       date: "17 augusti 2025",
       location: "Bromma, SVERIGE",
       mainImage: showAward,
@@ -130,13 +145,13 @@ const Utstallning = () => {
 
                 {/* Grid Images (if any) */}
                 {show.gridImages.length > 0 && (
-                  <div className="w-full max-w-2xl mx-auto space-y-6">
+                  <div className="w-full max-w-2xl mx-auto grid grid-cols-2 gap-4">
                     {show.gridImages.map((img, idx) => (
                       <img
                         key={idx}
                         src={img}
                         alt={`${show.club} utställning bild ${idx + 2}`}
-                        className="w-full h-auto object-contain rounded-lg"
+                        className="w-full h-auto object-cover rounded-lg aspect-[4/3]"
                       />
                     ))}
                   </div>
