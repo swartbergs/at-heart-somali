@@ -83,7 +83,10 @@ const Planer = () => {
               <div className="flex justify-start mb-12">
                 <Button
                   variant="outline"
-                  onClick={() => navigate('/kontakt')}
+                  onClick={() => {
+                    navigate('/kontakt');
+                    window.scrollTo(0, 0);
+                  }}
                   className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
@@ -125,7 +128,10 @@ const Planer = () => {
               <div className="flex justify-start mb-12">
                 <Button
                   variant="outline"
-                  onClick={() => navigate('/kontakt')}
+                  onClick={() => {
+                    navigate('/kontakt');
+                    window.scrollTo(0, 0);
+                  }}
                   className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
@@ -167,7 +173,10 @@ const Planer = () => {
               <div className="flex justify-start mb-12">
                 <Button
                   variant="outline"
-                  onClick={() => navigate('/kontakt')}
+                  onClick={() => {
+                    navigate('/kontakt');
+                    window.scrollTo(0, 0);
+                  }}
                   className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
