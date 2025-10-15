@@ -20,8 +20,8 @@ const Kullar = () => {
       father: "SE* At Heart Ess",
       image: kullarHero,
       kittens: [
-        { name: "SE* At Heart Jes Hona" },
-        { name: "SE* At Heart Joy Hona" },
+        { name: "SE* At Heart Jes", code: "", gender: "Hona" },
+        { name: "SE* At Heart Joy", code: "", gender: "Hona" },
       ]
     },
     {
@@ -32,9 +32,9 @@ const Kullar = () => {
       father: "Imo Impala av Rubicon",
       image: litterI,
       kittens: [
-        { name: "SE* At Heart Ian SOM n Hane" },
-        { name: "SE* At Heart Ice SOM n Hane" },
-        { name: "SE* At Heart Izo SOM n Hane" },
+        { name: "SE* At Heart Ian", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Ice", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Izo", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -45,9 +45,9 @@ const Kullar = () => {
       father: "S* Ianthelagens Montgomery Scott",
       image: litterH,
       kittens: [
-        { name: "SE* At Heart Hei SOM n Hona" },
-        { name: "SE* At Heart Hie SOM n Hona" },
-        { name: "SE* At Heart Hux SOM n Hane" },
+        { name: "SE* At Heart Hei", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Hie", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Hux", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -58,9 +58,9 @@ const Kullar = () => {
       father: "CH FI* Kisompa's Oliviero",
       image: litterF,
       kittens: [
-        { name: "SE* At Heart Fay SOM n Hane" },
-        { name: "SE* At Heart Fix SOM n Hona" },
-        { name: "SE* At Heart Fux SOM n Hane" },
+        { name: "SE* At Heart Fay", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Fix", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Fux", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -71,9 +71,9 @@ const Kullar = () => {
       father: "CH Neelix des Minocs d'Armor",
       image: litterE,
       kittens: [
-        { name: "SE* At Heart Eja SOM n Hona" },
-        { name: "SE* At Heart Eje SOM n Hane" },
-        { name: "SE* At Heart Ess SOM n Hane" },
+        { name: "SE* At Heart Eja", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Eje", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Ess", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -84,10 +84,10 @@ const Kullar = () => {
       father: "S* Limhamn's K.A. Leroux",
       image: litterD,
       kittens: [
-        { name: "SE* At Heart Dax SOM n Hane" },
-        { name: "SE* At Heart Day SOM n Hona" },
-        { name: "SE* At Heart Dex SOM n Hane" },
-        { name: "SE* At Heart Don SOM n Hane" },
+        { name: "SE* At Heart Dax", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Day", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Dex", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Don", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -98,9 +98,9 @@ const Kullar = () => {
       father: "SP, SC FI* Vulpes Aither",
       image: litterC,
       kittens: [
-        { name: "SE* At Heart Cat SOM n Hona" },
-        { name: "SE* At Heart Cia SOM o Hona" },
-        { name: "SE* At Heart Cim SOM n Hane" },
+        { name: "SE* At Heart Cat", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Cia", code: "SOM o", gender: "Hona" },
+        { name: "SE* At Heart Cim", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -111,10 +111,10 @@ const Kullar = () => {
       father: "S* Limhamn's K.A. Leroux",
       image: litterB,
       kittens: [
-        { name: "SE* At Heart Ben SOM n Hane" },
-        { name: "SE* At Heart Bez SOM n Hona" },
-        { name: "SE* At Heart Bim SOM o Hona" },
-        { name: "SE* At Heart Boy SOM n Hane" },
+        { name: "SE* At Heart Ben", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Bez", code: "SOM n", gender: "Hona" },
+        { name: "SE* At Heart Bim", code: "SOM o", gender: "Hona" },
+        { name: "SE* At Heart Boy", code: "SOM n", gender: "Hane" },
       ]
     },
     {
@@ -125,9 +125,9 @@ const Kullar = () => {
       father: "S* Limhamn's K.A. Leroux",
       image: litterA,
       kittens: [
-        { name: "SE* At Heart Ace SOM o Hane" },
-        { name: "SE* At Heart Ash SOM n Hane" },
-        { name: "SE* At Heart Aza SOM o Hona" },
+        { name: "SE* At Heart Ace", code: "SOM o", gender: "Hane" },
+        { name: "SE* At Heart Ash", code: "SOM n", gender: "Hane" },
+        { name: "SE* At Heart Aza", code: "SOM o", gender: "Hona" },
       ]
     }
   ];
@@ -156,26 +156,27 @@ const Kullar = () => {
                 </div>
 
                 {/* Litter Info */}
-                <div className="text-brand-gold font-body space-y-2 text-sm md:text-base">
+                <div className="text-brand-gold font-body text-sm md:text-base">
                   <h2 className="text-2xl md:text-3xl font-heading mb-4">{litter.name}</h2>
-                  <p className="font-light">
+                  <p className="font-light mb-2">
                     <span className="font-bold">Född: {litter.birthDate}</span>
                   </p>
-                  <p className="font-light">Mor: {litter.mother}</p>
-                  <p className="font-light">Far: {litter.father}</p>
-                </div>
-
-                {/* Kittens List */}
-                <div className="space-y-3 mt-6">
-                  {litter.kittens.map((kitten, index) => (
-                    <p
-                      key={index}
-                      className="text-brand-gold font-body font-light text-sm md:text-base"
-                    >
-                      {kitten.name}
-                    </p>
-                  ))}
-                  <p className="text-brand-gold font-body font-light text-sm md:text-base mt-4">
+                  <p className="font-light mb-4">
+                    Mor: {litter.mother}    Far: {litter.father}
+                  </p>
+                  
+                  {/* Kittens List */}
+                  <div className="space-y-1 mb-4">
+                    {litter.kittens.map((kitten, index) => (
+                      <div key={index} className="flex gap-8 font-light">
+                        <span className="flex-shrink-0 w-40">{kitten.name}</span>
+                        <span className="flex-shrink-0 w-16">{kitten.code}</span>
+                        <span>{kitten.gender}</span>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <p className="font-light">
                     Fler bilder
                   </p>
                 </div>
