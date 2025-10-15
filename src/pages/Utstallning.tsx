@@ -2,14 +2,35 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import ribbonsHero from "@/assets/ribbons-hero.jpg";
 import showAward from "@/assets/show-award.png";
+import showHofors1 from "@/assets/show-hofors-1.png";
+import showHofors2 from "@/assets/show-hofors-2.png";
+import showHofors3 from "@/assets/show-hofors-3.png";
+import showHofors4 from "@/assets/show-hofors-4.png";
+import showHofors5 from "@/assets/show-hofors-5.png";
 
 const Utstallning = () => {
   const shows = [
     {
+      date: "10 maj 2025",
+      location: "Hofors, SVERIGE",
+      mainImage: showHofors1,
+      gridImages: [showHofors2, showHofors3, showHofors4, showHofors5],
+      club: "Vi Kattägare kattklubb",
+      subtitle: "Aby och Somali Breed BIS",
+      results: [
+        "SC SE* At Heart Fux DVM fick HP (Price of Honor)",
+        "GIC SE* At Heart Cat fick CACS",
+        "KCH JCH SE* At Heart Jes fick CACJ, NOM och BIS",
+        "KCH SE* Wingardiums Caspian fick CACJ, Junior Champoin, BIV, NOM och BIS"
+      ]
+    },
+    {
       date: "17 augusti 2025",
       location: "Bromma, SVERIGE",
-      image: showAward,
+      mainImage: showAward,
+      gridImages: [],
       club: "Östkattens kattklubb",
+      subtitle: "",
       results: [
         "SC SE* At Heart Fux DVM fick HP och blev BIV",
         "JCH KCH SE* Wingardiums Caspian fick CAC"
@@ -51,20 +72,37 @@ const Utstallning = () => {
                   </p>
                 </div>
 
-                {/* Show Image - Större */}
+                {/* Main Image */}
                 <div className="w-full max-w-2xl mx-auto">
                   <img
-                    src={show.image}
+                    src={show.mainImage}
                     alt={`${show.club} utställning`}
                     className="w-full h-auto object-contain rounded-lg"
                   />
                 </div>
 
+                {/* Grid Images (if any) */}
+                {show.gridImages.length > 0 && (
+                  <div className="w-full max-w-2xl mx-auto grid grid-cols-2 gap-4">
+                    {show.gridImages.map((img, idx) => (
+                      <img
+                        key={idx}
+                        src={img}
+                        alt={`${show.club} utställning bild ${idx + 2}`}
+                        className="w-full h-auto object-cover rounded-lg aspect-square"
+                      />
+                    ))}
+                  </div>
+                )}
+
                 {/* Club and Results - UNDER bilden */}
                 <div className="text-brand-gold font-body text-sm md:text-base text-center">
-                  <h3 className="text-lg md:text-xl font-heading mb-3">
+                  <h3 className="text-lg md:text-xl font-heading mb-1">
                     {show.club}
                   </h3>
+                  {show.subtitle && (
+                    <p className="text-base font-light mb-3">{show.subtitle}</p>
+                  )}
                   <p className="font-bold mb-2">LÖRDAG:</p>
                   <div className="space-y-1 mb-4 font-light">
                     {show.results.map((result, idx) => (
