@@ -145,7 +145,7 @@ const Kullar = () => {
           {/* Litters List */}
           <div className="space-y-10">
             {litters.map((litter) => (
-              <div key={litter.id} className="space-y-1">
+              <div key={litter.id} className="space-y-4">
                 {/* Litter Image */}
                 <div className="w-full max-w-4xl mx-auto flex justify-start">
                   <img
@@ -155,9 +155,13 @@ const Kullar = () => {
                   />
                 </div>
 
+                {/* Litter Name - centered below image */}
+                <h2 className="text-brand-gold text-2xl md:text-3xl font-heading text-center">
+                  {litter.name}
+                </h2>
+
                 {/* Litter Info */}
                 <div className="text-brand-gold font-body text-sm md:text-base">
-                  <h2 className="text-2xl md:text-3xl font-heading mb-4">{litter.name}</h2>
                   <p className="font-light mb-2">
                     <span className="font-bold">Född: {litter.birthDate}</span>
                   </p>
