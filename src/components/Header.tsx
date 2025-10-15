@@ -10,7 +10,7 @@ const navigation = [
   { name: "Kullar", href: "/kullar" },
   { name: "Avelshonor", href: "/avelshonor" },
   { name: "Avelshanar", href: "/avelshanar" },
-  { name: "Shows", href: "/shows" },
+  { name: "Utställning", href: "/utstallning" },
   { name: "Kontakt", href: "/kontakt" },
 ];
 
