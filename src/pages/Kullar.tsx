@@ -66,7 +66,7 @@ const Kullar = () => {
     {
       id: "E",
       name: "Kull E",
-      birthDate: "2021-06-15",
+      birthDate: "2021-02-22",
       mother: "SE* At Heart Bez",
       father: "CH Neelix des Minocs d'Armor",
       image: litterE,
@@ -143,7 +143,7 @@ const Kullar = () => {
           </h1>
 
           {/* Litters List */}
-          <div className="space-y-16">
+          <div className="space-y-10">
             {litters.map((litter) => (
               <div key={litter.id} className="space-y-8">
                 {/* Litter Image */}
