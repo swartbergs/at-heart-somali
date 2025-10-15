@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import planerHero from "@/assets/planer-hero-new.jpg";
 import planerCat1 from "@/assets/planer-cat-1.png";
 import planerCat2 from "@/assets/planer-cat-2.png";
+import planerCat3 from "@/assets/planer-cat-3.png";
+import planerCat4 from "@/assets/planer-cat-4.png";
+import planerCat5 from "@/assets/planer-cat-5.png";
+import planerCat6 from "@/assets/planer-cat-6.png";
 
 const Planer = () => {
   return (
@@ -70,6 +74,88 @@ const Planer = () => {
                 <p>Förväntade färger: Viltfärg</p>
                 <p>Beräknad födelse: 17 oktober</p>
                 <p>Hälsotester: Båda Normal PK def och. Normal PRA</p>
+              </div>
+
+              {/* Interest Button */}
+              <div className="flex justify-start">
+                <Button
+                  variant="outline"
+                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
+                >
+                  Anmäl intresse
+                </Button>
+              </div>
+            </div>
+
+            {/* Second Cat Pair */}
+            <div className="space-y-12">
+              {/* Images */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="aspect-[3/4] bg-brand-green-muted">
+                  <img
+                    src={planerCat3}
+                    alt="CH SE*At Heart Hei"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="aspect-[3/4] bg-brand-green-muted">
+                  <img
+                    src={planerCat4}
+                    alt="SC SE*At Heart FUX DVM"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Cat Info */}
+              <div className="text-brand-gold font-body font-light space-y-1 text-sm md:text-base">
+                <h2 className="text-xl md:text-2xl font-heading mb-4">
+                  CH SE*At Heart Hei + SC SE*At Heart FUX DVM
+                </h2>
+                <p>Förväntade färger: Viltfärg och Blå</p>
+                <p>Beräknad födelse: 17 oktober</p>
+                <p>Hälsotester: Båda Normal PK def och Normal PRA</p>
+              </div>
+
+              {/* Interest Button */}
+              <div className="flex justify-start">
+                <Button
+                  variant="outline"
+                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
+                >
+                  Anmäl intresse
+                </Button>
+              </div>
+            </div>
+
+            {/* Third Cat Pair */}
+            <div className="space-y-12">
+              {/* Images */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div className="aspect-[3/4] bg-brand-green-muted">
+                  <img
+                    src={planerCat5}
+                    alt="GIC SE*At Heart Cat"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="aspect-[3/4] bg-brand-green-muted">
+                  <img
+                    src={planerCat6}
+                    alt="JCH KCH SE*Wingardiums Caspian"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Cat Info */}
+              <div className="text-brand-gold font-body font-light space-y-1 text-sm md:text-base">
+                <h2 className="text-xl md:text-2xl font-heading mb-4">
+                  GIC SE*At Heart Cat + JCH KCH SE*Wingardiums Caspian
+                </h2>
+                <p>Förväntade färger: Viltfärg och sorrel</p>
+                <p>Beräknad födelse: 20 oktober</p>
+                <p>Hälsotester: Båda Normal PK def, Cat bärare av PRA / Fux Normal PRA</p>
               </div>
 
               {/* Interest Button */}
