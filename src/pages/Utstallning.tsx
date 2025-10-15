@@ -58,7 +58,7 @@ const Utstallning = () => {
       date: "12 april 2025",
       location: "Stockholm, SVERIGE",
       mainImage: showStockholm1,
-      gridImages: [showStockholm2],
+      gridImages: [],
       club: "Stockholms kattklubb",
       subtitle: "",
       results: [
