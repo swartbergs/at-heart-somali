@@ -77,10 +77,10 @@ const Planer = () => {
               </div>
 
               {/* Interest Button */}
-              <div className="flex justify-start mb-12">
+              <div className="flex justify-start mb-5">
                 <Button
                   variant="outline"
-                  className="bg-brand-gold text-brand-dark-green border-brand-gold hover:bg-brand-gold/90 font-body px-8 py-3"
+                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
                 </Button>
@@ -118,10 +118,10 @@ const Planer = () => {
               </div>
 
               {/* Interest Button */}
-              <div className="flex justify-start mb-12">
+              <div className="flex justify-start mb-5">
                 <Button
                   variant="outline"
-                  className="bg-brand-gold text-brand-dark-green border-brand-gold hover:bg-brand-gold/90 font-body px-8 py-3"
+                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
                 </Button>
@@ -159,10 +159,10 @@ const Planer = () => {
               </div>
 
               {/* Interest Button */}
-              <div className="flex justify-start mb-12">
+              <div className="flex justify-start mb-16">
                 <Button
                   variant="outline"
-                  className="bg-brand-gold text-brand-dark-green border-brand-gold hover:bg-brand-gold/90 font-body px-8 py-3"
+                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
                 >
                   Anmäl intresse
                 </Button>
