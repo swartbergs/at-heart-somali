@@ -22,7 +22,7 @@ const Utstallning = () => {
       <Header />
       <main className="flex-1 bg-brand-dark-green">
         {/* Hero Image - Full Width */}
-        <div className="w-full h-[400px] md:h-[500px] relative">
+        <div className="w-full h-[500px] md:h-[600px] relative">
           <img
             src={ribbonsHero}
             alt="Utställningsrosetter och utmärkelser"
@@ -40,19 +40,19 @@ const Utstallning = () => {
           {/* Shows List */}
           <div className="space-y-12">
             {shows.map((show, index) => (
-              <div key={index} className="space-y-4">
-                {/* Date and Location */}
-                <div className="text-brand-gold font-body">
+              <div key={index} className="space-y-6">
+                {/* Date and Location - ÖVER bilden */}
+                <div className="text-brand-gold font-body text-center">
                   <h2 className="text-xl md:text-2xl font-heading mb-1">
                     {show.date}
                   </h2>
-                  <p className="text-lg font-light mb-6">
+                  <p className="text-lg font-light">
                     {show.location}
                   </p>
                 </div>
 
-                {/* Show Image */}
-                <div className="w-full max-w-md mx-auto mb-6">
+                {/* Show Image - Större */}
+                <div className="w-full max-w-2xl mx-auto">
                   <img
                     src={show.image}
                     alt={`${show.club} utställning`}
@@ -60,8 +60,8 @@ const Utstallning = () => {
                   />
                 </div>
 
-                {/* Club and Results */}
-                <div className="text-brand-gold font-body text-sm md:text-base">
+                {/* Club and Results - UNDER bilden */}
+                <div className="text-brand-gold font-body text-sm md:text-base text-center">
                   <h3 className="text-lg md:text-xl font-heading mb-3">
                     {show.club}
                   </h3>
