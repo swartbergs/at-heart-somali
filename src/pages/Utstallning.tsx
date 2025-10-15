@@ -10,6 +10,7 @@ import showHofors5 from "@/assets/show-hofors-5.png";
 import showGestrika from "@/assets/show-gestrika.png";
 import showStockholm1 from "@/assets/show-stockholm-1.png";
 import showStockholm2 from "@/assets/show-stockholm-2.png";
+import showStockholm3 from "@/assets/show-stockholm-3.png";
 import showNykoping from "@/assets/show-nykoping.png";
 
 const Utstallning = () => {
@@ -57,7 +58,7 @@ const Utstallning = () => {
       date: "12 april 2025",
       location: "Stockholm, SVERIGE",
       mainImage: showStockholm1,
-      gridImages: [showStockholm2],
+      gridImages: [showStockholm2, showStockholm3],
       club: "Stockholms kattklubb",
       subtitle: "",
       results: [
