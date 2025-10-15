@@ -11,6 +11,18 @@ import showHofors5 from "@/assets/show-hofors-5.png";
 const Utstallning = () => {
   const shows = [
     {
+      date: "17 augusti 2025",
+      location: "Bromma, SVERIGE",
+      mainImage: showAward,
+      gridImages: [],
+      club: "Östkattens kattklubb",
+      subtitle: "",
+      results: [
+        "SC SE* At Heart Fux DVM fick HP och blev BIV",
+        "JCH KCH SE* Wingardiums Caspian fick CAC"
+      ]
+    },
+    {
       date: "10 maj 2025",
       location: "Hofors, SVERIGE",
       mainImage: showHofors1,
@@ -22,18 +34,6 @@ const Utstallning = () => {
         "GIC SE* At Heart Cat fick CACS",
         "KCH JCH SE* At Heart Jes fick CACJ, NOM och BIS",
         "KCH SE* Wingardiums Caspian fick CACJ, Junior Champoin, BIV, NOM och BIS"
-      ]
-    },
-    {
-      date: "17 augusti 2025",
-      location: "Bromma, SVERIGE",
-      mainImage: showAward,
-      gridImages: [],
-      club: "Östkattens kattklubb",
-      subtitle: "",
-      results: [
-        "SC SE* At Heart Fux DVM fick HP och blev BIV",
-        "JCH KCH SE* Wingardiums Caspian fick CAC"
       ]
     }
   ];
