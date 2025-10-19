@@ -1,20 +1,14 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import piaWithCats from "@/assets/pia-with-cats.jpg";
-
 const Om = () => {
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Portrait Image */}
           <div className="mb-6 flex justify-center">
-            <img
-              src={piaWithCats}
-              alt="Pia Ringholm med två Somalikatter"
-              className="w-[90vw] md:w-full md:max-w-[820px] max-h-[60vh] object-contain"
-            />
+            <img src={piaWithCats} alt="Pia Ringholm med två Somalikatter" className="w-[90vw] md:w-full md:max-w-[820px] max-h-[60vh] object-contain" />
           </div>
 
           {/* Heading */}
@@ -36,13 +30,9 @@ const Om = () => {
               2017 startade jag mitt eget katteri; SE*At Heart, och min första kull föddes 2018.
             </p>
 
-            <p>
-              Mitt mål är att avla friska och vackra Somalikatter med en vänlig och härlig personlighet. Jag lägger stor vikt på trygghet, socialisering, miljöträning och närvaro i vardagen. Alla katter och kattungar är en del av vår familj och bor tillsammans med oss i vårt hus. Jag är hemma på dagtid och våra kattungar föds i en trygg hemmiljö med mycket omsorg, kärlek och social kontakt.
-            </p>
+            <p>Mitt mål är att avla friska och vackra Somalikatter med en vänlig och härlig personlighet. Jag lägger stor vikt på trygghet, socialisering, miljöträning och närvaro i vardagen. Alla katter och kattungar är en del av vår familj och bor tillsammans med oss i vårt hus. Jag är hemma på dagtid och våra kattungar föds i en trygg hemmiljö med mycket omsorg, kärlek och social kontakt.</p>
 
-            <p>
-              Jag har 2-3 kullar/år. och är mycket noga med att välja ut rätt hane till honan och den kommande kullen. Om jag inte hittar någon som jag tror uppfyller mina krav på utseende, personlighet och hälsa så blir det ingen kull, då väntar jag hellre.
-            </p>
+            <p>Jag har 2-3 kullar/år. och är mycket noga med att välja ut rätt hane till honan och den kommande kullen. Om jag inte hittar någon som jag tycker uppfyller mina krav på utseende, personlighet och hälsa så blir det ingen kull, då väntar jag hellre.</p>
 
             <p>
               Jag välkomnar alla godkända färger men viltfärgen är min favorit.
@@ -73,24 +63,18 @@ const Om = () => {
             </div>
 
             <div className="mt-4 space-y-2">
-              <p>
-                Jag är styrelseledamot i AbSolut Cat-club där jag är avelssekreterare.
-              </p>
+              <p>Jag är med i Absolut kattklubb som ingår i SVERAK där jag är styrelseledamot och avelssekreterare</p>
 
               <p>
                 Jag har uppfödardiplom från SVERAK och är utbildad i SVERAKs avelsskola (UppfödarEttan) och har min certifiering.
               </p>
 
-              <p>
-                Jag är med i AbSolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)
-              </p>
+              <p>Jag är med i Absolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)</p>
             </div>
           </div>
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Om;
