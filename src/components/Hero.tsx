@@ -1,5 +1,5 @@
 import heroCat from "@/assets/hero-cat-with-logo.png";
-import atHeartLogo from "@/assets/at-heart-logo.png";
+import atHeartLogo from "@/assets/at-heart-logo-text.png";
 
 export const Hero = () => {
   return <section className="relative w-full h-[65vh] min-h-[500px] flex items-center justify-start overflow-hidden">
