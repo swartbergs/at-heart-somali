@@ -1,4 +1,4 @@
-import heroCat from "@/assets/hero-cat-with-logo.png";
+import heroCat from "@/assets/hero-cat-bez-3.jpg";
 import atHeartLogo from "@/assets/at-heart-logo-text.png";
 
 export const Hero = () => {
