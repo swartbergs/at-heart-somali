@@ -1,4 +1,6 @@
 import heroCat from "@/assets/hero-cat-with-logo.png";
+import atHeartLogo from "@/assets/at-heart-logo.png";
+
 export const Hero = () => {
   return <section className="relative w-full h-[65vh] min-h-[500px] flex items-center justify-start overflow-hidden">
       {/* Hero Image */}
@@ -9,11 +11,11 @@ export const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 pl-24 md:pl-32 lg:pl-40 self-start pt-24 md:pt-32">
-        {/* Decorative overline */}
-        
-
-        {/* Main heading */}
-        
+        <img 
+          src={atHeartLogo} 
+          alt="SE At Heart - Somali Cats Cattery" 
+          className="w-[300px] md:w-[400px] lg:w-[500px] h-auto"
+        />
       </div>
     </section>;
 };
