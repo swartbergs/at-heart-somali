@@ -4,7 +4,7 @@ export const Intro = () => {
       <div className="container mx-auto px-4 max-w-4xl text-center">
         {/* Brand promise */}
         <p className="text-brand-gold text-base md:text-lg leading-relaxed mb-12 font-light">
-          En liten uppfödning av katten rasen Somali i hemmiljö, med fokus på hälsa, temperament och utseende (som följer Fife rasstandard för Somalikatter).
+          En liten uppfödning av kattrasen Somali i hemmiljö, med fokus på hälsa, temperament och utseende (som följer Fife rasstandard för Somalikatter).
         </p>
 
         {/* Decorative welcome */}
