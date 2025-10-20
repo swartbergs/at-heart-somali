@@ -154,7 +154,7 @@ const Kontakt = () => {
               }) => <FormItem>
                       <FormLabel className="text-black">Vad söker du?</FormLabel>
                       <FormControl>
-                        <Input placeholder="T.ex. kön, färg/teckning, sällskap/avel/show" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
+                        <Input placeholder="T.ex. kön, färg, sällskap/avel/show" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
