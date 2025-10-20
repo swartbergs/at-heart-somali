@@ -106,7 +106,7 @@ const Utstallning = () => {
           <h1 className="text-brand-gold text-4xl md:text-5xl mb-6 font-heading uppercase tracking-wide text-center">
             Utställning och utmärkelser
           </h1>
-          <Separator className="bg-brand-gold w-32 mx-auto mb-12" />
+          <Separator className="bg-brand-gold w-full max-w-md mx-auto mb-12" />
 
           {/* Shows List */}
           <div className="space-y-12">
