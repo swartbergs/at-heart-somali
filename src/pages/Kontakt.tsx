@@ -25,7 +25,7 @@ const formSchema = z.object({
     message: "Vänligen ange vad du söker"
   }).max(500),
   livingEnvironment: z.string().trim().min(1, {
-    message: "Boendemiljö krävs"
+    message: "Boende krävs"
   }).max(1000),
   experience: z.string().trim().min(1, {
     message: "Vänligen berätta om din erfarenhet"
@@ -162,9 +162,9 @@ const Kontakt = () => {
                 <FormField control={form.control} name="livingEnvironment" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-black">Boendemiljö</FormLabel>
+                      <FormLabel className="text-black">Boende</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Beskriv din boendemiljö (barn, andra djur, inne/ute)" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
+                        <Textarea placeholder="Beskriv ditt boende (barn, andra djur, inne/ute)" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
