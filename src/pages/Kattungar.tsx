@@ -2,16 +2,24 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import kittensHero from "@/assets/kittens-hero.png";
-
 const Kattungar = () => {
-  const kittens = [
-    { name: "Hane - Viltfärgad - SOM n", status: "Bokad", statusColor: "bg-[#D4A574]", textColor: "text-[#8CC4EC]" },
-    { name: "Hona - Sorrel - SOM o", status: "Stannar i katteriet", statusColor: "bg-[#8B9A7E]", textColor: "text-brand-gold" },
-    { name: "Hona - Viltfärgad - SOM n", status: "Tingad", statusColor: "bg-[#C4956F]", textColor: "text-[#F0A8C8]" },
-  ];
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  const kittens = [{
+    name: "Hane - Viltfärgad - SOM n",
+    status: "Bokad",
+    statusColor: "bg-[#D4A574]",
+    textColor: "text-[#8CC4EC]"
+  }, {
+    name: "Hona - Sorrel - SOM o",
+    status: "Stannar i katteriet",
+    statusColor: "bg-[#8B9A7E]",
+    textColor: "text-brand-gold"
+  }, {
+    name: "Hona - Viltfärgad - SOM n",
+    status: "Tingad",
+    statusColor: "bg-[#C4956F]",
+    textColor: "text-[#F0A8C8]"
+  }];
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
@@ -39,45 +47,32 @@ const Kattungar = () => {
           <div className="space-y-8">
             {/* Litter Image */}
             <div className="w-full max-w-4xl mx-auto flex justify-start">
-              <img
-                src={kittensHero}
-                alt="Kattunge kull"
-                className="h-[600px] w-auto object-contain rounded-lg"
-              />
+              <img src={kittensHero} alt="Kattunge kull" className="h-[600px] w-auto object-contain rounded-lg" />
             </div>
 
             {/* Litter Info */}
             <div className="text-brand-gold font-body space-y-2 text-sm md:text-base">
-              <h2 className="text-2xl md:text-3xl font-heading mb-4">N-Kull 2025-10-21</h2>
+              <h2 className="text-2xl md:text-3xl font-heading mb-4">L-Kull 2025-10-17</h2>
               <p className="font-light"><span className="font-bold">Född: 2025-10-00</span></p>
-              <p className="font-light">Mor: GIC SE*At Heart Cat, SOM n</p>
-              <p className="font-light">Far: JCH KCH SE*Wingardiums Caspian, SOM o</p>
+              <p className="font-light">Mor: JCH, KCH SE*At Heart Jes, SOM n</p>
+              <p className="font-light">Far: JCH, KCH SE*Wingardiums Caspian, SOM p</p>
             </div>
 
             {/* Kittens List */}
             <div className="space-y-4 mt-8">
-              {kittens.map((kitten, index) => (
-                <div
-                  key={index}
-                  className="flex items-center justify-between py-4 border-b border-brand-gold/20"
-                >
+              {kittens.map((kitten, index) => <div key={index} className="flex items-center justify-between py-4 border-b border-brand-gold/20">
                   <span className={`${kitten.textColor} font-body font-light text-sm md:text-base`}>
                     {kitten.name}
                   </span>
-                  <Badge
-                    className={`${kitten.statusColor} text-brand-dark-green font-body text-xs md:text-sm px-4 py-1 hover:opacity-90`}
-                  >
+                  <Badge className={`${kitten.statusColor} text-brand-dark-green font-body text-xs md:text-sm px-4 py-1 hover:opacity-90`}>
                     {kitten.status}
                   </Badge>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Kattungar;
