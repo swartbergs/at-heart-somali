@@ -200,7 +200,8 @@ const Avelshanar = () => {
           <p className="font-light">
             <span className="font-semibold">Far:</span> {cat.father}
           </p>
-          <div className="flex gap-4">
+          {/* Links - visible only on desktop */}
+          <div className="hidden md:flex gap-4">
             <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
               {cat.stamtavla}
             </a>
@@ -225,6 +226,16 @@ const Avelshanar = () => {
             <p className="font-light text-brand-gold/80">{cat.genes}</p>
           )}
         </div>
+      </div>
+
+      {/* Links - visible only on mobile, at the bottom */}
+      <div className="flex gap-4 md:hidden text-brand-gold font-body text-sm max-w-2xl mx-auto mt-4">
+        <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+          {cat.stamtavla}
+        </a>
+        <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+          Fler bilder
+        </a>
       </div>
 
       {/* Show Merits Section */}
