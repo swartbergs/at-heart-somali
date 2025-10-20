@@ -63,13 +63,11 @@ const Om = () => {
             </div>
 
             <div className="mt-4 space-y-2">
-              <p>Jag är med i Absolut kattklubb som ingår i SVERAK där jag är styrelseledamot och avelssekreterare</p>
+              <p>Jag är styrelseledamot i AbSolut Cat-club där jag är avelssekreterare. Jag har uppfödardiplom från SVERAK och är utbildad i SVERAKs avelsskola (UppfödarEttan) och har min certifiering. Jag är med i AbSolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)</p>
 
-              <p>
-                Jag har uppfödardiplom från SVERAK och är utbildad i SVERAKs avelsskola (UppfödarEttan) och har min certifiering.
-              </p>
+              
 
-              <p>Jag är med i Absolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)</p>
+              
             </div>
           </div>
         </div>
