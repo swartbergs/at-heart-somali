@@ -4,7 +4,7 @@ import atHeartLogo from "@/assets/at-heart-logo-text.png";
 export const Hero = () => {
   return <section className="relative w-full h-[65vh] min-h-[500px] flex items-center justify-start overflow-hidden">
       {/* Hero Image */}
-      <img src={heroCat} alt="En vacker somalikatt med gyllenbrun päls och intensiva bernstänsfärgade ögon" className="absolute inset-0 w-full h-full object-cover" />
+      <img src={heroCat} alt="En vacker somalikatt med gyllenbrun päls och intensiva bernstänsfärgade ögon" className="absolute inset-0 w-full h-full object-cover object-[center_20%] md:object-center scale-110 md:scale-100" />
       
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-brand-dark-green/40 via-transparent to-brand-dark-green/60" aria-hidden="true" />

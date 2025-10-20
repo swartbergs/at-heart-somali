@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import atHeartLogo from "@/assets/at-heart-logo.png";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 const navigation = [
   { name: "Start", href: "/" },
@@ -16,6 +18,7 @@ const navigation = [
 
 export const Header = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-brand-dark-green border-b border-brand-green-muted/30">
@@ -60,15 +63,31 @@ export const Header = () => {
             ))}
           </ul>
 
-          {/* Mobile menu button - placeholder for future */}
-          <button 
-            className="lg:hidden p-2 text-brand-gold"
-            aria-label="Öppna meny"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+          {/* Mobile menu */}
+          <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <button 
+                className="lg:hidden p-2 text-brand-gold hover:text-brand-gold/80 transition-colors"
+                aria-label="Öppna meny"
+              >
+                <Menu className="w-6 h-6" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="bg-brand-dark-green border-brand-green-muted/30 w-[280px]">
+              <nav className="flex flex-col gap-4 mt-8">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-brand-gold hover:text-brand-gold/80 transition-colors font-body text-lg py-2 px-4 rounded-md hover:bg-brand-green-muted/20"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>
