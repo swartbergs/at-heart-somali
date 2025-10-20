@@ -98,7 +98,7 @@ const Avelshonor = () => {
           <p className="font-light">
             <span className="font-semibold">Mor:</span> {cat.mother}
           </p>
-          <p className="font-light">
+          <p className="font-light whitespace-nowrap">
             <span className="font-semibold">Far:</span> {cat.father}
           </p>
           <div className="flex gap-4">
