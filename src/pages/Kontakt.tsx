@@ -11,26 +11,36 @@ import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-
 const formSchema = z.object({
-  name: z.string().trim().min(1, { message: "Namn krävs" }).max(100),
-  email: z.string().trim().email({ message: "Ogiltig e-postadress" }).max(255),
-  phone: z.string().trim().min(1, { message: "Telefonnummer krävs" }).max(50),
-  interest: z.string().trim().min(1, { message: "Vänligen ange vad du söker" }).max(500),
-  livingEnvironment: z.string().trim().min(1, { message: "Boendemiljö krävs" }).max(1000),
-  experience: z.string().trim().min(1, { message: "Vänligen berätta om din erfarenhet" }).max(1000),
+  name: z.string().trim().min(1, {
+    message: "Namn krävs"
+  }).max(100),
+  email: z.string().trim().email({
+    message: "Ogiltig e-postadress"
+  }).max(255),
+  phone: z.string().trim().min(1, {
+    message: "Telefonnummer krävs"
+  }).max(50),
+  interest: z.string().trim().min(1, {
+    message: "Vänligen ange vad du söker"
+  }).max(500),
+  livingEnvironment: z.string().trim().min(1, {
+    message: "Boendemiljö krävs"
+  }).max(1000),
+  experience: z.string().trim().min(1, {
+    message: "Vänligen berätta om din erfarenhet"
+  }).max(1000),
   other: z.string().trim().max(1000).optional(),
-  consent: z.boolean().refine((val) => val === true, {
-    message: "Du måste godkänna integritetspolicyn",
-  }),
+  consent: z.boolean().refine(val => val === true, {
+    message: "Du måste godkänna integritetspolicyn"
+  })
 });
-
 type FormData = z.infer<typeof formSchema>;
-
 const Kontakt = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -41,35 +51,30 @@ const Kontakt = () => {
       livingEnvironment: "",
       experience: "",
       other: "",
-      consent: false,
-    },
+      consent: false
+    }
   });
-
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
       // Here you would send the form data to your backend
       console.log("Form data:", data);
-      
       toast({
         title: "Tack för ditt meddelande!",
-        description: "Vi återkommer till dig så snart som möjligt.",
+        description: "Vi återkommer till dig så snart som möjligt."
       });
-      
       form.reset();
     } catch (error) {
       toast({
         title: "Något gick fel",
         description: "Vänligen försök igen senare.",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
@@ -83,21 +88,13 @@ const Kontakt = () => {
             <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
               <Mail className="w-8 h-8 mx-auto mb-4 text-black" />
               <h2 className="text-black font-heading text-lg mb-2">E-post</h2>
-              <a 
-                href="mailto:Pi@tupplurens.se" 
-                className="text-black hover:underline text-sm"
-              >
-                Pi@tupplurens.se
-              </a>
+              <a href="mailto:Pi@tupplurens.se" className="text-black hover:underline text-sm">pi@tupplurens.se</a>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
               <Phone className="w-8 h-8 mx-auto mb-4 text-black" />
               <h2 className="text-black font-heading text-lg mb-2">Telefon</h2>
-              <a 
-                href="tel:+46707940614" 
-                className="text-black hover:underline text-sm"
-              >
+              <a href="tel:+46707940614" className="text-black hover:underline text-sm">
                 +46 70 794 06 14
               </a>
             </div>
@@ -121,145 +118,82 @@ const Kontakt = () => {
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
+                  <FormField control={form.control} name="name" render={({
+                  field
+                }) => <FormItem>
                         <FormLabel className="text-black">Namn</FormLabel>
                         <FormControl>
-                          <Input
-                            placeholder="Ditt fullständiga namn"
-                            className="bg-white border-gray-300 text-black placeholder:text-gray-400"
-                            {...field}
-                          />
+                          <Input placeholder="Ditt fullständiga namn" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                         </FormControl>
                         <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                      </FormItem>} />
 
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
+                  <FormField control={form.control} name="email" render={({
+                  field
+                }) => <FormItem>
                         <FormLabel className="text-black">E-post</FormLabel>
                         <FormControl>
-                          <Input
-                            type="email"
-                            placeholder="din.email@exempel.se"
-                            className="bg-white border-gray-300 text-black placeholder:text-gray-400"
-                            {...field}
-                          />
+                          <Input type="email" placeholder="din.email@exempel.se" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                         </FormControl>
                         <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                      </FormItem>} />
                 </div>
 
-                <FormField
-                  control={form.control}
-                  name="phone"
-                  render={({ field }) => (
-                    <FormItem>
+                <FormField control={form.control} name="phone" render={({
+                field
+              }) => <FormItem>
                       <FormLabel className="text-black">Telefon</FormLabel>
                       <FormControl>
-                        <Input
-                          type="tel"
-                          placeholder="070-123 45 67"
-                          className="bg-white border-gray-300 text-black placeholder:text-gray-400"
-                          {...field}
-                        />
+                        <Input type="tel" placeholder="070-123 45 67" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                       </FormControl>
                       <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                    </FormItem>} />
 
-                <FormField
-                  control={form.control}
-                  name="interest"
-                  render={({ field }) => (
-                    <FormItem>
+                <FormField control={form.control} name="interest" render={({
+                field
+              }) => <FormItem>
                       <FormLabel className="text-black">Vad söker du?</FormLabel>
                       <FormControl>
-                        <Input
-                          placeholder="T.ex. kön, färg/teckning, sällskap/avel/show"
-                          className="bg-white border-gray-300 text-black placeholder:text-gray-400"
-                          {...field}
-                        />
+                        <Input placeholder="T.ex. kön, färg/teckning, sällskap/avel/show" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                       </FormControl>
                       <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                    </FormItem>} />
 
-                <FormField
-                  control={form.control}
-                  name="livingEnvironment"
-                  render={({ field }) => (
-                    <FormItem>
+                <FormField control={form.control} name="livingEnvironment" render={({
+                field
+              }) => <FormItem>
                       <FormLabel className="text-black">Boendemiljö</FormLabel>
                       <FormControl>
-                        <Textarea
-                          placeholder="Beskriv din boendemiljö (barn, andra djur, inne/ute)"
-                          className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]"
-                          {...field}
-                        />
+                        <Textarea placeholder="Beskriv din boendemiljö (barn, andra djur, inne/ute)" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                    </FormItem>} />
 
-                <FormField
-                  control={form.control}
-                  name="experience"
-                  render={({ field }) => (
-                    <FormItem>
+                <FormField control={form.control} name="experience" render={({
+                field
+              }) => <FormItem>
                       <FormLabel className="text-black">Erfarenhet av katt/rasen</FormLabel>
                       <FormControl>
-                        <Textarea
-                          placeholder="Berätta om din erfarenhet av katter och Somali-rasen"
-                          className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]"
-                          {...field}
-                        />
+                        <Textarea placeholder="Berätta om din erfarenhet av katter och Somali-rasen" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                    </FormItem>} />
 
-                <FormField
-                  control={form.control}
-                  name="other"
-                  render={({ field }) => (
-                    <FormItem>
+                <FormField control={form.control} name="other" render={({
+                field
+              }) => <FormItem>
                       <FormLabel className="text-black">Övrigt</FormLabel>
                       <FormControl>
-                        <Textarea
-                          placeholder="Övriga frågor eller information"
-                          className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]"
-                          {...field}
-                        />
+                        <Textarea placeholder="Övriga frågor eller information" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
-                    </FormItem>
-                  )}
-                />
+                    </FormItem>} />
 
-                <FormField
-                  control={form.control}
-                  name="consent"
-                  render={({ field }) => (
-                    <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                <FormField control={form.control} name="consent" render={({
+                field
+              }) => <FormItem className="flex flex-row items-start space-x-3 space-y-0">
                       <FormControl>
-                        <Checkbox
-                          checked={field.value}
-                          onCheckedChange={field.onChange}
-                        />
+                        <Checkbox checked={field.value} onCheckedChange={field.onChange} />
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel className="text-sm text-black font-normal">
@@ -267,15 +201,9 @@ const Kontakt = () => {
                         </FormLabel>
                         <FormMessage />
                       </div>
-                    </FormItem>
-                  )}
-                />
+                    </FormItem>} />
 
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-brand-dark-green hover:bg-brand-dark-green/90 text-brand-gold font-heading text-lg py-6"
-                >
+                <Button type="submit" disabled={isSubmitting} className="w-full bg-brand-dark-green hover:bg-brand-dark-green/90 text-brand-gold font-heading text-lg py-6">
                   {isSubmitting ? "Skickar..." : "Skicka"}
                 </Button>
               </form>
@@ -284,8 +212,6 @@ const Kontakt = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Kontakt;
