@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { Separator } from "@/components/ui/separator";
 import ribbonsHero from "@/assets/ribbons-hero.jpg";
 import showAward from "@/assets/show-award.png";
 import showHofors1 from "@/assets/show-hofors-1.png";
@@ -102,9 +103,10 @@ const Utstallning = () => {
         {/* Content Section */}
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Main Heading */}
-          <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide text-center">
+          <h1 className="text-brand-gold text-4xl md:text-5xl mb-6 font-heading uppercase tracking-wide text-center">
             Utställning och utmärkelser
           </h1>
+          <Separator className="bg-brand-gold w-32 mx-auto mb-12" />
 
           {/* Shows List */}
           <div className="space-y-12">
@@ -169,6 +171,11 @@ const Utstallning = () => {
                   )}
                   <p className="font-light">Fler bilder</p>
                 </div>
+                
+                {/* Separator between shows */}
+                {index < shows.length - 1 && (
+                  <Separator className="bg-brand-gold/30 my-8" />
+                )}
               </div>
             ))}
           </div>
