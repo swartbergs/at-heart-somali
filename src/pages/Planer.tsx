@@ -29,7 +29,7 @@ const Planer = () => {
 
             {/* Intro Text */}
             <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-2">
-              <p>Här publiceras planerade parningar för 2025.</p>
+              <p>Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även Köpekontrakt.</p>
               <p>
                 Skicka gärna en intresseanmälan här via hemsidan eller till{" "}
                 <a href="mailto:pi@tupplurens.se" className="underline hover:text-brand-gold/80">
