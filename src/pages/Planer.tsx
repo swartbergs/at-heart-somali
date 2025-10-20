@@ -9,21 +9,14 @@ import planerCat3 from "@/assets/planer-cat-3.png";
 import planerCat4 from "@/assets/planer-cat-4.png";
 import planerCat5 from "@/assets/planer-cat-5.png";
 import planerCat6 from "@/assets/planer-cat-6.png";
-
 const Planer = () => {
   const navigate = useNavigate();
-  
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
         {/* Hero Image Section */}
         <div className="w-full flex justify-center bg-brand-dark-green">
-          <img
-            src={planerHero}
-            alt="Somalikatter"
-            className="w-full max-w-7xl object-contain"
-          />
+          <img src={planerHero} alt="Somalikatter" className="w-full max-w-7xl object-contain" />
         </div>
 
         {/* Content Section */}
@@ -43,10 +36,7 @@ const Planer = () => {
                   pi@tupplurens.se
                 </a>
               </p>
-              <p>
-                Besök av kattungar tidigast efter att kattungarna fyllt 5 veckor. Besök bokas via överenskommelse . Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs
-                rekommenderade Tingningsavtal och även Köpekontrakt.
-              </p>
+              <p>Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut.</p>
             </div>
 
             {/* Cat Pair Section */}
@@ -54,18 +44,10 @@ const Planer = () => {
               {/* Images */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                 <div className="aspect-[3/4] bg-brand-green-muted">
-                  <img
-                    src={planerCat1}
-                    alt="Katt 1"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={planerCat1} alt="Katt 1" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-[3/4] bg-brand-green-muted">
-                  <img
-                    src={planerCat2}
-                    alt="Katt 2"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={planerCat2} alt="Katt 2" className="w-full h-full object-cover" />
                 </div>
               </div>
 
@@ -81,14 +63,10 @@ const Planer = () => {
 
               {/* Interest Button */}
               <div className="flex justify-start mb-12">
-                <Button
-                  variant="outline"
-                  onClick={() => {
-                    navigate('/kontakt');
-                    window.scrollTo(0, 0);
-                  }}
-                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
-                >
+                <Button variant="outline" onClick={() => {
+                navigate('/kontakt');
+                window.scrollTo(0, 0);
+              }} className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3">
                   Anmäl intresse
                 </Button>
               </div>
@@ -99,18 +77,10 @@ const Planer = () => {
               {/* Images */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 mt-10">
                 <div className="aspect-[3/4] bg-brand-green-muted">
-                  <img
-                    src={planerCat3}
-                    alt="CH SE*At Heart Hei"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={planerCat3} alt="CH SE*At Heart Hei" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-[3/4] bg-brand-green-muted">
-                  <img
-                    src={planerCat4}
-                    alt="SC SE*At Heart FUX DVM"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={planerCat4} alt="SC SE*At Heart FUX DVM" className="w-full h-full object-cover" />
                 </div>
               </div>
 
@@ -126,14 +96,10 @@ const Planer = () => {
 
               {/* Interest Button */}
               <div className="flex justify-start mb-12">
-                <Button
-                  variant="outline"
-                  onClick={() => {
-                    navigate('/kontakt');
-                    window.scrollTo(0, 0);
-                  }}
-                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
-                >
+                <Button variant="outline" onClick={() => {
+                navigate('/kontakt');
+                window.scrollTo(0, 0);
+              }} className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3">
                   Anmäl intresse
                 </Button>
               </div>
@@ -144,18 +110,10 @@ const Planer = () => {
               {/* Images */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 mt-10">
                 <div className="aspect-[3/4] bg-brand-green-muted">
-                  <img
-                    src={planerCat5}
-                    alt="GIC SE*At Heart Cat"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={planerCat5} alt="GIC SE*At Heart Cat" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-[3/4] bg-brand-green-muted">
-                  <img
-                    src={planerCat6}
-                    alt="JCH KCH SE*Wingardiums Caspian"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={planerCat6} alt="JCH KCH SE*Wingardiums Caspian" className="w-full h-full object-cover" />
                 </div>
               </div>
 
@@ -171,14 +129,10 @@ const Planer = () => {
 
               {/* Interest Button */}
               <div className="flex justify-start mb-12">
-                <Button
-                  variant="outline"
-                  onClick={() => {
-                    navigate('/kontakt');
-                    window.scrollTo(0, 0);
-                  }}
-                  className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3"
-                >
+                <Button variant="outline" onClick={() => {
+                navigate('/kontakt');
+                window.scrollTo(0, 0);
+              }} className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3">
                   Anmäl intresse
                 </Button>
               </div>
@@ -187,8 +141,6 @@ const Planer = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Planer;
