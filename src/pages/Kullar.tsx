@@ -205,6 +205,13 @@ const Kullar = () => {
           {/* Litters List */}
           <div>
             {litters.map(litter => <div key={litter.id} className="mt-4 md:mt-8">
+                {/* Litter Image */}
+                <img src={litter.image} alt={`${litter.name} kattungar`} className="h-[600px] w-auto object-contain rounded-lg" />
+
+                <p className="text-brand-gold font-body font-light text-sm md:text-base">
+                  Fler bilder
+                </p>
+
                 {/* Litter Name */}
                 <h2 className="text-brand-gold text-2xl md:text-3xl font-heading text-left">
                   {litter.name}
@@ -228,14 +235,7 @@ const Kullar = () => {
                         <span>{kitten.gender}</span>
                       </div>)}
                   </div>
-                  
-                  <p className="font-light">
-                    Fler bilder
-                  </p>
                 </div>
-
-                {/* Litter Image */}
-                <img src={litter.image} alt={`${litter.name} kattungar`} className="h-[600px] w-auto object-contain rounded-lg" />
               </div>)}
           </div>
         </div>
