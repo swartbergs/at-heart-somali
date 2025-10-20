@@ -73,14 +73,14 @@ export const Header = () => {
                 <Menu className="w-6 h-6" />
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-brand-dark-green/95 backdrop-blur-sm border-brand-green-muted/30 w-[220px]">
-              <nav className="flex flex-col gap-3 mt-8">
+            <SheetContent side="right" className="bg-transparent border-none w-[160px] shadow-none">
+              <nav className="flex flex-col gap-2 mt-8">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-brand-gold hover:text-brand-gold/80 transition-colors font-body text-base py-2 px-3 rounded-md hover:bg-brand-green-muted/20"
+                    className="text-brand-gold hover:text-brand-gold/80 transition-colors font-body text-sm py-1.5 px-2"
                   >
                     {item.name}
                   </Link>
