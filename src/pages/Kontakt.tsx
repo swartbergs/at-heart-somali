@@ -84,25 +84,25 @@ const Kontakt = () => {
           </h1>
 
           {/* Contact Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
-              <Mail className="w-8 h-8 mx-auto mb-4 text-black" />
-              <h2 className="text-black font-heading text-lg mb-2">E-post</h2>
-              <a href="mailto:Pi@tupplurens.se" className="text-black hover:underline text-sm">pi@tupplurens.se</a>
+          <div className="grid grid-cols-3 gap-3 md:gap-6 mb-12">
+            <div className="bg-white border border-gray-200 rounded-lg p-3 md:p-8 text-center">
+              <Mail className="w-5 h-5 md:w-8 md:h-8 mx-auto mb-2 md:mb-4 text-black" />
+              <h2 className="text-black font-heading text-xs md:text-lg mb-1 md:mb-2">E-post</h2>
+              <a href="mailto:Pi@tupplurens.se" className="text-black hover:underline text-[10px] md:text-sm break-words">pi@tupplurens.se</a>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
-              <Phone className="w-8 h-8 mx-auto mb-4 text-black" />
-              <h2 className="text-black font-heading text-lg mb-2">Telefon</h2>
-              <a href="tel:+46707940614" className="text-black hover:underline text-sm">
+            <div className="bg-white border border-gray-200 rounded-lg p-3 md:p-8 text-center">
+              <Phone className="w-5 h-5 md:w-8 md:h-8 mx-auto mb-2 md:mb-4 text-black" />
+              <h2 className="text-black font-heading text-xs md:text-lg mb-1 md:mb-2">Telefon</h2>
+              <a href="tel:+46707940614" className="text-black hover:underline text-[10px] md:text-sm break-words">
                 +46 70 794 06 14
               </a>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-lg p-8 text-center">
-              <MapPin className="w-8 h-8 mx-auto mb-4 text-black" />
-              <h2 className="text-black font-heading text-lg mb-2">Plats</h2>
-              <p className="text-black text-sm">Lidingö, Stockholm</p>
+            <div className="bg-white border border-gray-200 rounded-lg p-3 md:p-8 text-center">
+              <MapPin className="w-5 h-5 md:w-8 md:h-8 mx-auto mb-2 md:mb-4 text-black" />
+              <h2 className="text-black font-heading text-xs md:text-lg mb-1 md:mb-2">Plats</h2>
+              <p className="text-black text-[10px] md:text-sm">Lidingö, Stockholm</p>
             </div>
           </div>
 
