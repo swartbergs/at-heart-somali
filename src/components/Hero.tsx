@@ -10,11 +10,11 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-brand-dark-green/40 via-transparent to-brand-dark-green/60" aria-hidden="true" />
 
       {/* Hero Content */}
-      <div className="relative z-10 pl-24 md:pl-32 lg:pl-40 self-start pt-24 md:pt-32">
+      <div className="relative z-10 pl-8 md:pl-32 lg:pl-40 self-start pt-12 md:pt-32">
         <img 
           src={atHeartLogo} 
           alt="SE At Heart - Somali Cats Cattery" 
-          className="w-[300px] md:w-[400px] lg:w-[500px] h-auto"
+          className="w-[220px] md:w-[380px] lg:w-[480px] h-auto"
         />
       </div>
     </section>;
