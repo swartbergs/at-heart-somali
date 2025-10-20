@@ -14,7 +14,7 @@ export const Hero = () => {
         <img 
           src={atHeartLogo} 
           alt="SE At Heart - Somali Cats Cattery" 
-          className="w-[220px] md:w-[380px] lg:w-[480px] h-auto"
+          className="w-[180px] md:w-[320px] lg:w-[420px] h-auto"
         />
       </div>
     </section>;
