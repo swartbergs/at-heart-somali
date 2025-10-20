@@ -63,7 +63,7 @@ const Kattungar = () => {
             {/* Litter Info */}
             <div className="text-brand-gold font-body space-y-2 text-sm md:text-base">
               <h2 className="text-2xl md:text-3xl font-heading mb-4">L-Kull 2025-10-17</h2>
-              <p className="font-light"><span className="font-bold">Född: 2025-10-00</span></p>
+              <p className="font-light"><span className="font-bold">Född: 2025-10-17</span></p>
               <p className="font-light">Mor: JCH, KCH SE*At Heart Jes, SOM n</p>
               <p className="font-light">Far: JCH, KCH SE*Wingardiums Caspian, SOM p</p>
             </div>
