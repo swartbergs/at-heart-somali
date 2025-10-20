@@ -4,20 +4,30 @@ import { Badge } from "@/components/ui/badge";
 import kittensHero from "@/assets/kittens-hero.png";
 const Kattungar = () => {
   const kittens = [{
-    name: "Hane - Viltfärgad - SOM n",
-    status: "Bokad",
-    statusColor: "bg-[#D4A574]",
+    name: "Hona (gul) SOM n",
+    status: "Ledig",
+    statusColor: "bg-[#F4D03F]",
+    textColor: "text-[#F4D03F]"
+  }, {
+    name: "Hona (rosa) SOM n",
+    status: "Ledig",
+    statusColor: "bg-[#F0A8C8]",
+    textColor: "text-[#F0A8C8]"
+  }, {
+    name: "Hane (blå) SOM n",
+    status: "Ledig",
+    statusColor: "bg-[#3B82F6]",
+    textColor: "text-[#3B82F6]"
+  }, {
+    name: "Hane (ljusblå) SOM n",
+    status: "Ledig",
+    statusColor: "bg-[#8CC4EC]",
     textColor: "text-[#8CC4EC]"
   }, {
-    name: "Hona - Sorrel - SOM o",
-    status: "Stannar i katteriet",
+    name: "Hane (grön) SOM n",
+    status: "Ledig",
     statusColor: "bg-[#8B9A7E]",
-    textColor: "text-brand-gold"
-  }, {
-    name: "Hona - Viltfärgad - SOM n",
-    status: "Tingad",
-    statusColor: "bg-[#C4956F]",
-    textColor: "text-[#F0A8C8]"
+    textColor: "text-[#8B9A7E]"
   }];
   return <div className="min-h-screen flex flex-col">
       <Header />
