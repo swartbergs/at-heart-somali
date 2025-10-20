@@ -39,7 +39,7 @@ const Avelshanar = () => {
     },
     {
       id: "caspian",
-      name: "JCH KCH SE Wingardiums Caspian, SOM p*",
+      name: "JCH KCH SE Wingardiums Caspian, SOM p",
       image: catCaspian,
       birthDate: "2024-08-012",
       mother: "SE*Wingardiums Cassiega Soffice, SOM a",
@@ -56,7 +56,7 @@ const Avelshanar = () => {
   const retiredStuds = [
     {
       id: "ace",
-      name: "GIC SE At Heart Ace, SOM o*",
+      name: "GIC SE At Heart Ace, SOM o",
       image: catAce,
       birthDate: "2018-06-22",
       mother: "GIC Gloria von Müllers Mühler, SOM o",
@@ -160,7 +160,7 @@ const Avelshanar = () => {
       name: "SE* At Heart Ess, SOM n",
       image: catEss,
       birthDate: "2021-02-22",
-      mother: "SE* At Heart Bezr, SOM n",
+      mother: "SE* At Heart Bez, SOM n",
       father: "CH Neelix des Minocs d'Armor, ABY a",
       stamtavla: "Stamtavla",
       stamtavlaLink: "#",
@@ -194,7 +194,7 @@ const Avelshanar = () => {
           <p className="font-light">
             <span className="font-semibold">Född:</span> {cat.birthDate}
           </p>
-          <p className="font-light">
+          <p className="font-light whitespace-nowrap">
             <span className="font-semibold">Mor:</span> {cat.mother}
           </p>
           <p className="font-light">
