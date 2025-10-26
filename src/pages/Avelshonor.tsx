@@ -4,83 +4,73 @@ import catActive from "@/assets/cat-active.png";
 import catRetired from "@/assets/cat-retired.png";
 import catHei from "@/assets/cat-hei.jpg";
 import catJes from "@/assets/cat-jes.jpg";
-
 const Avelshonor = () => {
-  const activeQueens = [
-    {
-      id: "cat-1",
-      name: "GIC SE*At Heart Cat, SOM n",
-      image: catActive,
-      birthDate: "2020-03-01",
-      mother: "GIC Gloria von Müllers Mühle, SOM o",
-      father: "SC FI*Vulpes Aither, SOM n",
-      stamtavla: "Stamtavla",
-      stamtavlaLink: "#",
-      pkDef: "Normal",
-      pkaRada: "Bärare",
-      bloodType: "A/AB",
-      genes: "Anlag för sorrel ej dilution",
-      moreImagesLink: "#"
-    },
-    {
-      id: "cat-hei",
-      name: "CH SE*At Heart Hei, SOM n",
-      image: catHei,
-      birthDate: "2023-03-31",
-      mother: "GIC SE*At Heart Cat, SOM n",
-      father: "S*Lanthelagens Montgomery Scott, SOM n",
-      stamtavla: "Stamtavla",
-      stamtavlaLink: "#",
-      pkDef: "Normal",
-      pkaRada: "Bärare",
-      bloodType: "A/AB",
-      genes: "Bärare av dilution",
-      moreImagesLink: "#"
-    },
-    {
-      id: "cat-jes",
-      name: "JC KCH SE*At Heart Jes, SOM n",
-      image: catJes,
-      birthDate: "2024-06-14",
-      mother: "GIC SE*At Heart Cat, SOM n",
-      father: "SE*At Heart Ess, SOM n",
-      stamtavla: "Stamtavla",
-      stamtavlaLink: "#",
-      pkDef: "Normal",
-      pkaRada: "Normal",
-      bloodType: "A/AB",
-      genes: "Ej bärare av dilution",
-      moreImagesLink: "#"
-    }
-  ];
-
-  const retiredQueens = [
-    {
-      id: "gloria",
-      name: "GIC Gloria von Müllers Mühle, SOM o",
-      image: catRetired,
-      birthDate: "2016-12-08",
-      mother: "Foxgarden's Tasha Yar, SOM o",
-      father: "Elvis von Müllers Mühle, SOM p",
-      stamtavla: "Stamtavla",
-      stamtavlaLink: "#",
-      pkDef: "Normal",
-      pkaRada: "Normal",
-      bloodType: "A/AB",
-      genes: "",
-      moreImagesLink: "#"
-    }
-  ];
-
-  const CatCard = ({ cat }: { cat: typeof activeQueens[0] }) => (
-    <div className="space-y-6">
+  const activeQueens = [{
+    id: "cat-1",
+    name: "GIC SE*At Heart Cat, SOM n",
+    image: catActive,
+    birthDate: "2020-03-01",
+    mother: "GIC Gloria von Müllers Mühle, SOM o",
+    father: "SC FI*Vulpes Aither, SOM n",
+    stamtavla: "Stamtavla",
+    stamtavlaLink: "#",
+    pkDef: "Normal",
+    pkaRada: "Bärare",
+    bloodType: "A/AB",
+    genes: "Anlag för sorrel ej dilution",
+    moreImagesLink: "#"
+  }, {
+    id: "cat-hei",
+    name: "CH SE*At Heart Hei, SOM n",
+    image: catHei,
+    birthDate: "2023-03-31",
+    mother: "GIC SE*At Heart Cat, SOM n",
+    father: "S*Lanthelagens Montgomery Scott, SOM n",
+    stamtavla: "Stamtavla",
+    stamtavlaLink: "#",
+    pkDef: "Normal",
+    pkaRada: "Bärare",
+    bloodType: "A/AB",
+    genes: "Bärare av dilution",
+    moreImagesLink: "#"
+  }, {
+    id: "cat-jes",
+    name: "JC KCH SE*At Heart Jes, SOM n",
+    image: catJes,
+    birthDate: "2024-06-14",
+    mother: "GIC SE*At Heart Cat, SOM n",
+    father: "SE*At Heart Ess, SOM n",
+    stamtavla: "Stamtavla",
+    stamtavlaLink: "#",
+    pkDef: "Normal",
+    pkaRada: "Normal",
+    bloodType: "A/AB",
+    genes: "Ej bärare av dilution",
+    moreImagesLink: "#"
+  }];
+  const retiredQueens = [{
+    id: "gloria",
+    name: "GIC Gloria von Müllers Mühle, SOM o",
+    image: catRetired,
+    birthDate: "2016-12-08",
+    mother: "Foxgarden's Tasha Yar, SOM o",
+    father: "Elvis von Müllers Mühle, SOM p",
+    stamtavla: "Stamtavla",
+    stamtavlaLink: "#",
+    pkDef: "Normal",
+    pkaRada: "Normal",
+    bloodType: "A/AB",
+    genes: "",
+    moreImagesLink: "#"
+  }];
+  const CatCard = ({
+    cat
+  }: {
+    cat: typeof activeQueens[0];
+  }) => <div className="space-y-6">
       {/* Cat Image */}
       <div className="w-full max-w-2xl mx-auto">
-        <img
-          src={cat.image}
-          alt={cat.name}
-          className="w-full h-auto object-cover rounded-lg"
-        />
+        <img src={cat.image} alt={cat.name} className="w-full h-auto object-cover rounded-lg" />
       </div>
 
       {/* Cat Name */}
@@ -123,9 +113,7 @@ const Avelshonor = () => {
           <p className="font-light">
             <span className="font-semibold">Blodgrupp:</span> {cat.bloodType}
           </p>
-          {cat.genes && (
-            <p className="font-light text-brand-gold/80">{cat.genes}</p>
-          )}
+          {cat.genes}
         </div>
       </div>
 
@@ -138,11 +126,8 @@ const Avelshonor = () => {
           Fler bilder
         </a>
       </div>
-    </div>
-  );
-
-  return (
-    <div className="min-h-screen flex flex-col">
+    </div>;
+  return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1 bg-brand-dark-green">
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
@@ -153,9 +138,7 @@ const Avelshonor = () => {
             </h1>
 
             <div className="space-y-16">
-              {activeQueens.map((cat) => (
-                <CatCard key={cat.id} cat={cat} />
-              ))}
+              {activeQueens.map(cat => <CatCard key={cat.id} cat={cat} />)}
             </div>
           </section>
 
@@ -166,16 +149,12 @@ const Avelshonor = () => {
             </h1>
 
             <div className="space-y-16">
-              {retiredQueens.map((cat) => (
-                <CatCard key={cat.id} cat={cat} />
-              ))}
+              {retiredQueens.map(cat => <CatCard key={cat.id} cat={cat} />)}
             </div>
           </section>
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Avelshonor;
