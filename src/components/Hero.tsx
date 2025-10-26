@@ -1,10 +1,15 @@
 import heroCat from "@/assets/hero-cat-bez-3.jpg";
 import atHeartLogo from "@/assets/at-heart-logo-text.png";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 export const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return <section className="relative w-full h-[50vh] md:h-[60vh] min-h-[400px] md:min-h-[500px] flex items-center justify-start overflow-hidden">
       {/* Hero Image */}
-      <img src={heroCat} alt="En vacker somalikatt med gyllenbrun päls och intensiva bernstänsfärgade ögon" className="absolute inset-0 w-full h-full object-cover object-[center_30%] md:object-center" />
+      <img src={heroCat} alt={t.hero.catAlt} className="absolute inset-0 w-full h-full object-cover object-[center_30%] md:object-center" />
       
       {/* Overlay for better text contrast */}
       <div className="absolute inset-0 bg-gradient-to-b from-brand-dark-green/20 via-transparent to-brand-dark-green/40" aria-hidden="true" />
@@ -13,7 +18,7 @@ export const Hero = () => {
       <div className="relative z-10 pl-8 md:pl-32 lg:pl-40 self-start pt-12 md:pt-32">
         <img 
           src={atHeartLogo} 
-          alt="SE At Heart - Somali Cats Cattery" 
+          alt={t.hero.logoAlt}
           className="w-[180px] md:w-[320px] lg:w-[420px] h-auto"
         />
       </div>
