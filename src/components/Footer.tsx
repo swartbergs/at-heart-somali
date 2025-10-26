@@ -10,17 +10,8 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-white py-12 md:py-16 border-t border-border">
       <div className="container mx-auto px-4">
-        {/* Certifications */}
-        <div className="flex justify-center mb-8">
-          <img 
-            src={certifications} 
-            alt={t.footer.certificationsAlt}
-            className="h-20 md:h-24 w-auto object-contain"
-          />
-        </div>
-
-        {/* Instagram Link */}
-        <div className="flex justify-center mb-6">
+        {/* Instagram and Certifications */}
+        <div className="flex justify-center items-center gap-6 mb-8">
           <a
             href="https://www.instagram.com/atheart_somalicats_cattery/"
             target="_blank"
@@ -34,6 +25,11 @@ export const Footer = () => {
               className="h-10 w-10 object-contain"
             />
           </a>
+          <img 
+            src={certifications} 
+            alt={t.footer.certificationsAlt}
+            className="h-20 md:h-24 w-auto object-contain"
+          />
         </div>
 
         {/* Copyright and membership */}
