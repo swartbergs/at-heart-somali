@@ -48,7 +48,7 @@ export const Header = () => {
           </Link>
 
           {/* Navigation */}
-          <ul className="hidden lg:flex items-center gap-1 flex-1">
+          <ul className="hidden lg:flex items-center gap-1 ml-auto mr-4">
             {navigation.map((item, index) => (
               <li key={item.name}>
                 <Link
@@ -70,7 +70,7 @@ export const Header = () => {
           </ul>
 
           {/* Language Switcher - Desktop */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2">
             <button
               onClick={() => setLanguage('sv')}
               className={`transition-all ${
@@ -83,7 +83,7 @@ export const Header = () => {
               <img 
                 src={flagSweden} 
                 alt="Svenska" 
-                className="w-10 h-10 rounded-full"
+                className="w-7 h-7 rounded-full"
               />
             </button>
             <button
@@ -98,7 +98,7 @@ export const Header = () => {
               <img 
                 src={flagUK} 
                 alt="English" 
-                className="w-10 h-10 rounded-full"
+                className="w-7 h-7 rounded-full"
               />
             </button>
           </div>
@@ -119,7 +119,7 @@ export const Header = () => {
                 <img 
                   src={flagSweden} 
                   alt="Svenska" 
-                  className="w-8 h-8 rounded-full"
+                  className="w-6 h-6 rounded-full"
                 />
               </button>
               <button
@@ -134,7 +134,7 @@ export const Header = () => {
                 <img 
                   src={flagUK} 
                   alt="English" 
-                  className="w-8 h-8 rounded-full"
+                  className="w-6 h-6 rounded-full"
                 />
               </button>
             </div>
