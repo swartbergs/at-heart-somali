@@ -1,7 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
-import kittensHero from "@/assets/kittens-hero.png";
+import kittensHero from "@/assets/jes-med-l-kull.jpg";
 const Kattungar = () => {
   const kittens = [{
     name: "Hona (gul) SOM n",
