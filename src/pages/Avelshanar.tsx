@@ -170,7 +170,7 @@ const Avelshanar = () => {
     }
   ];
 
-  const CatCard = ({ cat }: { cat: typeof studs[0] }) => (
+  const CatCard = ({ cat, showMoreImages = true }: { cat: typeof studs[0]; showMoreImages?: boolean }) => (
     <div className="space-y-6">
       {/* Cat Image */}
       <div className="w-full max-w-2xl mx-auto">
@@ -200,11 +200,13 @@ const Avelshanar = () => {
             <span className="font-semibold">Far:</span> {cat.father}
           </p>
           {/* Links - visible only on desktop */}
-          <div className="hidden md:flex gap-4">
-            <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
-              Fler bilder
-            </a>
-          </div>
+          {showMoreImages && (
+            <div className="hidden md:flex gap-4">
+              <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+                Fler bilder
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Right Column */}
@@ -222,11 +224,13 @@ const Avelshanar = () => {
       </div>
 
       {/* Links - visible only on mobile, at the bottom */}
-      <div className="flex gap-4 md:hidden text-brand-gold font-body text-sm max-w-2xl mx-auto mt-4">
-        <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
-          Fler bilder
-        </a>
-      </div>
+      {showMoreImages && (
+        <div className="flex gap-4 md:hidden text-brand-gold font-body text-sm max-w-2xl mx-auto mt-4">
+          <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+            Fler bilder
+          </a>
+        </div>
+      )}
 
       {/* Show Merits Section */}
       {cat.showMerits && cat.showMerits.length > 0 && (
@@ -285,7 +289,7 @@ const Avelshanar = () => {
 
             <div className="space-y-16">
               {borrowedStuds.map((cat) => (
-                <CatCard key={cat.id} cat={cat} />
+                <CatCard key={cat.id} cat={cat} showMoreImages={false} />
               ))}
             </div>
           </section>
