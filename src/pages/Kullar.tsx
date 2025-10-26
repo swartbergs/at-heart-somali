@@ -235,7 +235,14 @@ const Kullar = () => {
                   </div>
                   
                   <p className="font-light">
-                    Fler bilder
+                    <a 
+                      href="https://www.instagram.com/atheart_somalicats_cattery/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="underline hover:text-brand-gold/80 transition-colors"
+                    >
+                      Fler bilder
+                    </a>
                   </p>
                 </div>
               </div>)}
