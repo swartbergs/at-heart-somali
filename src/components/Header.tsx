@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import atHeartLogo from "@/assets/at-heart-logo.png";
+import flagSweden from "@/assets/flag-sweden.png";
+import flagUK from "@/assets/flag-uk.png";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -9,7 +11,7 @@ import { translations } from "@/i18n/translations";
 export const Header = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { language, toggleLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
   const t = translations[language];
 
   const navigation = [
@@ -45,18 +47,8 @@ export const Header = () => {
             </span>
           </Link>
 
-          {/* Language Switcher - Desktop */}
-          <button
-            onClick={toggleLanguage}
-            className="hidden lg:flex items-center gap-2 px-3 py-1.5 text-sm font-body text-brand-gold hover:text-brand-gold/80 transition-colors border border-brand-gold/30 rounded-md hover:border-brand-gold/50"
-            aria-label={language === 'sv' ? 'Switch to English' : 'Byt till Svenska'}
-          >
-            <span className="text-base">{language === 'sv' ? '🇸🇪' : '🇬🇧'}</span>
-            <span className="font-medium">{language === 'sv' ? 'SV' : 'EN'}</span>
-          </button>
-
           {/* Navigation */}
-          <ul className="hidden lg:flex items-center gap-1">
+          <ul className="hidden lg:flex items-center gap-1 flex-1">
             {navigation.map((item, index) => (
               <li key={item.name}>
                 <Link
@@ -77,17 +69,75 @@ export const Header = () => {
             ))}
           </ul>
 
+          {/* Language Switcher - Desktop */}
+          <div className="hidden lg:flex items-center gap-3">
+            <button
+              onClick={() => setLanguage('sv')}
+              className={`transition-all ${
+                language === 'sv' 
+                  ? 'opacity-100 ring-2 ring-brand-gold' 
+                  : 'opacity-50 hover:opacity-75'
+              } rounded-full`}
+              aria-label="Byt till Svenska"
+            >
+              <img 
+                src={flagSweden} 
+                alt="Svenska" 
+                className="w-10 h-10 rounded-full"
+              />
+            </button>
+            <button
+              onClick={() => setLanguage('en')}
+              className={`transition-all ${
+                language === 'en' 
+                  ? 'opacity-100 ring-2 ring-brand-gold' 
+                  : 'opacity-50 hover:opacity-75'
+              } rounded-full`}
+              aria-label="Switch to English"
+            >
+              <img 
+                src={flagUK} 
+                alt="English" 
+                className="w-10 h-10 rounded-full"
+              />
+            </button>
+          </div>
+
           {/* Mobile menu and language switcher */}
           <div className="lg:hidden flex items-center gap-2">
             {/* Language Switcher - Mobile */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-body text-brand-gold hover:text-brand-gold/80 transition-colors border border-brand-gold/30 rounded-md hover:border-brand-gold/50"
-              aria-label={language === 'sv' ? 'Switch to English' : 'Byt till Svenska'}
-            >
-              <span className="text-sm">{language === 'sv' ? '🇸🇪' : '🇬🇧'}</span>
-              <span className="font-medium">{language === 'sv' ? 'SV' : 'EN'}</span>
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setLanguage('sv')}
+                className={`transition-all ${
+                  language === 'sv' 
+                    ? 'opacity-100 ring-2 ring-brand-gold' 
+                    : 'opacity-50'
+                } rounded-full`}
+                aria-label="Byt till Svenska"
+              >
+                <img 
+                  src={flagSweden} 
+                  alt="Svenska" 
+                  className="w-8 h-8 rounded-full"
+                />
+              </button>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`transition-all ${
+                  language === 'en' 
+                    ? 'opacity-100 ring-2 ring-brand-gold' 
+                    : 'opacity-50'
+                } rounded-full`}
+                aria-label="Switch to English"
+              >
+                <img 
+                  src={flagUK} 
+                  alt="English" 
+                  className="w-8 h-8 rounded-full"
+                />
+              </button>
+            </div>
 
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
