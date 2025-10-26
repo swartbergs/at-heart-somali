@@ -14,11 +14,11 @@ const Kattungar = () => {
       father: "SC SE*At Heart Fux DVM, SOM n",
       image: nKullImage,
       kittens: [
-        { name: "Hane SOM a", status: "Ledig", statusColor: "bg-[#8CC4EC]" },
-        { name: "Hona SOM a", status: "Ledig", statusColor: "bg-[#F0A8C8]" },
-        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]" },
-        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F4D03F]" },
-        { name: "Hona SOM o", status: "Ledig", statusColor: "bg-[#E8B4D9]" },
+        { name: "Hane SOM a", status: "Ledig" },
+        { name: "Hona SOM a", status: "Ledig" },
+        { name: "Hane SOM n", status: "Ledig" },
+        { name: "Hona SOM n", status: "Ledig" },
+        { name: "Hona SOM o", status: "Ledig" },
       ]
     },
     {
@@ -29,7 +29,7 @@ const Kattungar = () => {
       father: "JCH KCH SE*Wingardiums Caspian SOM p",
       image: mKullImage,
       kittens: [
-        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]" },
+        { name: "Hane SOM n", status: "Ledig" },
       ]
     },
     {
@@ -40,11 +40,11 @@ const Kattungar = () => {
       father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
       image: lKullImage,
       kittens: [
-        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F4D03F]" },
-        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F0A8C8]" },
-        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]" },
-        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#8CC4EC]" },
-        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#8B9A7E]" },
+        { name: "Hona SOM n", status: "Ledig" },
+        { name: "Hona SOM n", status: "Ledig" },
+        { name: "Hane SOM n", status: "Ledig" },
+        { name: "Hane SOM n", status: "Ledig" },
+        { name: "Hane SOM n", status: "Ledig" },
       ]
     }
   ];
@@ -101,7 +101,7 @@ const Kattungar = () => {
                       <span className="text-brand-gold font-body font-light text-sm md:text-base">
                         {kitten.name}
                       </span>
-                      <Badge className={`${kitten.statusColor} text-brand-dark-green font-body text-xs md:text-sm px-4 py-1 hover:opacity-90`}>
+                      <Badge className="bg-brand-gold text-brand-dark-green font-body text-xs md:text-sm px-4 py-1 hover:opacity-90">
                         {kitten.status}
                       </Badge>
                     </div>
