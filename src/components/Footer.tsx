@@ -1,4 +1,5 @@
 import certifications from "@/assets/certifications.png";
+import instagramIcon from "@/assets/instagram-icon.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -16,6 +17,23 @@ export const Footer = () => {
             alt={t.footer.certificationsAlt}
             className="h-20 md:h-24 w-auto object-contain"
           />
+        </div>
+
+        {/* Instagram Link */}
+        <div className="flex justify-center mb-6">
+          <a
+            href="https://www.instagram.com/atheart_somalicats_cattery/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity hover:opacity-80"
+            aria-label="Instagram - At Heart Somali Cats"
+          >
+            <img 
+              src={instagramIcon} 
+              alt="Instagram"
+              className="h-10 w-10 object-contain"
+            />
+          </a>
         </div>
 
         {/* Copyright and membership */}
