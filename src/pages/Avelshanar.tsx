@@ -25,7 +25,6 @@ const Avelshanar = () => {
       pkDef: "Normal",
       pkaRada: "Normal",
       bloodType: "A/AB",
-      genes: "Bärare av dilution",
       moreImagesLink: "#",
       showMerits: [
         "Årets bästa fertila Somali hane 2023",
@@ -95,7 +94,7 @@ const Avelshanar = () => {
       stamtavla: "Stamtavla",
       stamtavlaLink: "#",
       pkDef: "Normal",
-      pkaRada: "Bärare",
+      pkaRada: "Normal",
       bloodType: "A/AB",
       moreImagesLink: "#"
     },
@@ -123,7 +122,7 @@ const Avelshanar = () => {
       stamtavla: "Stamtavla",
       stamtavlaLink: "#",
       pkDef: "Normal",
-      pkaRada: "Bärare",
+      pkaRada: "Normal",
       bloodType: "A/AB",
       moreImagesLink: "#"
     },
@@ -202,9 +201,6 @@ const Avelshanar = () => {
           </p>
           {/* Links - visible only on desktop */}
           <div className="hidden md:flex gap-4">
-            <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
-              {cat.stamtavla}
-            </a>
             <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
               Fler bilder
             </a>
@@ -222,17 +218,11 @@ const Avelshanar = () => {
           <p className="font-light">
             <span className="font-semibold">Blodgrupp:</span> {cat.bloodType}
           </p>
-          {cat.genes && (
-            <p className="font-light text-brand-gold/80">{cat.genes}</p>
-          )}
         </div>
       </div>
 
       {/* Links - visible only on mobile, at the bottom */}
       <div className="flex gap-4 md:hidden text-brand-gold font-body text-sm max-w-2xl mx-auto mt-4">
-        <a href={cat.stamtavlaLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
-          {cat.stamtavla}
-        </a>
         <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
           Fler bilder
         </a>
