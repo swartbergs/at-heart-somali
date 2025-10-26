@@ -1,10 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
 import lKullImage from "@/assets/jes-med-l-kull.jpg";
 import mKullImage from "@/assets/cat-med-m-kull.jpg";
 import nKullImage from "@/assets/hei-med-n-kull.jpg";
+
 const Kattungar = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const litters = [
     {
       id: "n-kull",
@@ -14,11 +20,11 @@ const Kattungar = () => {
       father: "SC SE*At Heart Fux DVM, SOM n",
       image: nKullImage,
       kittens: [
-        { name: "Hane SOM a", status: "Ledig" },
-        { name: "Hona SOM a", status: "Ledig" },
-        { name: "Hane SOM n", status: "Ledig" },
-        { name: "Hona SOM n", status: "Ledig" },
-        { name: "Hona SOM o", status: "Ledig" },
+        { name: language === 'sv' ? "Hane SOM a" : "Male SOM a", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM a" : "Female SOM a", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM n" : "Female SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM o" : "Female SOM o", status: t.kittens.status.available },
       ]
     },
     {
@@ -29,7 +35,7 @@ const Kattungar = () => {
       father: "JCH KCH SE*Wingardiums Caspian SOM p",
       image: mKullImage,
       kittens: [
-        { name: "Hane SOM n", status: "Ledig" },
+        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
       ]
     },
     {
@@ -40,11 +46,11 @@ const Kattungar = () => {
       father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
       image: lKullImage,
       kittens: [
-        { name: "Hona SOM n", status: "Ledig" },
-        { name: "Hona SOM n", status: "Ledig" },
-        { name: "Hane SOM n", status: "Ledig" },
-        { name: "Hane SOM n", status: "Ledig" },
-        { name: "Hane SOM n", status: "Ledig" },
+        { name: language === 'sv' ? "Hona SOM n" : "Female SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM n" : "Female SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
       ]
     }
   ];
@@ -55,21 +61,22 @@ const Kattungar = () => {
         <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
           {/* Heading */}
           <h1 className="text-brand-gold text-3xl md:text-4xl mb-6 font-heading uppercase tracking-wide">
-            Aktuella Kattungar
+            {t.kittens.title}
           </h1>
 
           {/* Intro Text */}
           <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-2">
             <p>
-              Skicka gärna en intresseanmälan här via hemsidan eller till{" "}
+              {language === 'sv' ? 'Skicka gärna en intresseanmälan här via hemsidan eller till' : 'Feel free to send a registration of interest here via the website or to'}{" "}
               <a href="mailto:pi@tupplurens.se" className="underline hover:text-brand-gold/80">
                 pi@tupplurens.se
               </a>
               .
             </p>
             <p>
-              Besök av kattungar tidigast efter att kattungarna fyllt 5 veckor. Besök bokas via överenskommelse. Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs
-              rekommenderade Tingningsavtal och även SVERAKs Köpekontrakt.
+              {language === 'sv' 
+                ? 'Besök av kattungar tidigast efter att kattungarna fyllt 5 veckor. Besök bokas via överenskommelse. Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även SVERAKs Köpekontrakt.'
+                : 'Visits to kittens at the earliest after the kittens have turned 5 weeks old. Visits are booked by agreement. A deposit fee is charged when booking a kitten. I use SVERAK\'s recommended Deposit Agreement and also SVERAK\'s Purchase Agreement.'}
             </p>
           </div>
 
@@ -81,7 +88,7 @@ const Kattungar = () => {
                 <div className="w-full max-w-4xl mx-auto flex justify-start">
                   <img 
                     src={litter.image} 
-                    alt={`${litter.name} kattunge kull`} 
+                    alt={`${litter.name} ${language === 'sv' ? 'kattunge kull' : 'kitten litter'}`}
                     className="h-[600px] w-auto object-contain rounded-lg" 
                   />
                 </div>
@@ -89,9 +96,9 @@ const Kattungar = () => {
                 {/* Litter Info */}
                 <div className="text-brand-gold font-body space-y-2 text-sm md:text-base">
                   <h2 className="text-2xl md:text-3xl font-heading mb-4">{litter.name}</h2>
-                  <p className="font-light"><span className="font-bold">Född: {litter.birthDate}</span></p>
-                  <p className="font-light">Mor: {litter.mother}</p>
-                  <p className="font-light">Far: {litter.father}</p>
+                  <p className="font-light"><span className="font-bold">{t.kittens.born}: {litter.birthDate}</span></p>
+                  <p className="font-light">{t.kittens.mother}: {litter.mother}</p>
+                  <p className="font-light">{t.kittens.father}: {litter.father}</p>
                 </div>
 
                 {/* Kittens List */}
@@ -115,4 +122,5 @@ const Kattungar = () => {
       <Footer />
     </div>;
 };
+
 export default Kattungar;

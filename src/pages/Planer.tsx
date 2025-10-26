@@ -2,6 +2,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
 import planerHero from "@/assets/planer-hero-new.jpg";
 import planerCat1 from "@/assets/planer-cat-1.png";
 import planerCat2 from "@/assets/planer-cat-2.png";
@@ -9,14 +11,18 @@ import planerCat3 from "@/assets/planer-cat-3.png";
 import planerCat4 from "@/assets/planer-cat-4.png";
 import planerCat5 from "@/assets/planer-cat-5.png";
 import planerCat6 from "@/assets/planer-cat-6.png";
+
 const Planer = () => {
   const navigate = useNavigate();
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
         {/* Hero Image Section */}
         <div className="w-full flex justify-center bg-brand-dark-green">
-          <img src={planerHero} alt="Somalikatter" className="w-full max-w-7xl object-contain" />
+          <img src={planerHero} alt={t.plans.heroAlt} className="w-full max-w-7xl object-contain" />
         </div>
 
         {/* Content Section */}
@@ -36,7 +42,7 @@ const Planer = () => {
                   pi@tupplurens.se
                 </a>
               </p>
-              <p>Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut.</p>
+              <p>{language === 'sv' ? 'Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut.' : 'Visits to the kittens can take place at the earliest when they are 8 weeks old and have received their first vaccination and are booked by agreement. A deposit fee is charged for booking a kitten.'}</p>
             </div>
 
             {/* Cat Pair Section */}
@@ -56,9 +62,9 @@ const Planer = () => {
                 <h2 className="text-xl md:text-2xl font-heading mb-4">
                   JC KCH SE*At Heart Jes + JCH KCH SE*Wingardiums Caspian
                 </h2>
-                <p>Förväntade färger: Viltfärg</p>
-                <p>Beräknad födelse: 17 oktober</p>
-                <p>Hälsotester: Båda Normal PK def och. Normal PRA</p>
+                <p>{t.plans.expectedColors}: {language === 'sv' ? 'Viltfärg' : 'Ruddy'}</p>
+                <p>{t.plans.expectedBirth}: {language === 'sv' ? '17 oktober' : 'October 17'}</p>
+                <p>{t.plans.healthTests}: {language === 'sv' ? 'Båda Normal PK def och. Normal PRA' : 'Both Normal PK def and Normal PRA'}</p>
               </div>
 
               {/* Interest Button */}
@@ -67,7 +73,7 @@ const Planer = () => {
                 navigate('/kontakt');
                 window.scrollTo(0, 0);
               }} className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3">
-                  Anmäl intresse
+                  {t.plans.expressInterest}
                 </Button>
               </div>
             </div>
@@ -89,9 +95,9 @@ const Planer = () => {
                 <h2 className="text-xl md:text-2xl font-heading mb-4">
                   CH SE*At Heart Hei + SC SE*At Heart FUX DVM
                 </h2>
-                <p>Förväntade färger: Viltfärg och Blå</p>
-                <p>Beräknad födelse: 17 oktober</p>
-                <p>Hälsotester: Båda Normal PK def och Normal PRA</p>
+                <p>{t.plans.expectedColors}: {language === 'sv' ? 'Viltfärg och Blå' : 'Ruddy and Blue'}</p>
+                <p>{t.plans.expectedBirth}: {language === 'sv' ? '17 oktober' : 'October 17'}</p>
+                <p>{t.plans.healthTests}: {language === 'sv' ? 'Båda Normal PK def och Normal PRA' : 'Both Normal PK def and Normal PRA'}</p>
               </div>
 
               {/* Interest Button */}
@@ -100,7 +106,7 @@ const Planer = () => {
                 navigate('/kontakt');
                 window.scrollTo(0, 0);
               }} className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3">
-                  Anmäl intresse
+                  {t.plans.expressInterest}
                 </Button>
               </div>
             </div>
@@ -122,9 +128,9 @@ const Planer = () => {
                 <h2 className="text-xl md:text-2xl font-heading mb-4">
                   GIC SE*At Heart Cat + JCH KCH SE*Wingardiums Caspian
                 </h2>
-                <p>Förväntade färger: Viltfärg och sorrel</p>
-                <p>Beräknad födelse: 20 oktober</p>
-                <p>Hälsotester: Båda Normal PK def, Cat bärare av PRA / Fux Normal PRA</p>
+                <p>{t.plans.expectedColors}: {language === 'sv' ? 'Viltfärg och sorrel' : 'Ruddy and Sorrel'}</p>
+                <p>{t.plans.expectedBirth}: {language === 'sv' ? '20 oktober' : 'October 20'}</p>
+                <p>{t.plans.healthTests}: {language === 'sv' ? 'Båda Normal PK def, Cat bärare av PRA / Fux Normal PRA' : 'Both Normal PK def, Cat carrier of PRA / Fux Normal PRA'}</p>
               </div>
 
               {/* Interest Button */}
@@ -133,7 +139,7 @@ const Planer = () => {
                 navigate('/kontakt');
                 window.scrollTo(0, 0);
               }} className="bg-transparent text-brand-gold border-brand-gold hover:bg-brand-gold hover:text-brand-dark-green font-body px-8 py-3">
-                  Anmäl intresse
+                  {t.plans.expressInterest}
                 </Button>
               </div>
             </div>

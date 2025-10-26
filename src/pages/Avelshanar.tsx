@@ -1,5 +1,7 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/i18n/translations";
 import maleCatFox from "@/assets/male-cat-fox-new.png";
 import catCaspian from "@/assets/cat-caspian.jpg";
 import catAce from "@/assets/cat-ace.png";
@@ -12,6 +14,9 @@ import catImo from "@/assets/cat-imo.jpg";
 import catEss from "@/assets/cat-ess.png";
 
 const Avelshanar = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const studs = [
     {
       id: "fox",
@@ -191,19 +196,18 @@ const Avelshanar = () => {
         {/* Left Column */}
         <div className="space-y-2">
           <p className="font-light">
-            <span className="font-semibold">Född:</span> {cat.birthDate}
+            <span className="font-semibold">{t.studs.born}:</span> {cat.birthDate}
           </p>
           <p className="font-light whitespace-nowrap">
-            <span className="font-semibold">Mor:</span> {cat.mother}
+            <span className="font-semibold">{t.studs.mother}:</span> {cat.mother}
           </p>
           <p className="font-light">
-            <span className="font-semibold">Far:</span> {cat.father}
+            <span className="font-semibold">{t.studs.father}:</span> {cat.father}
           </p>
-          {/* Links - visible only on desktop */}
           {showMoreImages && (
             <div className="hidden md:flex gap-4">
               <a href="https://www.instagram.com/atheart_somalicats_cattery/" target="_blank" rel="noopener noreferrer" className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
-                Fler bilder
+                {t.studs.moreImages}
               </a>
             </div>
           )}
@@ -258,7 +262,7 @@ const Avelshanar = () => {
           {/* Active Studs */}
           <section>
             <h1 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
-              Avelshanar
+              {t.studs.title}
             </h1>
 
             <div className="space-y-16">
@@ -271,7 +275,7 @@ const Avelshanar = () => {
           {/* Retired Studs */}
           <section className="mt-24">
             <h2 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
-              Pensionerade Hanar
+              {language === 'sv' ? 'Pensionerade Hanar' : 'Retired Studs'}
             </h2>
 
             <div className="space-y-16">
@@ -284,7 +288,7 @@ const Avelshanar = () => {
           {/* Borrowed Studs */}
           <section className="mt-24">
             <h2 className="text-brand-gold text-3xl md:text-4xl mb-12 font-heading uppercase tracking-wide max-w-2xl mx-auto">
-              Lånade Avelshanar
+              {t.studs.borrowedStuds}
             </h2>
 
             <div className="space-y-16">

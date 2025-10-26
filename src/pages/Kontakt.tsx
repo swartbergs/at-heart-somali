@@ -154,9 +154,9 @@ const Kontakt = () => {
                 <FormField control={form.control} name="phone" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-black">Telefon</FormLabel>
+                      <FormLabel className="text-black">{t.contact.form.phone}</FormLabel>
                       <FormControl>
-                        <Input type="tel" placeholder="070-123 45 67" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
+                        <Input type="tel" placeholder={t.contact.form.phonePlaceholder} className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -164,9 +164,9 @@ const Kontakt = () => {
                 <FormField control={form.control} name="interest" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-black">Vad söker du?</FormLabel>
+                      <FormLabel className="text-black">{t.contact.form.interest}</FormLabel>
                       <FormControl>
-                        <Input placeholder="T.ex. kön, färg, sällskap/avel/show" className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
+                        <Input placeholder={t.contact.form.interestPlaceholder} className="bg-white border-gray-300 text-black placeholder:text-gray-400" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -174,9 +174,9 @@ const Kontakt = () => {
                 <FormField control={form.control} name="livingEnvironment" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-black">Boende</FormLabel>
+                      <FormLabel className="text-black">{t.contact.form.living}</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Beskriv ditt boende (barn, andra djur, inne/ute)" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
+                        <Textarea placeholder={t.contact.form.livingPlaceholder} className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -184,9 +184,9 @@ const Kontakt = () => {
                 <FormField control={form.control} name="experience" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-black">Erfarenhet av katt/rasen</FormLabel>
+                      <FormLabel className="text-black">{t.contact.form.experience}</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Berätta om din erfarenhet av katter och Somali-rasen" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
+                        <Textarea placeholder={t.contact.form.experiencePlaceholder} className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -194,9 +194,9 @@ const Kontakt = () => {
                 <FormField control={form.control} name="other" render={({
                 field
               }) => <FormItem>
-                      <FormLabel className="text-black">Övrigt</FormLabel>
+                      <FormLabel className="text-black">{t.contact.form.other}</FormLabel>
                       <FormControl>
-                        <Textarea placeholder="Övriga frågor eller information" className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
+                        <Textarea placeholder={t.contact.form.otherPlaceholder} className="bg-white border-gray-300 text-black placeholder:text-gray-400 min-h-[100px]" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>} />
@@ -209,7 +209,7 @@ const Kontakt = () => {
                       </FormControl>
                       <div className="space-y-1 leading-none">
                         <FormLabel className="text-sm text-black font-normal">
-                          Jag samtycker till att At Heart Cattery lagrar mina uppgifter för att kunna kontakta mig enligt integritetspolicyn.
+                          {t.contact.form.consent}
                         </FormLabel>
                         <FormMessage />
                       </div>
