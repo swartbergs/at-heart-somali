@@ -14,11 +14,11 @@ const Kattungar = () => {
       father: "SC SE*At Heart Fux DVM, SOM n",
       image: nKullImage,
       kittens: [
-        { name: "Hane SOM a", status: "Ledig", statusColor: "bg-[#8CC4EC]", textColor: "text-[#8CC4EC]" },
-        { name: "Hona SOM a", status: "Ledig", statusColor: "bg-[#F0A8C8]", textColor: "text-[#F0A8C8]" },
-        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]", textColor: "text-[#3B82F6]" },
-        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F4D03F]", textColor: "text-[#F4D03F]" },
-        { name: "Hona SOM o", status: "Ledig", statusColor: "bg-[#E8B4D9]", textColor: "text-[#E8B4D9]" },
+        { name: "Hane SOM a", status: "Ledig", statusColor: "bg-[#8CC4EC]" },
+        { name: "Hona SOM a", status: "Ledig", statusColor: "bg-[#F0A8C8]" },
+        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]" },
+        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F4D03F]" },
+        { name: "Hona SOM o", status: "Ledig", statusColor: "bg-[#E8B4D9]" },
       ]
     },
     {
@@ -29,7 +29,7 @@ const Kattungar = () => {
       father: "JCH KCH SE*Wingardiums Caspian SOM p",
       image: mKullImage,
       kittens: [
-        { name: "HANE SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]", textColor: "text-[#3B82F6]" },
+        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]" },
       ]
     },
     {
@@ -40,11 +40,11 @@ const Kattungar = () => {
       father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
       image: lKullImage,
       kittens: [
-        { name: "Hona (gul) SOM n", status: "Ledig", statusColor: "bg-[#F4D03F]", textColor: "text-[#F4D03F]" },
-        { name: "Hona (rosa) SOM n", status: "Ledig", statusColor: "bg-[#F0A8C8]", textColor: "text-[#F0A8C8]" },
-        { name: "Hane (blå) SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]", textColor: "text-[#3B82F6]" },
-        { name: "Hane (ljusblå) SOM n", status: "Ledig", statusColor: "bg-[#8CC4EC]", textColor: "text-[#8CC4EC]" },
-        { name: "Hane (grön) SOM n", status: "Ledig", statusColor: "bg-[#8B9A7E]", textColor: "text-[#8B9A7E]" },
+        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F4D03F]" },
+        { name: "Hona SOM n", status: "Ledig", statusColor: "bg-[#F0A8C8]" },
+        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#3B82F6]" },
+        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#8CC4EC]" },
+        { name: "Hane SOM n", status: "Ledig", statusColor: "bg-[#8B9A7E]" },
       ]
     }
   ];
@@ -98,7 +98,7 @@ const Kattungar = () => {
                 <div className="space-y-4 mt-8">
                   {litter.kittens.map((kitten, index) => (
                     <div key={index} className="flex items-center justify-between py-4 border-b border-brand-gold/20">
-                      <span className={`${kitten.textColor} font-body font-light text-sm md:text-base`}>
+                      <span className="text-brand-gold font-body font-light text-sm md:text-base">
                         {kitten.name}
                       </span>
                       <Badge className={`${kitten.statusColor} text-brand-dark-green font-body text-xs md:text-sm px-4 py-1 hover:opacity-90`}>
