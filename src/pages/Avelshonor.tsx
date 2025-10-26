@@ -17,7 +17,7 @@ const Avelshonor = () => {
     pkDef: "Normal",
     pkaRada: "Bärare",
     bloodType: "A/AB",
-    genes: "Anlag för sorrel ej dilution",
+    genes: "",
     moreImagesLink: "#"
   }, {
     id: "cat-hei",
@@ -31,7 +31,7 @@ const Avelshonor = () => {
     pkDef: "Normal",
     pkaRada: "Bärare",
     bloodType: "A/AB",
-    genes: "Bärare av dilution",
+    genes: "",
     moreImagesLink: "#"
   }, {
     id: "cat-jes",
@@ -45,7 +45,7 @@ const Avelshonor = () => {
     pkDef: "Normal",
     pkaRada: "Normal",
     bloodType: "A/AB",
-    genes: "Ej bärare av dilution",
+    genes: "",
     moreImagesLink: "#"
   }];
   const retiredQueens = [{
@@ -93,7 +93,7 @@ const Avelshonor = () => {
           </p>
           {/* Links - visible only on desktop */}
           <div className="hidden md:flex gap-4">
-            <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+            <a href="https://www.instagram.com/atheart_somalicats_cattery/" target="_blank" rel="noopener noreferrer" className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
               Fler bilder
             </a>
           </div>
@@ -116,7 +116,7 @@ const Avelshonor = () => {
 
       {/* Links - visible only on mobile, at the bottom */}
       <div className="flex gap-4 md:hidden text-brand-gold font-body text-sm max-w-2xl mx-auto mt-4">
-        <a href={cat.moreImagesLink} className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
+        <a href="https://www.instagram.com/atheart_somalicats_cattery/" target="_blank" rel="noopener noreferrer" className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
           Fler bilder
         </a>
       </div>
