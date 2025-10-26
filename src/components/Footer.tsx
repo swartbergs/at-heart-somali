@@ -22,7 +22,7 @@ export const Footer = () => {
             <img 
               src={instagramIcon} 
               alt="Instagram"
-              className="h-10 w-10 object-contain"
+              className="h-20 md:h-24 w-auto object-contain"
             />
           </a>
           <img 
