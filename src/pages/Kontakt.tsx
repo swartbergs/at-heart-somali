@@ -57,14 +57,21 @@ const Kontakt = () => {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
     try {
-      // Here you would send the form data to your backend
-      console.log("Form data:", data);
+      const { supabase } = await import("@/integrations/supabase/client");
+      
+      const { error } = await supabase.functions.invoke('send-contact-email', {
+        body: data
+      });
+
+      if (error) throw error;
+
       toast({
         title: "Tack för ditt meddelande!",
         description: "Vi återkommer till dig så snart som möjligt."
       });
       form.reset();
     } catch (error) {
+      console.error("Error sending form:", error);
       toast({
         title: "Något gick fel",
         description: "Vänligen försök igen senare.",
