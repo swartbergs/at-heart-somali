@@ -103,7 +103,7 @@ export const translations = {
       mother: "Mamma",
       father: "Pappa",
       kittens: "Kattungar i kullen",
-      moreImages: "Fler bilder på Instagram"
+      moreImages: "Fler bilder"
     },
     queens: {
       title: "Avelshonor",
@@ -273,7 +273,7 @@ export const translations = {
       mother: "Mother",
       father: "Father",
       kittens: "Kittens in the litter",
-      moreImages: "More pictures on Instagram"
+      moreImages: "More pictures"
     },
     queens: {
       title: "Breeding Queens",
