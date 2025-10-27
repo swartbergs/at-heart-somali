@@ -11,12 +11,12 @@ import planerCat3 from "@/assets/planer-cat-3.png";
 import planerCat4 from "@/assets/planer-cat-4.png";
 import planerCat5 from "@/assets/planer-cat-5.png";
 import planerCat6 from "@/assets/planer-cat-6.png";
-
 const Planer = () => {
   const navigate = useNavigate();
-  const { language } = useLanguage();
+  const {
+    language
+  } = useLanguage();
   const t = translations[language];
-
   return <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
@@ -42,7 +42,7 @@ const Planer = () => {
                   pi@tupplurens.se
                 </a>
               </p>
-              <p>{language === 'sv' ? 'Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut.' : 'Visits to the kittens can take place at the earliest when they are 8 weeks old and have received their first vaccination and are booked by agreement. A deposit fee is charged for booking a kitten.'}</p>
+              
             </div>
 
             {/* Cat Pair Section */}
