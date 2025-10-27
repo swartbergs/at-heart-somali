@@ -126,7 +126,9 @@ export const translations = {
       color: "Färg",
       healthTests: "Hälsotester",
       pedigree: "Stamtavla",
-      moreImages: "Fler bilder"
+      moreImages: "Fler bilder",
+      bloodType: "Blodgrupp",
+      extraShowMerits: "Extra utstållnings meriter:"
     },
     shows: {
       title: "Utställning och utmärkelser",
@@ -296,7 +298,9 @@ export const translations = {
       color: "Color",
       healthTests: "Health tests",
       pedigree: "Pedigree",
-      moreImages: "More pictures"
+      moreImages: "More pictures",
+      bloodType: "Blood type",
+      extraShowMerits: "Extra show merits:"
     },
     shows: {
       title: "Shows and Awards",

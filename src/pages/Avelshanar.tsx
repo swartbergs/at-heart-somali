@@ -31,7 +31,7 @@ const Avelshanar = () => {
       pkaRada: "Normal",
       bloodType: "A/AB",
       moreImagesLink: "#",
-      showMerits: [
+      showMerits: language === 'sv' ? [
         "Årets bästa fertila Somali hane 2023",
         "Årets bästa fertila hane i grupp 4, plats 7, 2023",
         "Årets bästa viltfärgade Somali 2023",
@@ -39,6 +39,14 @@ const Avelshanar = () => {
         "Årets bästa fertila Somali hane 2024",
         "Årets bästa fertila hane i grupp 4 plats 5, 2024",
         "Årets bästa viltfärgade Somali 2024"
+      ] : [
+        "Best fertile Somali male 2023",
+        "Best fertile male in group 4, place 7, 2023",
+        "Best ruddy Somali 2023",
+        "Distinguished Variety Merit 2024",
+        "Best fertile Somali male 2024",
+        "Best fertile male in group 4, place 5, 2024",
+        "Best ruddy Somali 2024"
       ]
     },
     {
@@ -222,7 +230,7 @@ const Avelshanar = () => {
             <span className="font-semibold">PKA (rdAc):</span> {cat.pkaRada}
           </p>
           <p className="font-light">
-            <span className="font-semibold">Blodgrupp:</span> {cat.bloodType}
+            <span className="font-semibold">{t.studs.bloodType}:</span> {cat.bloodType}
           </p>
         </div>
       </div>
@@ -231,7 +239,7 @@ const Avelshanar = () => {
       {showMoreImages && (
         <div className="flex gap-4 md:hidden text-brand-gold font-body text-sm max-w-2xl mx-auto mt-4">
           <a href="https://www.instagram.com/atheart_somalicats_cattery/" target="_blank" rel="noopener noreferrer" className="font-light text-brand-gold/80 hover:text-brand-gold transition-colors">
-            Fler bilder
+            {t.studs.moreImages}
           </a>
         </div>
       )}
@@ -240,7 +248,7 @@ const Avelshanar = () => {
       {cat.showMerits && cat.showMerits.length > 0 && (
         <div className="max-w-2xl mx-auto mt-8">
           <h3 className="text-brand-gold text-xl font-heading mb-4">
-            Extra utstållnings meriter:
+            {t.studs.extraShowMerits}
           </h3>
           <ul className="space-y-2 text-brand-gold font-body text-sm md:text-base">
             {cat.showMerits.map((merit, index) => (
