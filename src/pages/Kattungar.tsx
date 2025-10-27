@@ -75,8 +75,8 @@ const Kattungar = () => {
             </p>
             <p>
               {language === 'sv' 
-                ? 'Besök av kattungar tidigast efter att kattungarna fyllt 5 veckor. Besök bokas via överenskommelse. Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även SVERAKs Köpekontrakt.'
-                : 'Visits to kittens at the earliest after the kittens have turned 5 weeks old. Visits are booked by agreement. A deposit fee is charged when booking a kitten. I use SVERAK\'s recommended Deposit Agreement and also SVERAK\'s Purchase Agreement.'}
+                ? 'Besök av kattungar tidigast efter att kattungarna fyllt 8 veckor. Besök bokas via överenskommelse. Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även SVERAKs Köpekontrakt.'
+                : 'Visits to kittens at the earliest after the kittens have turned 8 weeks old. Visits are booked by agreement. A deposit fee is charged when booking a kitten. I use SVERAK\'s recommended Deposit Agreement and also SVERAK\'s Purchase Agreement.'}
             </p>
           </div>
 
