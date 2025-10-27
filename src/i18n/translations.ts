@@ -49,15 +49,17 @@ export const translations = {
       paragraph8: "Jag är styrelseledamot i AbSolut Cat-club där jag är avelssekreterare. Jag har uppfödardiplom från SVERAK och är utbildad i SVERAKs avelsskola (UppfödarEttan) och har min certifiering. Jag är med i AbSolut kattklubb som ingår i SVERAK (Sveriges Kattrasföreningars Riksförbund)"
     },
     plans: {
-      title: "Planerade Kullar",
+      title: "Planerade Parningar",
       subtitle: "Aktuella planer för kommande kullar",
       heroAlt: "Somalikatter i avelsmiljö",
+      visitInfo: "Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även Köpekontrakt.",
+      contactInfo: "Skicka gärna en intresseanmälan här via hemsidan eller till",
       expectedColors: "Förväntade färger",
       expectedBirth: "Förväntad födsel",
       pedigree: "Stamtavla",
       healthTests: "Hälsotester",
       normal: "Normal",
-      expressInterest: "Anmäl intresse",
+      expressInterest: "Intresseanmälan",
       litter1: {
         mother: "IC SE* At Heart Acacia",
         father: "SE* Majala's Edison",
@@ -221,15 +223,17 @@ export const translations = {
       paragraph8: "I am a board member of AbSolut Cat-club where I am the breeding secretary. I have a breeder diploma from SVERAK and am trained in SVERAK's breeding school (BreederOne) and have my certification. I am a member of AbSolut Cat Club which is part of SVERAK (Swedish Cat Breed Associations)"
     },
     plans: {
-      title: "Planned Litters",
+      title: "Planned Pairings",
       subtitle: "Current plans for upcoming litters",
       heroAlt: "Somali cats in breeding environment",
+      visitInfo: "Visits to the kittens can take place no earlier than when they are 8 weeks old and have received their first vaccination, and are booked by arrangement. A booking fee is charged for booking a kitten. I use SVERAK's recommended Booking Agreement and Purchase Contract.",
+      contactInfo: "Please send an expression of interest here via the website or to",
       expectedColors: "Expected colors",
       expectedBirth: "Expected birth",
       pedigree: "Pedigree",
       healthTests: "Health tests",
       normal: "Normal",
-      expressInterest: "Express interest",
+      expressInterest: "Express Interest",
       litter1: {
         mother: "IC SE* At Heart Acacia",
         father: "SE* Majala's Edison",
