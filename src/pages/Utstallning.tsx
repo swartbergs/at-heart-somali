@@ -160,7 +160,14 @@ const Utstallning = () => {
                       </div>
                     </>
                   )}
-                  <p className="font-light">{language === 'sv' ? 'Fler bilder' : 'More pictures'}</p>
+                  <a 
+                    href="https://www.instagram.com/atheart_somalicats_cattery/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="font-light hover:underline inline-block"
+                  >
+                    {language === 'sv' ? 'Fler bilder' : 'More pictures'}
+                  </a>
                 </div>
                 {index < shows.length - 1 && (
                   <Separator className="bg-brand-gold/30 my-8" />
