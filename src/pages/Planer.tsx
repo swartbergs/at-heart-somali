@@ -29,15 +29,13 @@ const Planer = () => {
         <div className="bg-brand-dark-green">
           <div className="container mx-auto px-4 py-12 md:py-16 max-w-4xl">
             {/* Heading */}
-            <h1 className="text-brand-gold text-3xl md:text-4xl mb-6 font-heading uppercase tracking-wide">
-              {t.plans.title}
-            </h1>
+            <h1 className="text-brand-gold text-3xl md:text-4xl mb-6 font-heading uppercase tracking-wide">PLANNED MATINGS</h1>
 
             {/* Intro Text */}
             <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-2">
-              <p>{t.plans.visitInfo}</p>
+              <p>Besöka kattungarna kan ske tidigast när de är 8 veckor och fått sin första vaccination och bokas via överenskommelse. För bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även Köpekontrakt.</p>
               <p>
-                {t.plans.contactInfo}{" "}
+                Skicka gärna en intresseanmälan här via hemsidan eller till{" "}
                 <a href="mailto:pi@tupplurens.se" className="underline hover:text-brand-gold/80">
                   pi@tupplurens.se
                 </a>
