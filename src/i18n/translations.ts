@@ -265,7 +265,7 @@ export const translations = {
       mother: "Mother",
       father: "Father",
       status: {
-        available: "Available",
+        available: "Under evaluation",
         reserved: "Reserved",
         sold: "Sold"
       }
