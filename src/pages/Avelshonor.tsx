@@ -4,6 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import catActive from "@/assets/cat-active.png";
 import catRetired from "@/assets/cat-retired.png";
+import catBez from "@/assets/cat-bez.jpg";
 import catHei from "@/assets/cat-hei.jpg";
 import catJes from "@/assets/cat-jes.jpg";
 
@@ -44,6 +45,16 @@ const Avelshonor = () => {
   }];
 
   const retiredQueens = [{
+    id: "bez",
+    name: "SE*At Heart Bez, SOM n",
+    image: catBez,
+    birthDate: "2019-04-19",
+    mother: "GIC Gloria von Müllers Mühler, SOM o",
+    father: "S* Limhamn's .K.A. Leroux, SOM n",
+    pkDef: language === 'sv' ? "Normal" : "Normal",
+    pkaRada: language === 'sv' ? "Normal" : "Normal",
+    bloodType: "A/AB"
+  }, {
     id: "gloria",
     name: "GIC Gloria von Müllers Mühle, SOM o",
     image: catRetired,
