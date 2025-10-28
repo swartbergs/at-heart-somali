@@ -20,11 +20,11 @@ const Kattungar = () => {
       father: "SC SE*At Heart Fux DVM, SOM n",
       image: nKullImage,
       kittens: [
-        { name: language === 'sv' ? "Hane SOM a" : "Male SOM a", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hona SOM a" : "Female SOM a", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hona SOM n" : "Female SOM n", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hona SOM o" : "Female SOM o", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM a (blå)" : "Male SOM a (blue)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM a (blå)" : "Female SOM a (blue)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n (viltfärg)" : "Male SOM n (wild color)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM n (viltfärg)" : "Female SOM n (wild color)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM o (sorrel)" : "Female SOM o (sorrel)", status: t.kittens.status.available },
       ]
     },
     {
@@ -35,7 +35,7 @@ const Kattungar = () => {
       father: "JCH KCH SE*Wingardiums Caspian SOM p",
       image: mKullImage,
       kittens: [
-        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n (viltfärg)" : "Male SOM n (wild color)", status: t.kittens.status.available },
       ]
     },
     {
@@ -46,11 +46,11 @@ const Kattungar = () => {
       father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
       image: lKullImage,
       kittens: [
-        { name: language === 'sv' ? "Hona SOM n" : "Female SOM n", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hona SOM n" : "Female SOM n", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
-        { name: language === 'sv' ? "Hane SOM n" : "Male SOM n", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM n (viltfärg)" : "Female SOM n (wild color)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM n (viltfärg)" : "Female SOM n (wild color)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n (viltfärg)" : "Male SOM n (wild color)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n (viltfärg)" : "Male SOM n (wild color)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hane SOM n (viltfärg)" : "Male SOM n (wild color)", status: t.kittens.status.available },
       ]
     }
   ];

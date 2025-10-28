@@ -91,7 +91,7 @@ export const translations = {
       mother: "Mamma",
       father: "Pappa",
       status: {
-        available: "Ledig",
+        available: "Under utvärdering",
         reserved: "Reserverad",
         sold: "Såld"
       }
