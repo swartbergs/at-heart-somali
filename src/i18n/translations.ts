@@ -223,7 +223,7 @@ export const translations = {
       paragraph8: "I am a board member of AbSolut Cat-club where I am the breeding secretary. I have a breeder diploma from SVERAK and am trained in SVERAK's breeding school (BreederOne) and have my certification. I am a member of AbSolut Cat Club which is part of SVERAK (Swedish Cat Breed Associations)"
     },
     plans: {
-      title: "Planned Pairings",
+      title: "PLANNED MATINGS",
       subtitle: "Current plans for upcoming litters",
       heroAlt: "Somali cats in breeding environment",
       visitInfo: "Visits to the kittens can take place no earlier than when they are 8 weeks old and have received their first vaccination, and are booked by arrangement. A booking fee is charged for booking a kitten. I use SVERAK's recommended Booking Agreement and Purchase Contract.",
