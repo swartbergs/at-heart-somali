@@ -96,7 +96,7 @@ const Avelshonor = () => {
             <span className="font-semibold">PK def:</span> {cat.pkDef}
           </p>
           <p className="font-light">
-            <span className="font-semibold">PKA (rdAc):</span> {cat.pkaRada}
+            <span className="font-semibold">PRA (rdAc):</span> {cat.pkaRada}
           </p>
           <p className="font-light">
             <span className="font-semibold">{language === 'sv' ? 'Blodgrupp' : 'Blood type'}:</span> {cat.bloodType}
