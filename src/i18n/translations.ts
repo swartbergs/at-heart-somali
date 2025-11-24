@@ -93,7 +93,8 @@ export const translations = {
       status: {
         available: "Under utvärdering",
         reserved: "Reserverad",
-        sold: "Såld"
+        sold: "Såld",
+        tingad: "Tingad"
       }
     },
     litters: {
@@ -267,7 +268,8 @@ export const translations = {
       status: {
         available: "Under evaluation",
         reserved: "Reserved",
-        sold: "Sold"
+        sold: "Sold",
+        tingad: "Reserved with deposit"
       }
     },
     litters: {
