@@ -131,7 +131,7 @@ export const translations = {
       pedigree: "Stamtavla",
       moreImages: "Fler bilder",
       bloodType: "Blodgrupp",
-      extraShowMerits: "Extra utstållnings meriter:"
+      extraShowMerits: "Extra utställnings meriter:"
     },
     shows: {
       title: "Utställning och utmärkelser",
