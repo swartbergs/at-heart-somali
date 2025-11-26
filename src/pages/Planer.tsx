@@ -94,7 +94,7 @@ const Planer = () => {
                 </h2>
                 <p>{t.plans.expectedColors}: {language === 'sv' ? 'Viltfärg och Blå' : 'Ruddy and Blue'}</p>
                 <p>{t.plans.expectedBirth}: {language === 'sv' ? '17 oktober' : 'October 17'}</p>
-                <p>{t.plans.healthTests}: {language === 'sv' ? 'Båda Normal PK def och Normal PRA' : 'Both Normal PK def and Normal PRA'}</p>
+                <p>{t.plans.healthTests}: {language === 'sv' ? 'Båda Normal PK def, Hei bärare av PRA / Fux Normal PRA' : 'Both Normal PK def, Hei carrier of PRA / Fux Normal PRA'}</p>
               </div>
 
               {/* Interest Button */}
