@@ -21,7 +21,7 @@ const Kattungar = () => {
       image: nKullImage,
       kittens: [
         { name: language === 'sv' ? "Hane SOM a (Blå)" : "Male SOM a (Blue)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hona SOM a (Blå)" : "Female SOM a (Blue)", status: t.kittens.status.available },
+        { name: language === 'sv' ? "Hona SOM a (Blå)" : "Female SOM a (Blue)", status: t.kittens.status.tingad },
         { name: language === 'sv' ? "Hane SOM n (Viltfärg)" : "Male SOM n (Ruddy)", status: t.kittens.status.tingad },
         { name: language === 'sv' ? "Hona SOM n (Viltfärg)" : "Female SOM n (Ruddy)", status: t.kittens.status.tingad },
         { name: language === 'sv' ? "Hona SOM o (Sorrel)" : "Female SOM o (Sorrel)", status: t.kittens.status.tingad },
