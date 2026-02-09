@@ -21,7 +21,7 @@ export const translations = {
     },
     footer: {
       certificationsAlt: "Certifierad uppfödare - UI-certifiering och medlemskap",
-      copyright: "© 2025 At Heart Somali Cats — Medlem i SVERAK. Registrerat prefix: At Heart."
+      copyright: "© 2026 At Heart Somali Cats — Medlem i SVERAK. Registrerat prefix: At Heart."
     },
     about: {
       title: "Om mig och min kattuppfödning.",
