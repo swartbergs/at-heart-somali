@@ -47,6 +47,18 @@ const Kullar = () => {
       gender: language === 'sv' ? "Hona" : "Female"
     }]
   }, {
+    id: "M",
+    name: language === 'sv' ? "Kull M" : "Litter M",
+    birthDate: "2025-10-21",
+    mother: "GIC SE*At Heart Cat, SOM n",
+    father: "JCH KCH SE*Wingardiums Caspian SOM p",
+    image: litterM,
+    kittens: [{
+      name: "SE* At Heart Max",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }]
+  }, {
     id: "J",
     name: language === 'sv' ? "Kull J" : "Litter J",
     birthDate: "2024-06-14",
