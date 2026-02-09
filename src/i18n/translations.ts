@@ -84,7 +84,7 @@ export const translations = {
     },
     kittens: {
       title: "Aktuella Kattungar",
-      intro: "Välkommen att kontakta mig för mer information om våra kattungar eller för att bli förregistrerad till kommande kullar.",
+      intro: "Vi har inga kullar planerade den närmsta tiden, men du är varmt välkommen att skicka in en intresseanmälan via hemsidan, mejla till pi@tupplurens.se eller följa oss på Instagram. Då håller vi dig uppdaterad så snart vi har nyheter om nästa kull.",
       heroAlt: "Somalikattungar",
       litter: "Kull",
       born: "Född",
