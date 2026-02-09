@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import kullarHero from "@/assets/kullar-hero.png";
+import litterL from "@/assets/litter-l.jpg";
 import litterI from "@/assets/litter-i.png";
 import litterH from "@/assets/litter-h.png";
 import litterF from "@/assets/litter-f.png";
