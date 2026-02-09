@@ -3,57 +3,12 @@ import { Footer } from "@/components/Footer";
 import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
-import lKullImage from "@/assets/jes-med-l-kull.jpg";
-import mKullImage from "@/assets/cat-med-m-kull.jpg";
-import nKullImage from "@/assets/hei-med-n-kull.jpg";
 
 const Kattungar = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const litters = [
-    {
-      id: "n-kull",
-      name: "N-Kull 2025-10-23",
-      birthDate: "2025-10-23",
-      mother: "CH SE*At Heart Hei, SOM n",
-      father: "SC SE*At Heart Fux DVM, SOM n",
-      image: nKullImage,
-      kittens: [
-        { name: language === 'sv' ? "Hane SOM a (Blå)" : "Male SOM a (Blue)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hona SOM a (Blå)" : "Female SOM a (Blue)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hane SOM n (Viltfärg)" : "Male SOM n (Ruddy)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hona SOM n (Viltfärg)" : "Female SOM n (Ruddy)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hona SOM o (Sorrel)" : "Female SOM o (Sorrel)", status: t.kittens.status.tingad },
-      ]
-    },
-    {
-      id: "m-kull",
-      name: "M-Kull 2025-10-21",
-      birthDate: "2025-10-21",
-      mother: "GIC SE*At Heart Cat, SOM n",
-      father: "JCH KCH SE*Wingardiums Caspian SOM p",
-      image: mKullImage,
-      kittens: [
-        { name: language === 'sv' ? "Hane SOM n (Viltfärg)" : "Male SOM n (Ruddy)", status: t.kittens.status.tingad },
-      ]
-    },
-    {
-      id: "l-kull",
-      name: "L-Kull 2025-10-17",
-      birthDate: "2025-10-17",
-      mother: "JCH, KCH SE*At Heart Jes, SOM n",
-      father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
-      image: lKullImage,
-      kittens: [
-        { name: language === 'sv' ? "Hona SOM n (Viltfärg)" : "Female SOM n (Ruddy)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hona SOM n (Viltfärg)" : "Female SOM n (Ruddy)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hane SOM n (Viltfärg)" : "Male SOM n (Ruddy)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hane SOM n (Viltfärg)" : "Male SOM n (Ruddy)", status: t.kittens.status.tingad },
-        { name: language === 'sv' ? "Hane SOM n (Viltfärg)" : "Male SOM n (Ruddy)", status: t.kittens.status.tingad },
-      ]
-    }
-  ];
+  const litters: { id: string; name: string; birthDate: string; mother: string; father: string; image: string; kittens: { name: string; status: string }[] }[] = [];
 
   return <div className="min-h-screen flex flex-col">
       <Header />
