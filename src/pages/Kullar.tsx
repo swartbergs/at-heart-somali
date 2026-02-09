@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import kullarHero from "@/assets/kullar-hero.png";
+import litterM from "@/assets/litter-m.jpg";
 import litterL from "@/assets/litter-l.jpg";
 import litterI from "@/assets/litter-i.png";
 import litterH from "@/assets/litter-h.png";
@@ -44,6 +45,18 @@ const Kullar = () => {
       name: "SE* At Heart Léa",
       code: "SOM n",
       gender: language === 'sv' ? "Hona" : "Female"
+    }]
+  }, {
+    id: "M",
+    name: language === 'sv' ? "Kull M" : "Litter M",
+    birthDate: "2025-10-21",
+    mother: "GIC SE*At Heart Cat, SOM n",
+    father: "JCH KCH SE*Wingardiums Caspian SOM p",
+    image: litterM,
+    kittens: [{
+      name: "SE* At Heart Max",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
     }]
   }, {
     id: "J",
