@@ -273,7 +273,7 @@ export const translations = {
       }
     },
     litters: {
-      title: "FROM A-LITTER 2018 TO L-LITTER 2025",
+      title: "FROM A-LITTER 2018 TO N-LITTER 2025",
       subtitle: "History of our litters",
       heroAlt: "Litters through the years",
       litter: "Litter",
