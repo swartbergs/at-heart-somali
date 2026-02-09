@@ -196,7 +196,7 @@ export const translations = {
     },
     footer: {
       certificationsAlt: "Certified breeder - UI certification and membership",
-      copyright: "© 2025 At Heart Somali Cats — Member of SVERAK. Registered prefix: At Heart."
+      copyright: "© 2026 At Heart Somali Cats — Member of SVERAK. Registered prefix: At Heart."
     },
     about: {
       title: "About me and my cattery.",
