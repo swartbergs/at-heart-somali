@@ -18,6 +18,34 @@ const Kullar = () => {
   const t = translations[language];
 
   const litters = [{
+    id: "L",
+    name: language === 'sv' ? "Kull L" : "Litter L",
+    birthDate: "2025-10-17",
+    mother: "JCH, KCH SE*At Heart Jes, SOM n",
+    father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
+    image: litterL,
+    kittens: [{
+      name: "SE* At Heart Leo",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }, {
+      name: "SE* At Heart Lex",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }, {
+      name: "SE* At Heart Lee",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }, {
+      name: "SE* At Heart Lou",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hona" : "Female"
+    }, {
+      name: "SE* At Heart Léa",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hona" : "Female"
+    }]
+  }, {
     id: "J",
     name: language === 'sv' ? "Kull J" : "Litter J",
     birthDate: "2024-06-14",
