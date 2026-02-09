@@ -259,7 +259,7 @@ export const translations = {
     },
     kittens: {
       title: "Available Kittens",
-      intro: "Welcome to contact me for more information about our kittens or to be pre-registered for upcoming litters.",
+      intro: "We have no litters planned in the near future, but you are warmly welcome to send a registration of interest via the website, email pi@tupplurens.se or follow us on Instagram. We will keep you updated as soon as we have news about the next litter.",
       heroAlt: "Somali kittens",
       litter: "Litter",
       born: "Born",

@@ -20,17 +20,11 @@ const Kattungar = () => {
           </h1>
 
           {/* Intro Text */}
-          <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-2">
-            <p>
-              {language === 'sv' ? 'Skicka gärna en intresseanmälan här via hemsidan eller till' : 'Feel free to send a registration of interest here via the website or to'}{" "}
-              <a href="mailto:pi@tupplurens.se" className="underline hover:text-brand-gold/80">
-                pi@tupplurens.se
-              </a>
-              .
-            </p>
+          <div className="text-brand-gold font-body font-light leading-snug text-sm md:text-base mb-12 space-y-4">
+            <p>{t.kittens.intro}</p>
             <p>
               {language === 'sv' 
-                ? 'Besök av kattungar tidigast efter att kattungarna fyllt 8 veckor. Besök bokas via överenskommelse. Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade Tingningsavtal och även SVERAKs Köpekontrakt.'
+                ? 'Besök av kattungar tidigast efter att kattungarna fyllt 8 veckor. Besök bokas via överenskommelse. Vid bokning av kattunge tas en tingningsavgift ut. Jag använder mig av SVERAKs rekommenderade tingningsavtal och även SVERAKs köpekontrakt.'
                 : 'Visits to kittens at the earliest after the kittens have turned 8 weeks old. Visits are booked by agreement. A deposit fee is charged when booking a kitten. I use SVERAK\'s recommended Deposit Agreement and also SVERAK\'s Purchase Agreement.'}
             </p>
           </div>
