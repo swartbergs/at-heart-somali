@@ -84,7 +84,7 @@ export const translations = {
     },
     kittens: {
       title: "Aktuella Kattungar",
-      intro: "Välkommen att kontakta mig för mer information om våra kattungar eller för att bli förregistrerad till kommande kullar.",
+      intro: "Vi har inga kullar planerade den närmsta tiden, men du är varmt välkommen att skicka in en intresseanmälan via hemsidan, mejla till pi@tupplurens.se eller följa oss på Instagram. Då håller vi dig uppdaterad så snart vi har nyheter om nästa kull.",
       heroAlt: "Somalikattungar",
       litter: "Kull",
       born: "Född",
@@ -259,7 +259,7 @@ export const translations = {
     },
     kittens: {
       title: "Available Kittens",
-      intro: "Welcome to contact me for more information about our kittens or to be pre-registered for upcoming litters.",
+      intro: "We have no litters planned in the near future, but you are warmly welcome to send a registration of interest via the website, email pi@tupplurens.se or follow us on Instagram. We will keep you updated as soon as we have news about the next litter.",
       heroAlt: "Somali kittens",
       litter: "Litter",
       born: "Born",
