@@ -98,7 +98,7 @@ export const translations = {
       }
     },
     litters: {
-      title: "FRÅN A-KULL 2018 TILL K-KULL 2024",
+      title: "FRÅN A-KULL 2018 TILL L-KULL 2025",
       subtitle: "Historik över våra kullar",
       heroAlt: "Kullar genom åren",
       litter: "Kull",
