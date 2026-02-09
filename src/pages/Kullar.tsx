@@ -172,7 +172,7 @@ const Kullar = () => {
     image: litterE,
     kittens: [{
       name: "SE* At Heart Eja",
-      code: "SOM n",
+      code: "ABY n",
       gender: language === 'sv' ? "Hona" : "Female"
     }, {
       name: "SE* At Heart Eje",
