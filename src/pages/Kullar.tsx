@@ -176,7 +176,7 @@ const Kullar = () => {
       gender: language === 'sv' ? "Hona" : "Female"
     }, {
       name: "SE* At Heart Eje",
-      code: "SOM n",
+      code: "ABY n",
       gender: language === 'sv' ? "Hane" : "Male"
     }, {
       name: "SE* At Heart Ess",
