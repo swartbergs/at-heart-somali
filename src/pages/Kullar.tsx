@@ -20,46 +20,6 @@ const Kullar = () => {
   const t = translations[language];
 
   const litters = [{
-    id: "L",
-    name: language === 'sv' ? "Kull L" : "Litter L",
-    birthDate: "2025-10-17",
-    mother: "JCH, KCH SE*At Heart Jes, SOM n",
-    father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
-    image: litterL,
-    kittens: [{
-      name: "SE* At Heart Leo",
-      code: "SOM n",
-      gender: language === 'sv' ? "Hane" : "Male"
-    }, {
-      name: "SE* At Heart Lex",
-      code: "SOM n",
-      gender: language === 'sv' ? "Hane" : "Male"
-    }, {
-      name: "SE* At Heart Lee",
-      code: "SOM n",
-      gender: language === 'sv' ? "Hane" : "Male"
-    }, {
-      name: "SE* At Heart Lou",
-      code: "SOM n",
-      gender: language === 'sv' ? "Hona" : "Female"
-    }, {
-      name: "SE* At Heart Léa",
-      code: "SOM n",
-      gender: language === 'sv' ? "Hona" : "Female"
-    }]
-  }, {
-    id: "M",
-    name: language === 'sv' ? "Kull M" : "Litter M",
-    birthDate: "2025-10-21",
-    mother: "GIC SE*At Heart Cat, SOM n",
-    father: "JCH KCH SE*Wingardiums Caspian SOM p",
-    image: litterM,
-    kittens: [{
-      name: "SE* At Heart Max",
-      code: "SOM n",
-      gender: language === 'sv' ? "Hane" : "Male"
-    }]
-  }, {
     id: "N",
     name: language === 'sv' ? "Kull N" : "Litter N",
     birthDate: "2025-10-23",
@@ -84,6 +44,46 @@ const Kullar = () => {
       gender: language === 'sv' ? "Hona" : "Female"
     }, {
       name: "SE* At Heart Nel",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hona" : "Female"
+    }]
+  }, {
+    id: "M",
+    name: language === 'sv' ? "Kull M" : "Litter M",
+    birthDate: "2025-10-21",
+    mother: "GIC SE*At Heart Cat, SOM n",
+    father: "JCH KCH SE*Wingardiums Caspian SOM p",
+    image: litterM,
+    kittens: [{
+      name: "SE* At Heart Max",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }]
+  }, {
+    id: "L",
+    name: language === 'sv' ? "Kull L" : "Litter L",
+    birthDate: "2025-10-17",
+    mother: "JCH, KCH SE*At Heart Jes, SOM n",
+    father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
+    image: litterL,
+    kittens: [{
+      name: "SE* At Heart Leo",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }, {
+      name: "SE* At Heart Lex",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }, {
+      name: "SE* At Heart Lee",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hane" : "Male"
+    }, {
+      name: "SE* At Heart Lou",
+      code: "SOM n",
+      gender: language === 'sv' ? "Hona" : "Female"
+    }, {
+      name: "SE* At Heart Léa",
       code: "SOM n",
       gender: language === 'sv' ? "Hona" : "Female"
     }]
