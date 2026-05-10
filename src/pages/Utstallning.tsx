@@ -16,12 +16,24 @@ import showNykoping from "@/assets/show-nykoping.png";
 import showOrebro1 from "@/assets/show-orebro-1.jpg";
 import showOrebro2 from "@/assets/show-orebro-2.jpg";
 import showOrebro3 from "@/assets/show-orebro-3.jpg";
+import showVasteras1 from "@/assets/show-vasteras-1.jpg";
 
 const Utstallning = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
   const shows = [
+    {
+      date: language === 'sv' ? "2 maj 2026" : "May 2, 2026",
+      location: language === 'sv' ? "Västerås, SVERIGE" : "Västerås, SWEDEN",
+      mainImage: showVasteras1,
+      gridImages: [],
+      club: language === 'sv' ? "Västerås kattklubb" : "Västerås Cat Club",
+      subtitle: "",
+      results: [
+        "CH JCH KCH SE* At Heart Jes " + (language === 'sv' ? "blev Champion" : "became Champion")
+      ]
+    },
     {
       date: language === 'sv' ? "5 & 6 april 2026" : "April 5 & 6, 2026",
       location: language === 'sv' ? "Örebro, SVERIGE" : "Örebro, SWEDEN",
