@@ -13,12 +13,28 @@ import showHofors5 from "@/assets/show-hofors-5.png";
 import showGestrika from "@/assets/show-gestrika.png";
 import showStockholm1 from "@/assets/show-stockholm-1.png";
 import showNykoping from "@/assets/show-nykoping.png";
+import showOrebro1 from "@/assets/show-orebro-1.jpg";
+import showOrebro2 from "@/assets/show-orebro-2.jpg";
 
 const Utstallning = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
   const shows = [
+    {
+      date: language === 'sv' ? "5 & 6 april 2026" : "April 5 & 6, 2026",
+      location: language === 'sv' ? "Örebro, SVERIGE" : "Örebro, SWEDEN",
+      mainImage: showOrebro1,
+      gridImages: [showOrebro2],
+      club: language === 'sv' ? "Nerikes kattklubb" : "Nerikes Cat Club",
+      subtitle: "",
+      results: [
+        "SC SE* At Heart Cat " + (language === 'sv' ? "blev Supreme Champion, BIV och Nominerad till Panel" : "became Supreme Champion, BIV and Nominated to Panel")
+      ],
+      sundayResults: [
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "blev Champion" : "became Champion")
+      ]
+    },
     {
       date: language === 'sv' ? "17 augusti 2025" : "August 17, 2025",
       location: language === 'sv' ? "Bromma, SVERIGE" : "Bromma, SWEDEN",
