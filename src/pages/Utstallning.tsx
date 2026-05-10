@@ -15,6 +15,7 @@ import showStockholm1 from "@/assets/show-stockholm-1.png";
 import showNykoping from "@/assets/show-nykoping.png";
 import showOrebro1 from "@/assets/show-orebro-1.jpg";
 import showOrebro2 from "@/assets/show-orebro-2.jpg";
+import showOrebro3 from "@/assets/show-orebro-3.jpg";
 
 const Utstallning = () => {
   const { language } = useLanguage();
@@ -31,6 +32,7 @@ const Utstallning = () => {
       results: [
         "SC SE* At Heart Cat " + (language === 'sv' ? "blev Supreme Champion, BIV och Nominerad till Panel" : "became Supreme Champion, BIV and Nominated to Panel")
       ],
+      middleImage: showOrebro3,
       sundayResults: [
         "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "blev Champion" : "became Champion")
       ]
@@ -168,6 +170,15 @@ const Utstallning = () => {
                   </div>
                   {show.sundayResults && (
                     <>
+                      {(show as any).middleImage && (
+                        <div className="w-full max-w-2xl mx-auto my-4">
+                          <img
+                            src={(show as any).middleImage}
+                            alt={`${show.club} ${language === 'sv' ? 'utställning bild' : 'show image'}`}
+                            className="w-full h-auto object-contain rounded-lg"
+                          />
+                        </div>
+                      )}
                       <p className="font-bold mb-2">{language === 'sv' ? "SÖNDAG" : "SUNDAY"}:</p>
                       <div className="space-y-1 mb-4 font-light">
                         {show.sundayResults.map((result, idx) => (
