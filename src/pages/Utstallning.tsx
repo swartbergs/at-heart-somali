@@ -26,7 +26,7 @@ const Utstallning = () => {
       date: language === 'sv' ? "5 & 6 april 2026" : "April 5 & 6, 2026",
       location: language === 'sv' ? "Örebro, SVERIGE" : "Örebro, SWEDEN",
       mainImage: showOrebro1,
-      gridImages: [showOrebro2],
+      gridImages: [],
       club: language === 'sv' ? "Nerikes kattklubb" : "Nerikes Cat Club",
       subtitle: "",
       results: [
