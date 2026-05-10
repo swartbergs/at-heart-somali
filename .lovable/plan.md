@@ -1,19 +1,30 @@
+## Uppdatera titlar för Cat, Jes och Caspian överallt
 
+Ändra titlarna konsekvent på hela hemsidan (alla flikar, inklusive historiska utställningsresultat):
 
-## Korrigering av kullordningen
+- **At Heart Cat**: `GIC` → `SC`
+- **At Heart Jes**: `JCH KCH` / `KCH JCH` / `JC KCH` / `JCH, KCH` → `CH JCH KCH`
+- **Wingardiums Caspian**: `JCH KCH` / `KCH` / `JCH, KCH` → `CH JCH KCH`
 
-Ordningen på kullarna i arrayen i `src/pages/Kullar.tsx` är fel. Alla befintliga kullar listas i omvänd alfabetisk ordning (nyast först): J, I, H, F, E, D, C, B, A.
+### Filer som uppdateras
 
-De tre nya kullarna ska följa samma mönster och placeras i ordningen **N, M, L** överst i listan.
+**`src/pages/Utstallning.tsx`** (alla utställningsposter, även äldre)
+- Rad 61: `JCH KCH SE* Wingardiums Caspian` → `CH JCH KCH SE* Wingardiums Caspian`
+- Rad 73, 87, 100: `GIC SE* At Heart Cat` → `SC SE* At Heart Cat`
+- Rad 74, 88, 101, 114, 118: `KCH JCH SE* At Heart Jes` → `CH JCH KCH SE* At Heart Jes`
+- Rad 75, 89, 102, 115, 119: `KCH SE* Wingardiums Caspian` → `CH JCH KCH SE* Wingardiums Caspian`
 
-### Ändring
+**`src/pages/Kullar.tsx`**
+- Rad 54, 94, 130: `GIC SE*At Heart Cat` / `GIC SE* At Heart Cat` → `SC SE*At Heart Cat` / `SC SE* At Heart Cat`
+- Rad 55: `JCH KCH SE*Wingardiums Caspian` → `CH JCH KCH SE*Wingardiums Caspian`
+- Rad 66: `JCH, KCH SE*At Heart Jes` → `CH JCH KCH SE*At Heart Jes`
+- Rad 67: `JCH, KCH SE*Wingardiums Caspian` → `CH JCH KCH SE*Wingardiums Caspian`
 
-I filen `src/pages/Kullar.tsx`, flytta om de tre första objekten i `litters`-arrayen så ordningen blir:
+**`src/pages/Avelshonor.tsx`**
+- Rad 17, 30, 40: `GIC SE*At Heart Cat` → `SC SE*At Heart Cat`
+- Rad 37: `JC KCH SE*At Heart Jes` → `CH JCH KCH SE*At Heart Jes`
 
-1. **Kull N** (född 2025-10-23) - först
-2. **Kull M** (född 2025-10-21) - andra
-3. **Kull L** (född 2025-10-17) - tredje
-4. Kull J, I, H, F, E, D, C, B, A (oförändrade)
+**`src/pages/Avelshanar.tsx`**
+- Rad 54: `JCH KCH SE Wingardiums Caspian` → `CH JCH KCH SE Wingardiums Caspian`
 
-Ingen annan data ändras - bara ordningen på de tre nya kullarna i arrayen.
-
+Inga andra ändringar — endast titelprefix uppdateras. Översättningsfiler (`src/i18n/translations.ts`) påverkas inte eftersom dessa namn lagras direkt i komponenterna.
