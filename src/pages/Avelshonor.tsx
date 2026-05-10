@@ -14,7 +14,7 @@ const Avelshonor = () => {
 
   const activeQueens = [{
     id: "cat-1",
-    name: "GIC SE*At Heart Cat, SOM n",
+    name: "SC SE*At Heart Cat, SOM n",
     image: catActive,
     birthDate: "2020-03-01",
     mother: "GIC Gloria von Müllers Mühle, SOM o",
@@ -27,17 +27,17 @@ const Avelshonor = () => {
     name: "CH SE*At Heart Hei, SOM n",
     image: catHei,
     birthDate: "2023-03-31",
-    mother: "GIC SE*At Heart Cat, SOM n",
+    mother: "SC SE*At Heart Cat, SOM n",
     father: "S*Lanthelagens Montgomery Scott, SOM n",
     pkDef: language === 'sv' ? "Normal" : "Normal",
     pkaRada: language === 'sv' ? "Bärare" : "Carrier",
     bloodType: "A/AB"
   }, {
     id: "cat-jes",
-    name: "JC KCH SE*At Heart Jes, SOM n",
+    name: "CH JCH KCH SE*At Heart Jes, SOM n",
     image: catJes,
     birthDate: "2024-06-14",
-    mother: "GIC SE*At Heart Cat, SOM n",
+    mother: "SC SE*At Heart Cat, SOM n",
     father: "SE*At Heart Ess, SOM n",
     pkDef: language === 'sv' ? "Normal" : "Normal",
     pkaRada: language === 'sv' ? "Normal" : "Normal",

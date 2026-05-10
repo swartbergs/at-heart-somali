@@ -51,8 +51,8 @@ const Kullar = () => {
     id: "M",
     name: language === 'sv' ? "Kull M" : "Litter M",
     birthDate: "2025-10-21",
-    mother: "GIC SE*At Heart Cat, SOM n",
-    father: "JCH KCH SE*Wingardiums Caspian SOM p",
+    mother: "SC SE*At Heart Cat, SOM n",
+    father: "CH JCH KCH SE*Wingardiums Caspian SOM p",
     image: litterM,
     kittens: [{
       name: "SE* At Heart Max",
@@ -63,8 +63,8 @@ const Kullar = () => {
     id: "L",
     name: language === 'sv' ? "Kull L" : "Litter L",
     birthDate: "2025-10-17",
-    mother: "JCH, KCH SE*At Heart Jes, SOM n",
-    father: "JCH, KCH SE*Wingardiums Caspian, SOM p",
+    mother: "CH JCH KCH SE*At Heart Jes, SOM n",
+    father: "CH JCH KCH SE*Wingardiums Caspian, SOM p",
     image: litterL,
     kittens: [{
       name: "SE* At Heart Leo",
@@ -91,7 +91,7 @@ const Kullar = () => {
     id: "J",
     name: language === 'sv' ? "Kull J" : "Litter J",
     birthDate: "2024-06-14",
-    mother: "GIC SE* At Heart Cat",
+    mother: "SC SE* At Heart Cat",
     father: "SE* At Heart Ess",
     image: kullarHero,
     kittens: [{
@@ -127,7 +127,7 @@ const Kullar = () => {
     id: "H",
     name: language === 'sv' ? "Kull H" : "Litter H",
     birthDate: "2023-03-31",
-    mother: "GIC SE* At Heart Cat",
+    mother: "SC SE* At Heart Cat",
     father: "S* Ianthelagens Montgomery Scott",
     image: litterH,
     kittens: [{

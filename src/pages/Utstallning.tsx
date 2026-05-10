@@ -58,7 +58,7 @@ const Utstallning = () => {
       subtitle: "",
       results: [
         "SC SE* At Heart Fux DVM " + (language === 'sv' ? "fick HP och blev BIV" : "received HP and became BIV"),
-        "JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CAC" : "received CAC")
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CAC" : "received CAC")
       ]
     },
     {
@@ -70,9 +70,9 @@ const Utstallning = () => {
       subtitle: "Aby och Somali Breed BIS",
       results: [
         "SC SE* At Heart Fux DVM " + (language === 'sv' ? "fick HP (Price of Honor)" : "received HP (Price of Honor)"),
-        "GIC SE* At Heart Cat " + (language === 'sv' ? "fick CACS" : "received CACS"),
-        "KCH JCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ, NOM och BIS" : "received CACJ, NOM and BIS"),
-        "KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACJ, Junior Champoin, BIV, NOM och BIS" : "received CACJ, Junior Champion, BIV, NOM and BIS")
+        "SC SE* At Heart Cat " + (language === 'sv' ? "fick CACS" : "received CACS"),
+        "CH JCH KCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ, NOM och BIS" : "received CACJ, NOM and BIS"),
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACJ, Junior Champoin, BIV, NOM och BIS" : "received CACJ, Junior Champion, BIV, NOM and BIS")
       ],
       dayLabel: language === 'sv' ? "LÖRDAG" : "SATURDAY"
     },
@@ -84,9 +84,9 @@ const Utstallning = () => {
       club: language === 'sv' ? "Gestrika kattklubb" : "Gestrika Cat Club",
       subtitle: "",
       results: [
-        "GIC SE* At Heart Cat " + (language === 'sv' ? "fick CACS och NOM" : "received CACS and NOM"),
-        "KCH JCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ" : "received CACJ"),
-        "KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACJ och NOM" : "received CACJ and NOM")
+        "SC SE* At Heart Cat " + (language === 'sv' ? "fick CACS och NOM" : "received CACS and NOM"),
+        "CH JCH KCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ" : "received CACJ"),
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACJ och NOM" : "received CACJ and NOM")
       ]
     },
     {
@@ -97,9 +97,9 @@ const Utstallning = () => {
       club: language === 'sv' ? "Stockholms kattklubb" : "Stockholm Cat Club",
       subtitle: "",
       results: [
-        "GIC SE* At Heart Cat " + (language === 'sv' ? "fick CACS x 2, NOM i utställning B" : "received CACS x 2, NOM in show B"),
-        "KCH JCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ x 2" : "received CACJ x 2"),
-        "KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACJ x 2 och NOM i utställning A" : "received CACJ x 2 and NOM in show A")
+        "SC SE* At Heart Cat " + (language === 'sv' ? "fick CACS x 2, NOM i utställning B" : "received CACS x 2, NOM in show B"),
+        "CH JCH KCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ x 2" : "received CACJ x 2"),
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACJ x 2 och NOM i utställning A" : "received CACJ x 2 and NOM in show A")
       ],
       dayLabel: language === 'sv' ? "LÖRDAG UTSTÄLLNING A + B" : "SATURDAY SHOW A + B"
     },
@@ -111,12 +111,12 @@ const Utstallning = () => {
       club: language === 'sv' ? "Östkattens kattklubb" : "Östkattens Cat Club",
       subtitle: "",
       results: [
-        "KCH JCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ" : "received CACJ"),
-        "KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CAC och NOM" : "received CAC and NOM")
+        "CH JCH KCH SE* At Heart Jes " + (language === 'sv' ? "fick CACJ" : "received CACJ"),
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CAC och NOM" : "received CAC and NOM")
       ],
       sundayResults: [
-        "KCH JCH SE* At Heart Jes " + (language === 'sv' ? "fick CACS och därmed Junior Champoin och BIV" : "received CACS and thus Junior Champion and BIV"),
-        "KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACC, NOM och BIS" : "received CACC, NOM and BIS")
+        "CH JCH KCH SE* At Heart Jes " + (language === 'sv' ? "fick CACS och därmed Junior Champoin och BIV" : "received CACS and thus Junior Champion and BIV"),
+        "CH JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "fick CACC, NOM och BIS" : "received CACC, NOM and BIS")
       ]
     }
   ];
