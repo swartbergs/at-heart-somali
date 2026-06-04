@@ -17,12 +17,25 @@ import showOrebro1 from "@/assets/show-orebro-1.jpg";
 import showOrebro2 from "@/assets/show-orebro-2.jpg";
 import showOrebro3 from "@/assets/show-orebro-3.jpg";
 import showVasteras1 from "@/assets/show-vasteras-1.jpg";
+import showStockholmCaspian from "@/assets/show-stockholm-caspian.jpg";
 
 const Utstallning = () => {
   const { language } = useLanguage();
   const t = translations[language];
 
   const shows = [
+    {
+      date: language === 'sv' ? "17 maj 2026" : "May 17, 2026",
+      location: language === 'sv' ? "Stockholm, SVERIGE" : "Stockholm, SWEDEN",
+      mainImage: showStockholmCaspian,
+      gridImages: [],
+      club: language === 'sv' ? "Stockholms kattklubb" : "Stockholm Cat Club",
+      subtitle: "",
+      results: [
+        "IC JCH KCH SE* Wingardiums Caspian " + (language === 'sv' ? "blev med titeln INTERNATIONAL CHAMPION" : "received the title INTERNATIONAL CHAMPION")
+      ],
+      dayLabel: language === 'sv' ? "SÖNDAG" : "SUNDAY"
+    },
     {
       date: language === 'sv' ? "2 maj 2026" : "May 2, 2026",
       location: language === 'sv' ? "Västerås, SVERIGE" : "Västerås, SWEDEN",
