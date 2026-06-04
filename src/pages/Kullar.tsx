@@ -52,7 +52,7 @@ const Kullar = () => {
     name: language === 'sv' ? "Kull M" : "Litter M",
     birthDate: "2025-10-21",
     mother: "SC SE*At Heart Cat, SOM n",
-    father: "CH JCH KCH SE*Wingardiums Caspian SOM p",
+    father: "IC JCH KCH SE*Wingardiums Caspian SOM p",
     image: litterM,
     kittens: [{
       name: "SE* At Heart Max",
@@ -64,7 +64,7 @@ const Kullar = () => {
     name: language === 'sv' ? "Kull L" : "Litter L",
     birthDate: "2025-10-17",
     mother: "CH JCH KCH SE*At Heart Jes, SOM n",
-    father: "CH JCH KCH SE*Wingardiums Caspian, SOM p",
+    father: "IC JCH KCH SE*Wingardiums Caspian, SOM p",
     image: litterL,
     kittens: [{
       name: "SE* At Heart Leo",
