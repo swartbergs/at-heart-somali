@@ -17,7 +17,8 @@ import showOrebro1 from "@/assets/show-orebro-1.jpg";
 import showOrebro2 from "@/assets/show-orebro-2.jpg";
 import showOrebro3 from "@/assets/show-orebro-3.jpg";
 import showVasteras1 from "@/assets/show-vasteras-1.jpg";
-import showStockholmCaspian from "@/assets/show-stockholm-caspian.jpg";
+import showStockholmCaspianAsset from "@/assets/show-stockholm-caspian.jpg.asset.json";
+const showStockholmCaspian = showStockholmCaspianAsset.url;
 
 const Utstallning = () => {
   const { language } = useLanguage();
