@@ -51,7 +51,7 @@ const Avelshanar = () => {
     },
     {
       id: "caspian",
-      name: "CH JCH KCH SE Wingardiums Caspian, SOM p",
+      name: "IC JCH KCH SE Wingardiums Caspian, SOM p",
       image: catCaspian,
       birthDate: "2024-08-012",
       mother: "SE*Wingardiums Cassiega Soffice, SOM a",
