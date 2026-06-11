@@ -32,19 +32,19 @@ const Avelshanar = () => {
       bloodType: "A/AB",
       moreImagesLink: "#",
       showMerits: language === 'sv' ? [
-        "Årets bästa fertila Somali hane 2023",
+        "Årets bästa Somali 2023",
         "Årets bästa fertila hane i grupp 4, plats 7, 2023",
         "Årets bästa viltfärgade Somali 2023",
         "Destinguish Varity Merit 2024",
-        "Årets bästa fertila Somali hane 2024",
+        "Årets bästa Somali 2024",
         "Årets bästa fertila hane i grupp 4 plats 5, 2024",
         "Årets bästa viltfärgade Somali 2024"
       ] : [
-        "Best fertile Somali male 2023",
+        "Best Somali 2023",
         "Best fertile male in group 4, place 7, 2023",
         "Best ruddy Somali 2023",
         "Distinguished Variety Merit 2024",
-        "Best fertile Somali male 2024",
+        "Best Somali 2024",
         "Best fertile male in group 4, place 5, 2024",
         "Best ruddy Somali 2024"
       ]
