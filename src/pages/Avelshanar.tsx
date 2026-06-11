@@ -61,7 +61,14 @@ const Avelshanar = () => {
       pkDef: "Normal",
       pkaRada: "Normal",
       bloodType: "A/AB",
-      moreImagesLink: "#"
+      moreImagesLink: "#",
+      showMerits: language === 'sv' ? [
+        "Årets bästa Somali 2025",
+        "Årets bästa fawn Somali 2025"
+      ] : [
+        "Best Somali 2025",
+        "Best fawn Somali 2025"
+      ]
     }
   ];
 
