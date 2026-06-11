@@ -61,7 +61,14 @@ const Avelshanar = () => {
       pkDef: "Normal",
       pkaRada: "Normal",
       bloodType: "A/AB",
-      moreImagesLink: "#"
+      moreImagesLink: "#",
+      showMerits: language === 'sv' ? [
+        "Årets bästa Somali 2025",
+        "Årets bästa fawn Somali 2025"
+      ] : [
+        "Best Somali 2025",
+        "Best fawn Somali 2025"
+      ]
     }
   ];
 
@@ -183,7 +190,8 @@ const Avelshanar = () => {
     }
   ];
 
-  const CatCard = ({ cat, showMoreImages = true }: { cat: typeof studs[0]; showMoreImages?: boolean }) => (
+  type CatType = Omit<typeof studs[0], 'showMerits'> & { showMerits?: string[] };
+  const CatCard = ({ cat, showMoreImages = true }: { cat: CatType; showMoreImages?: boolean }) => (
     <div className="space-y-6">
       {/* Cat Image */}
       <div className="w-full max-w-2xl mx-auto">
